@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_48c7164168dca01d479414587f75dc62" kind="dir">
+    <compoundname>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu</compoundname>
+    <innerfile refid="Adventure_8cpp">Adventure.cpp</innerfile>
+    <innerfile refid="Adventure_8hpp">Adventure.hpp</innerfile>
+    <innerfile refid="Arcade_8cpp">Arcade.cpp</innerfile>
+    <innerfile refid="Arcade_8hpp">Arcade.hpp</innerfile>
+    <innerfile refid="Button_8cpp">Button.cpp</innerfile>
+    <innerfile refid="Button_8hpp">Button.hpp</innerfile>
+    <innerfile refid="Menu_8cpp">Menu.cpp</innerfile>
+    <innerfile refid="Menu_8hpp">Menu.hpp</innerfile>
+    <innerfile refid="Option_8cpp">Option.cpp</innerfile>
+    <innerfile refid="Option_8hpp">Option.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/"/>
+  </compounddef>
+</doxygen>

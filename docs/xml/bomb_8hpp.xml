@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="bomb_8hpp" kind="file" language="C++">
+    <compoundname>bomb.hpp</compoundname>
+    <includes local="no">irrlicht.h</includes>
+    <includes local="no">vector</includes>
+    <includes refid="map_8hpp" local="yes">map.hpp</includes>
+    <includes refid="Music_8hpp" local="yes">Music.hpp</includes>
+    <includedby refid="Player_8hpp" local="yes">/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp</includedby>
+    <includedby refid="window_8hpp" local="yes">/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp</includedby>
+    <includedby refid="Path_8hpp" local="yes">/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp</includedby>
+    <includedby refid="bomb_8cpp" local="yes">/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>Wall.hpp</label>
+        <link refid="Wall_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>map.hpp</label>
+        <link refid="map_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>SFML/Audio.hpp</label>
+      </node>
+      <node id="10">
+        <label>Music.hpp</label>
+        <link refid="Music_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp</label>
+        <link refid="bomb_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>fstream</label>
+      </node>
+      <node id="5">
+        <label>ostream</label>
+      </node>
+      <node id="8">
+        <label>random</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>irrlicht.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp</label>
+        <link refid="window_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp</label>
+        <link refid="bomb_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Option.hpp</label>
+        <link refid="Option_8hpp_source"/>
+      </node>
+      <node id="3">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp</label>
+        <link refid="UI_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp</label>
+        <link refid="Path_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp</label>
+        <link refid="Player_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classbombHandler" prot="public">bombHandler</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="bomb_8hpp_1a5c036b023eeb2b8d1b19e610d1166ea8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>BOMB_STATUS</name>
+        <enumvalue id="bomb_8hpp_1a5c036b023eeb2b8d1b19e610d1166ea8ac157bdf0b85a40d2619cbc8bc1ae5fe2" prot="public">
+          <name>NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bomb_8hpp_1a5c036b023eeb2b8d1b19e610d1166ea8a46a8b7915191a24229de52ff2d7e5f7f" prot="public">
+          <name>EXPLODING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bomb_8hpp_1a5c036b023eeb2b8d1b19e610d1166ea8ac453c9fc61bcab16ca3eb3bafc9e99fb" prot="public">
+          <name>EXPLODED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="21" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" bodystart="22" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2020</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>bomb.hpp</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>bomb</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BOMB_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOMB_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;irrlicht.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;map.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Music.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>BOMB_STATUS</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>NONE,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPLODING,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPLODED</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classbombHandler" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbombHandler" kindref="compound">bombHandler</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbombHandler" kindref="compound">bombHandler</ref>(irr::scene::ISceneManager<sp/>*smgr,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::video::IVideoDriver<sp/>*driver,<sp/>irr::ITimer<sp/>*clock,<sp/><ref refid="classMap" kindref="compound">Map</ref><sp/>*map,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMusic" kindref="compound">Music</ref><sp/>*music);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classbombHandler" kindref="compound">bombHandler</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classbombHandler_1a1bf6bb843941ce190044c2560e8c4b98" kindref="member">addBomb</ref>(std::vector&lt;int&gt;<sp/>bombPos,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>force);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbombHandler_1a65ed78824969ea583e73fd1800673b3b" kindref="member">SetPause</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>pause);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbombHandler_1afc7e6a87dbe540cbfb14e10f9e72aa3a" kindref="member">checkBomb</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;int&gt;&gt;<sp/><ref refid="classbombHandler_1a7a4a3d013569397263a39fd57f5a4663" kindref="member">getDangerZone</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>checkWaitTime(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bombCounter,<sp/>irr::u32<sp/>actualTime);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setBombExplosion(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bombCounter);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addParticles(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bombCounter);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>removeParticles();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bombRadiusVertical(std::vector&lt;std::vector&lt;int&gt;&gt;<sp/>actualMap,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>force,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>startPos,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>incrementor,<sp/>std::vector&lt;int&gt;<sp/>*wallExplosedTmp);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bombRadiusHorizontal(std::vector&lt;std::vector&lt;int&gt;&gt;<sp/>actualMap,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>force,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>startPos,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>incrementor,<sp/>std::vector&lt;int&gt;<sp/>*wallExplosedTmp);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getBombRadius(std::vector&lt;std::vector&lt;int&gt;&gt;<sp/>actualMap,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>direction,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>force,<sp/>std::vector&lt;int&gt;<sp/>*allWallDestroyed);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setDangerZone(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>force);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateDangerZone();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addHorizontalDangerZone(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dangerType,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>leftX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>leftY,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rightX);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addVerticalDangerZone(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dangerType,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>topX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>topY,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>downY);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>removeOldPointer();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMap" kindref="compound">Map</ref><sp/>*map;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::scene::ISceneManager*<sp/>smgr;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::video::IVideoDriver<sp/>*driver;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMusic" kindref="compound">Music</ref><sp/>*music;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;int&gt;&gt;<sp/>bombPos;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;int&gt;&gt;<sp/>bombEffectZone;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;int&gt;&gt;<sp/>wallExplosed;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;irr::scene::IParticleSystemSceneNode<sp/>*&gt;&gt;<sp/>bombParticles;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;int&gt;&gt;<sp/>mapEffectZone;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;BOMB_STATUS&gt;<sp/>bombStatus;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;irr::u32&gt;<sp/>remainingTime;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::ITimer<sp/>*clock;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::scene::IAnimatedMesh<sp/>*bombMesh;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;irr::scene::IAnimatedMeshSceneNode*&gt;<sp/>bombMeshSceneNode;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>pause;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp"/>
+  </compounddef>
+</doxygen>

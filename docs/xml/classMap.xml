@@ -1,0 +1,731 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classMap" kind="class" language="C++" prot="public">
+    <compoundname>Map</compoundname>
+    <includes refid="map_8hpp" local="no">map.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMap_1a6b8ab15ba5a4d4b50e17ce50e83a66cb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Map::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="25" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMap_1a94da184f644e9b8a3e7f2ba107255531" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Map::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="26" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMap_1a2150dc36888421312944d2c2bde1f789" prot="private" static="no" mutable="no">
+        <type>irr::IrrlichtDevice *</type>
+        <definition>irr::IrrlichtDevice* Map::device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <briefdescription>
+<para>device of the game </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="30" column="25" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMap_1aa263720194e80f61f381cf82afd1fb24" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; Map::game_map</definition>
+        <argsstring></argsstring>
+        <name>game_map</name>
+        <briefdescription>
+<para>the map of the game </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="34" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMap_1a51fc52df714308a66f32cbf8a2e6ecbc" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; Map::new_game_map</definition>
+        <argsstring></argsstring>
+        <name>new_game_map</name>
+        <briefdescription>
+<para>the procedural generatated map of the game </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="38" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMap_1a37e4b93fd5f193e4f236925b5386c392" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classWall" kindref="compound">Wall</ref> &gt;</type>
+        <definition>std::vector&lt;Wall&gt; Map::destructible_wall</definition>
+        <argsstring></argsstring>
+        <name>destructible_wall</name>
+        <briefdescription>
+<para>the vector of destructible wall </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="42" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMap_1a11111a1df170f168358f6ed9d3d7201f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classWall" kindref="compound">Wall</ref> &gt;</type>
+        <definition>std::vector&lt;Wall&gt; Map::bonnus</definition>
+        <argsstring></argsstring>
+        <name>bonnus</name>
+        <briefdescription>
+<para>the vector of bonus </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="46" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMap_1aa7d93c627530b9d68a296a76a4cba9b8" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; irr::scene::ISceneNode * &gt;</type>
+        <definition>std::vector&lt;irr::scene::ISceneNode*&gt; Map::allEntityChar</definition>
+        <argsstring></argsstring>
+        <name>allEntityChar</name>
+        <briefdescription>
+<para>the vector of every players </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="50" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMap_1a8b879d18fc483bb1d0e42cfa25131734" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; irr::scene::ISceneNodeAnimator * &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;irr::scene::ISceneNodeAnimator*&gt; &gt; Map::wallAnimator</definition>
+        <argsstring></argsstring>
+        <name>wallAnimator</name>
+        <briefdescription>
+<para>the vector of every collisison </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="54" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMap_1a082d0e587eab71242066958dcf909056" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Map::Map</definition>
+        <argsstring>(irr::IrrlichtDevice *device, int lvl)</argsstring>
+        <name>Map</name>
+        <param>
+          <type>irr::IrrlichtDevice *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lvl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="57" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.cpp" bodystart="11" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classMap_1aa403fbe09394ccf39747588f5168e3b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Map::~Map</definition>
+        <argsstring>()</argsstring>
+        <name>~Map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="59" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classMap_1ab7b1730ff654dd83ea9628997f104e8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Map::is_protected_place</definition>
+        <argsstring>(unsigned short width, unsigned short height, unsigned short x, unsigned short y)</argsstring>
+        <name>is_protected_place</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the map&apos;s width </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the map&apos;s height </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of the abscissa X for a block </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of the abscissa Y for a block </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the block is a protected place </para>
+</simplesect>
+<simplesect kind="return"><para>false if the block isn&apos;t a protected place </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="70" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.cpp" bodystart="45" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classMap_1af7eeed905803416b2496ae53794bead2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned short</type>
+        <definition>unsigned short Map::generate_block</definition>
+        <argsstring>(std::vector&lt; float &gt; &amp;bonus_probabilities)</argsstring>
+        <name>generate_block</name>
+        <param>
+          <type>std::vector&lt; float &gt; &amp;</type>
+          <declname>bonus_probabilities</declname>
+        </param>
+        <briefdescription>
+<para>generate a block id using given probabilities list </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bonus_probabilities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of probabilities for bonus blocks (each must be between 0 and 1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>unsigned short the generated block id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="77" column="20" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.cpp" bodystart="59" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classMap_1abd90761404b6e9df006ac7f7fffadc73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; int &gt; &gt; Map::generate_map</definition>
+        <argsstring>(unsigned short width, unsigned short height, std::vector&lt; float &gt; &amp;bonus_probabilities)</argsstring>
+        <name>generate_map</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; float &gt; &amp;</type>
+          <declname>bonus_probabilities</declname>
+        </param>
+        <briefdescription>
+<para>generate a random map </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map width </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map height </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bonus_probabilities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of probabilities for bonus blocks (each must be between 0 and 1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::vector&lt;std::vector&lt;unsigned short&gt;&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="86" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.cpp" bodystart="83" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classMap_1a35efa11c5caddb37e1ce511671bdf9a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Map::dump_map</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; int &gt;&gt; map)</argsstring>
+        <name>dump_map</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; int &gt;&gt;</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+<para>dump map in console using block&apos;s ids </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the two-dimensionnal vector representing the map </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="94" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.cpp" bodystart="105" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classMap_1aeacdb5eb477a0b31b2ec2b77d4247300" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; int &gt; &gt; Map::loadMap</definition>
+        <argsstring>(const char *path_name)</argsstring>
+        <name>loadMap</name>
+        <param>
+          <type>const char *</type>
+          <declname>path_name</declname>
+        </param>
+        <briefdescription>
+<para>function that fill a 2d vector of int </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the path of a file(txt) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the game map (std::vector&lt;std::vector&lt;int&gt;&gt;) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="100" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.cpp" bodystart="115" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classMap_1a8557842171fd3554b7b667437b142e4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Map::createMap</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; int &gt;&gt; game_map, std::vector&lt; irr::scene::ISceneNode * &gt; allEntityChar)</argsstring>
+        <name>createMap</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; int &gt;&gt;</type>
+          <declname>game_map</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; irr::scene::ISceneNode * &gt;</type>
+          <declname>allEntityChar</declname>
+        </param>
+        <briefdescription>
+<para>function that create the map </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>game_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the map in vector 2d(int) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>allEntityChar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the player to prevend the collision </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a vector of destructible wall </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="107" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.cpp" bodystart="159" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classMap_1aa91c1d6daf6fbcf1b439f708e8949470" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Map::collision</definition>
+        <argsstring>(Wall wall)</argsstring>
+        <name>collision</name>
+        <param>
+          <type><ref refid="classWall" kindref="compound">Wall</ref></type>
+          <declname>wall</declname>
+        </param>
+        <briefdescription>
+<para>function that will make a collision between the slector(wall_selector) and object(player_node) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wall</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wall that we want to make collision </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="113" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.cpp" bodystart="142" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classMap_1ab874d807dc2b01d6ff304ac694f93760" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; int &gt; &gt; Map::getMap</definition>
+        <argsstring>()</argsstring>
+        <name>getMap</name>
+        <briefdescription>
+<para>getter of the vector map </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>map vector (int) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="119" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.cpp" bodystart="201" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classMap_1a34a4252c673f3b3e9139d34a5199ce81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classWall" kindref="compound">Wall</ref> &gt;</type>
+        <definition>std::vector&lt; Wall &gt; Map::getDestructibleWall</definition>
+        <argsstring>() const</argsstring>
+        <name>getDestructibleWall</name>
+        <briefdescription>
+<para>getter of the vector destructible_wall </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>destructible wall vector (int) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="125" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.cpp" bodystart="206" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classMap_1a4d05a6bb491df4b03505e521e0f98a8a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classWall" kindref="compound">Wall</ref> &gt;</type>
+        <definition>std::vector&lt; Wall &gt; Map::getBonnus</definition>
+        <argsstring>() const</argsstring>
+        <name>getBonnus</name>
+        <briefdescription>
+<para>getter of the vector bonus </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bonus vector (<ref refid="classWall" kindref="compound">Wall</ref>) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="131" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.cpp" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classMap_1ac83f759ed24e6d66e85b7fc609cc5f42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Map::removeWall</definition>
+        <argsstring>(int wallX, int wallY)</argsstring>
+        <name>removeWall</name>
+        <param>
+          <type>int</type>
+          <declname>wallX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wallY</declname>
+        </param>
+        <briefdescription>
+<para>function that remove wall after explosion of the bomb </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wallX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size x of map </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wallY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size y of map </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="138" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.cpp" bodystart="216" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classMap_1aa688c301470a03eccf792d7d264c2d37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; Map::getMapSize</definition>
+        <argsstring>()</argsstring>
+        <name>getMapSize</name>
+        <briefdescription>
+<para>get the size of the current map </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vector of length and width (int) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="144" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.cpp" bodystart="251" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classMap_1a64dee4ed6f876b447d8b396a2dae0c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Map::setMap</definition>
+        <argsstring>(int x, int y, int block)</argsstring>
+        <name>setMap</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+<para>function that will set a new block of the position x and y </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position x in the map </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position y in the map </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new block to put int the map </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="152" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.cpp" bodystart="240" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classMap_1ab42217d3312ee32bafaf72b982c88430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Map::removeMeshBonnus</definition>
+        <argsstring>(int count)</argsstring>
+        <name>removeMeshBonnus</name>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>function that remove the bonus after collision with player </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>used to be the index of the bonus vector </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="158" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.cpp" bodystart="245" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classMap_1a7735c4422ee170c9cb90a56d56a8dfd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Map::getProgress</definition>
+        <argsstring>()</argsstring>
+        <name>getProgress</name>
+        <briefdescription>
+<para>get progress from save </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int of actual progress </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="163" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.cpp" bodystart="259" bodyend="266"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class which is used to build a map </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" line="22" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/map.hpp" bodystart="23" bodyend="164"/>
+    <listofallmembers>
+      <member refid="classMap_1aa7d93c627530b9d68a296a76a4cba9b8" prot="private" virt="non-virtual"><scope>Map</scope><name>allEntityChar</name></member>
+      <member refid="classMap_1a11111a1df170f168358f6ed9d3d7201f" prot="private" virt="non-virtual"><scope>Map</scope><name>bonnus</name></member>
+      <member refid="classMap_1aa91c1d6daf6fbcf1b439f708e8949470" prot="public" virt="non-virtual"><scope>Map</scope><name>collision</name></member>
+      <member refid="classMap_1a8557842171fd3554b7b667437b142e4e" prot="public" virt="non-virtual"><scope>Map</scope><name>createMap</name></member>
+      <member refid="classMap_1a37e4b93fd5f193e4f236925b5386c392" prot="private" virt="non-virtual"><scope>Map</scope><name>destructible_wall</name></member>
+      <member refid="classMap_1a2150dc36888421312944d2c2bde1f789" prot="private" virt="non-virtual"><scope>Map</scope><name>device</name></member>
+      <member refid="classMap_1a35efa11c5caddb37e1ce511671bdf9a6" prot="public" virt="non-virtual"><scope>Map</scope><name>dump_map</name></member>
+      <member refid="classMap_1aa263720194e80f61f381cf82afd1fb24" prot="private" virt="non-virtual"><scope>Map</scope><name>game_map</name></member>
+      <member refid="classMap_1af7eeed905803416b2496ae53794bead2" prot="public" virt="non-virtual"><scope>Map</scope><name>generate_block</name></member>
+      <member refid="classMap_1abd90761404b6e9df006ac7f7fffadc73" prot="public" virt="non-virtual"><scope>Map</scope><name>generate_map</name></member>
+      <member refid="classMap_1a4d05a6bb491df4b03505e521e0f98a8a" prot="public" virt="non-virtual"><scope>Map</scope><name>getBonnus</name></member>
+      <member refid="classMap_1a34a4252c673f3b3e9139d34a5199ce81" prot="public" virt="non-virtual"><scope>Map</scope><name>getDestructibleWall</name></member>
+      <member refid="classMap_1ab874d807dc2b01d6ff304ac694f93760" prot="public" virt="non-virtual"><scope>Map</scope><name>getMap</name></member>
+      <member refid="classMap_1aa688c301470a03eccf792d7d264c2d37" prot="public" virt="non-virtual"><scope>Map</scope><name>getMapSize</name></member>
+      <member refid="classMap_1a7735c4422ee170c9cb90a56d56a8dfd0" prot="public" virt="non-virtual"><scope>Map</scope><name>getProgress</name></member>
+      <member refid="classMap_1ab7b1730ff654dd83ea9628997f104e8d" prot="public" virt="non-virtual"><scope>Map</scope><name>is_protected_place</name></member>
+      <member refid="classMap_1aeacdb5eb477a0b31b2ec2b77d4247300" prot="public" virt="non-virtual"><scope>Map</scope><name>loadMap</name></member>
+      <member refid="classMap_1a082d0e587eab71242066958dcf909056" prot="public" virt="non-virtual"><scope>Map</scope><name>Map</name></member>
+      <member refid="classMap_1a51fc52df714308a66f32cbf8a2e6ecbc" prot="private" virt="non-virtual"><scope>Map</scope><name>new_game_map</name></member>
+      <member refid="classMap_1ab42217d3312ee32bafaf72b982c88430" prot="public" virt="non-virtual"><scope>Map</scope><name>removeMeshBonnus</name></member>
+      <member refid="classMap_1ac83f759ed24e6d66e85b7fc609cc5f42" prot="public" virt="non-virtual"><scope>Map</scope><name>removeWall</name></member>
+      <member refid="classMap_1a64dee4ed6f876b447d8b396a2dae0c05" prot="public" virt="non-virtual"><scope>Map</scope><name>setMap</name></member>
+      <member refid="classMap_1a8b879d18fc483bb1d0e42cfa25131734" prot="private" virt="non-virtual"><scope>Map</scope><name>wallAnimator</name></member>
+      <member refid="classMap_1a6b8ab15ba5a4d4b50e17ce50e83a66cb" prot="private" virt="non-virtual"><scope>Map</scope><name>x</name></member>
+      <member refid="classMap_1a94da184f644e9b8a3e7f2ba107255531" prot="private" virt="non-virtual"><scope>Map</scope><name>y</name></member>
+      <member refid="classMap_1aa403fbe09394ccf39747588f5168e3b2" prot="public" virt="non-virtual"><scope>Map</scope><name>~Map</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

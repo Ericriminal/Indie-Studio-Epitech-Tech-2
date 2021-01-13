@@ -1,0 +1,1282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classPathFinder" kind="class" language="C++" prot="public">
+    <compoundname>PathFinder</compoundname>
+    <includes refid="Path_8hpp" local="no">Path.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPathFinder_1abd8d9938c381be02e401341995b98090" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; PathFinder::_originalMap</definition>
+        <argsstring></argsstring>
+        <name>_originalMap</name>
+        <briefdescription>
+<para>copy of the game map </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="218" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1ab6c6a8cd9d66b97a0c79ed4916992729" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; PathFinder::_dangerMap</definition>
+        <argsstring></argsstring>
+        <name>_dangerMap</name>
+        <briefdescription>
+<para>map of danger, only bombs are represented </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="222" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1a8c17fa6c3b8bb110c36fef9e4a9f563f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; PathFinder::_map</definition>
+        <argsstring></argsstring>
+        <name>_map</name>
+        <briefdescription>
+<para>personal map of the ai, it ads dead end to it </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="226" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1a6752cc081310cc3eaa905dea433f60da" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; PathFinder::YMap</definition>
+        <argsstring></argsstring>
+        <name>YMap</name>
+        <briefdescription>
+<para>list of y coordinate of already walked points </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="230" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1ae68a1b3c238c35f0f1afbb42d3ce2b01" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; PathFinder::XMap</definition>
+        <argsstring></argsstring>
+        <name>XMap</name>
+        <briefdescription>
+<para>list of x coordinate of already walked points </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="234" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1a4f4d8ebd2f6fddc6d36d3a698886b276" prot="private" static="no" mutable="no">
+        <type>irr::scene::IAnimatedMesh *</type>
+        <definition>irr::scene::IAnimatedMesh* PathFinder::aiMesh</definition>
+        <argsstring></argsstring>
+        <name>aiMesh</name>
+        <briefdescription>
+<para>animated mesh of ai </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="238" column="31" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1ab162274c6930971b6db23043f63a37c3" prot="private" static="no" mutable="no">
+        <type>irr::scene::IAnimatedMeshSceneNode *</type>
+        <definition>irr::scene::IAnimatedMeshSceneNode* PathFinder::animModel</definition>
+        <argsstring></argsstring>
+        <name>animModel</name>
+        <briefdescription>
+<para>animated mesh of ai </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="242" column="40" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1a5fc596c1d1a12fe0396e945ebe98e9d5" prot="private" static="no" mutable="no">
+        <type>irr::IrrlichtDevice *</type>
+        <definition>irr::IrrlichtDevice* PathFinder::device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="246" column="25" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1a355280b84c0eb1ce762e7de074574f07" prot="private" static="no" mutable="no">
+        <type>irr::core::vector3df</type>
+        <definition>irr::core::vector3df PathFinder::pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="250" column="26" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1a2b2140533bcebbe931d228a8f7144b14" prot="private" static="no" mutable="no">
+        <type><ref refid="classbombHandler" kindref="compound">bombHandler</ref> *</type>
+        <definition>bombHandler* PathFinder::bombs</definition>
+        <argsstring></argsstring>
+        <name>bombs</name>
+        <briefdescription>
+<para>point to bomb object </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="254" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1ac83316280ebe15705e2fd115723201de" prot="private" static="no" mutable="no">
+        <type><ref refid="classMap" kindref="compound">Map</ref> *</type>
+        <definition>Map* PathFinder::map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <briefdescription>
+<para>pointer to map object </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="258" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1a16239f9c818cc953af71ba37db6aa21b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PathFinder::aiNb</definition>
+        <argsstring></argsstring>
+        <name>aiNb</name>
+        <briefdescription>
+<para>number of ai </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="262" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1a2a94daae32a11b456e4d34a52f344ef0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PathFinder::_alive</definition>
+        <argsstring></argsstring>
+        <name>_alive</name>
+        <briefdescription>
+<para>state of ai </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="266" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1aa700415085855ca3c6724bf306fd3503" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PathFinder::quit</definition>
+        <argsstring></argsstring>
+        <name>quit</name>
+        <briefdescription>
+<para>state of ai </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="270" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1ad16465bdb9feeafde62b054bf1273ee7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PathFinder::looping</definition>
+        <argsstring></argsstring>
+        <name>looping</name>
+        <briefdescription>
+<para>? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="274" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1a1e4206d4bcdf6fc894da96757a3239f4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PathFinder::speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <briefdescription>
+<para>speed of ai </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="278" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1a2c79c8596549f161732676746e9ed266" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PathFinder::bombFire</definition>
+        <argsstring></argsstring>
+        <name>bombFire</name>
+        <briefdescription>
+<para>range of exposion </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="282" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1a7db7fabe6225d5c6e1f506e3b4ba4d31" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PathFinder::bombNb</definition>
+        <argsstring></argsstring>
+        <name>bombNb</name>
+        <briefdescription>
+<para>number bomb </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="286" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1a47090e902fa5383542079e5e41a3141c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PathFinder::_x</definition>
+        <argsstring></argsstring>
+        <name>_x</name>
+        <briefdescription>
+<para>ai x coordinate </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="290" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1a21f9d268cfa3bfab74b122948355931c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PathFinder::_y</definition>
+        <argsstring></argsstring>
+        <name>_y</name>
+        <briefdescription>
+<para>ai y coordinate </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="294" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1a344c5d5d7b9e34f5bdad8f60f88b5e0d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PathFinder::XToGo</definition>
+        <argsstring></argsstring>
+        <name>XToGo</name>
+        <briefdescription>
+<para>ai x destination </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="298" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1a5954b79589120becdad1b33f6c346223" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PathFinder::YToGo</definition>
+        <argsstring></argsstring>
+        <name>YToGo</name>
+        <briefdescription>
+<para>ai y destination </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="302" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1ad0004cc07a0861159b70c0713744fa29" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PathFinder::mod</definition>
+        <argsstring></argsstring>
+        <name>mod</name>
+        <briefdescription>
+<para>ai mod of thinking (0 for running, 1 for destruction, 2 for flight) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="306" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1a3e93cc33fdd367d3d40c478499675abd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PathFinder::isMoving</definition>
+        <argsstring></argsstring>
+        <name>isMoving</name>
+        <briefdescription>
+<para>is ai moving </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="310" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPathFinder_1add49295a08c559ac0b1dcf48f05fbb37" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PathFinder::lockMove</definition>
+        <argsstring></argsstring>
+        <name>lockMove</name>
+        <briefdescription>
+<para>locked move </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="314" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPathFinder_1a7da1643c6f64170a17c995cae270e9be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PathFinder::PathFinder</definition>
+        <argsstring>(irr::IrrlichtDevice *device, bombHandler *bombs, Map *map, int aiNb, int position)</argsstring>
+        <name>PathFinder</name>
+        <param>
+          <type>irr::IrrlichtDevice *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type><ref refid="classbombHandler" kindref="compound">bombHandler</ref> *</type>
+          <declname>bombs</declname>
+        </param>
+        <param>
+          <type><ref refid="classMap" kindref="compound">Map</ref> *</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>aiNb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="39" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="11" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1acc04bc8bcddfda54da6a2905b256cf90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PathFinder::~PathFinder</definition>
+        <argsstring>()</argsstring>
+        <name>~PathFinder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="41" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a41c595648ef9764be9920ec207d24580" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathFinder::setPointToGo</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>setPointToGo</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>function to tell the ai where to go </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>and y are the coordinates </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="47" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="57" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a008c443d8acd9424c9ee4643797e0be4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathFinder::setCurrentPos</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>setCurrentPos</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>function to tell the ai where it is </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>and y are the coordinates </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="53" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="68" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a95f0b5272e64c86cf4631d8da4456d7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathFinder::setCurrentMapState</definition>
+        <argsstring>(const std::vector&lt; std::vector&lt; int &gt;&gt; &amp;map)</argsstring>
+        <name>setCurrentMapState</name>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; int &gt;&gt; &amp;</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+<para>function to refresh the map </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the game map </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="59" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="75" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a670034ee385ba19f8f8582e6f201999b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathFinder::setDangerMap</definition>
+        <argsstring>()</argsstring>
+        <name>setDangerMap</name>
+        <briefdescription>
+<para>function to refresh the map of dangers </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>null</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="65" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1acd60a5c9830f376b38d9d2f5a51ac53d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PathFinder::cycle</definition>
+        <argsstring>(std::mutex &amp;mutex)</argsstring>
+        <name>cycle</name>
+        <param>
+          <type>std::mutex &amp;</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+<para>function to make the ai take decisions </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mutex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if bot alive false if not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="71" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="433" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a5496c27c17b3ad1f049488e2e1343ea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathFinder::setLooping</definition>
+        <argsstring>(bool looping)</argsstring>
+        <name>setLooping</name>
+        <param>
+          <type>bool</type>
+          <declname>looping</declname>
+        </param>
+        <briefdescription>
+<para>function to set the value of looping </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>boolean</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="77" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="557" bodyend="560"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1ac45b4684450c5e832f70eac09278c0ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathFinder::setQuit</definition>
+        <argsstring>()</argsstring>
+        <name>setQuit</name>
+        <briefdescription>
+<para>animate the running of the ai </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>null</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="83" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a281090a10eeb389ecf119081b13f0247" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const bool</type>
+        <definition>const bool PathFinder::arrived</definition>
+        <argsstring>() const</argsstring>
+        <name>arrived</name>
+        <briefdescription>
+<para>function to verify if the ai arrived at it&apos;s designated spot </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>null</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if bot arrived false if not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="89" column="16" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="531" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1ab369f8dd1c66036f3e250606661e786c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const bool &amp;</type>
+        <definition>const bool &amp; PathFinder::alive</definition>
+        <argsstring>() const</argsstring>
+        <name>alive</name>
+        <briefdescription>
+<para>function to verify if ai is alive </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>null</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if bot alive false if not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="95" column="16" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="539" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a19fc7800dd16502e94d6855c47b1f3c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::tuple&lt; int, int &gt;</type>
+        <definition>const std::tuple&lt; int, int &gt; PathFinder::imHere</definition>
+        <argsstring>() const</argsstring>
+        <name>imHere</name>
+        <briefdescription>
+<para>function to give the current position of the ai </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>null</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>position of the ai </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="101" column="22" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="545" bodyend="548"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a0d666808638a849e6f001ec02833099e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::thread</type>
+        <definition>std::thread PathFinder::runThread</definition>
+        <argsstring>(std::mutex &amp;mutex)</argsstring>
+        <name>runThread</name>
+        <param>
+          <type>std::mutex &amp;</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+<para>function </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mutex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>thread </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="107" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="550" bodyend="555"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classPathFinder_1ae8d0c5bd83d0877a5efe878919b40d08" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathFinder::modifyPosAccordingToDirection</definition>
+        <argsstring>(Direction way)</argsstring>
+        <name>modifyPosAccordingToDirection</name>
+        <param>
+          <type>Direction</type>
+          <declname>way</declname>
+        </param>
+        <briefdescription>
+<para>modify coordinates of ai in map </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to move to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="116" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="336" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a92f95500ce7f986acf2673f2a3eea209" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathFinder::printMap</definition>
+        <argsstring>()</argsstring>
+        <name>printMap</name>
+        <briefdescription>
+<para>print the map </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>null</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="122" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="276" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1ae2a71660ee48b35f610d26cbf2bb917a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathFinder::breakShit</definition>
+        <argsstring>(std::mutex &amp;mutex)</argsstring>
+        <name>breakShit</name>
+        <param>
+          <type>std::mutex &amp;</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+<para>decide wether or not to place a bomb </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mutex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="128" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="364" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a1cfa58e425f3a7eccc1e3349def37f7f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathFinder::bombIt</definition>
+        <argsstring>(std::mutex &amp;mutex)</argsstring>
+        <name>bombIt</name>
+        <param>
+          <type>std::mutex &amp;</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+<para>place a bomb </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mutex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="134" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="309" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1ae76359f626c76a641307ed4d0c6ce8fc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathFinder::stuck</definition>
+        <argsstring>()</argsstring>
+        <name>stuck</name>
+        <briefdescription>
+<para>check if the ai is stuck (according to it&apos;s own logic) in a corner </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>null</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="140" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="375" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a5851f46159809b762bc6a466d441e109" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathFinder::invertedTrump</definition>
+        <argsstring>()</argsstring>
+        <name>invertedTrump</name>
+        <briefdescription>
+<para>set direction to a breakable wall </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>null</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="146" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="394" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1afd2d3da37f094c3d5910f9725e0551e7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PathFinder::updateFormerPos</definition>
+        <argsstring>(Direction way)</argsstring>
+        <name>updateFormerPos</name>
+        <param>
+          <type>Direction</type>
+          <declname>way</declname>
+        </param>
+        <briefdescription>
+<para>keep track of the ai&apos;s last movements and forbid it to repeat one </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where to go </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if the current desired movement is allowed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="153" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="256" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a319062913c6f64110921e9045e995029" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PathFinder::isPointWalkable</definition>
+        <argsstring>(int y, int x)</argsstring>
+        <name>isPointWalkable</name>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>verify if point is walkable (= 0 or &gt; 5 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>and y are the coordinates </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>success or failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="159" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="102" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1aced4a44a92652d5717ea08599f600afb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PathFinder::lastAction</definition>
+        <argsstring>(Direction way)</argsstring>
+        <name>lastAction</name>
+        <param>
+          <type>Direction</type>
+          <declname>way</declname>
+        </param>
+        <briefdescription>
+<para>Verify if the current movement is allowed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where to go </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>success or failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="165" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="157" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a6ec612d316e61667cc20628baeebc871" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PathFinder::checkAction</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>checkAction</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>verify if ai already went here </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>and y are the coordinates </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>success or failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="171" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="148" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a762127493b0473d433bc47c01007b86a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PathFinder::checkBreakable</definition>
+        <argsstring>()</argsstring>
+        <name>checkBreakable</name>
+        <briefdescription>
+<para>verify if a wall nearby is breakable (= 2) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>null</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>success or failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="177" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="137" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a33f400abcde9453d223c14653fb7b454" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PathFinder::isWallBreakable</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>isWallBreakable</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>verify if wall at coordinates is breakable (= 2) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>and y are the coordinates </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>success or failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="183" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="114" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a39bf32b59e2a0ad34c952f0f3516c859" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PathFinder::chuckleImInDanger</definition>
+        <argsstring>()</argsstring>
+        <name>chuckleImInDanger</name>
+        <briefdescription>
+<para>verify if the ai is in danger of death </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>null</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>success or failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="189" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="384" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a3a955a7551b2831f97d2c35dc744482a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PathFinder::countAction</definition>
+        <argsstring>()</argsstring>
+        <name>countAction</name>
+        <briefdescription>
+<para>count the number of movement option disponible to ai </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>null</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of possible path </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="196" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="126" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a8f2b97fa4c7ac3da121c13d5e9358073" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Direction</type>
+        <definition>Direction PathFinder::findDirection</definition>
+        <argsstring>()</argsstring>
+        <name>findDirection</name>
+        <briefdescription>
+<para>decide where direction the ai should go </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>null</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Direction where to go </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="202" column="15" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="173" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1abb4e53c3109bdf3709625948c2ba3b98" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathFinder::checkBonnus</definition>
+        <argsstring>(int posY, int posX)</argsstring>
+        <name>checkBonnus</name>
+        <param>
+          <type>int</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posX</declname>
+        </param>
+        <briefdescription>
+<para>verify if player walked into a bonus </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>and y are the coordinates </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="208" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="405" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="classPathFinder_1a1c8865b63e18c52f043b0816a625ebd0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathFinder::moveAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>moveAnimation</name>
+        <briefdescription>
+<para>animate the running of the ai </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>null</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="214" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.cpp" bodystart="321" bodyend="333"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class which create and manages ais </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" line="36" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Path.hpp" bodystart="37" bodyend="315"/>
+    <listofallmembers>
+      <member refid="classPathFinder_1a2a94daae32a11b456e4d34a52f344ef0" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>_alive</name></member>
+      <member refid="classPathFinder_1ab6c6a8cd9d66b97a0c79ed4916992729" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>_dangerMap</name></member>
+      <member refid="classPathFinder_1a8c17fa6c3b8bb110c36fef9e4a9f563f" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>_map</name></member>
+      <member refid="classPathFinder_1abd8d9938c381be02e401341995b98090" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>_originalMap</name></member>
+      <member refid="classPathFinder_1a47090e902fa5383542079e5e41a3141c" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>_x</name></member>
+      <member refid="classPathFinder_1a21f9d268cfa3bfab74b122948355931c" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>_y</name></member>
+      <member refid="classPathFinder_1a4f4d8ebd2f6fddc6d36d3a698886b276" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>aiMesh</name></member>
+      <member refid="classPathFinder_1a16239f9c818cc953af71ba37db6aa21b" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>aiNb</name></member>
+      <member refid="classPathFinder_1ab369f8dd1c66036f3e250606661e786c" prot="public" virt="non-virtual"><scope>PathFinder</scope><name>alive</name></member>
+      <member refid="classPathFinder_1ab162274c6930971b6db23043f63a37c3" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>animModel</name></member>
+      <member refid="classPathFinder_1a281090a10eeb389ecf119081b13f0247" prot="public" virt="non-virtual"><scope>PathFinder</scope><name>arrived</name></member>
+      <member refid="classPathFinder_1a2c79c8596549f161732676746e9ed266" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>bombFire</name></member>
+      <member refid="classPathFinder_1a1cfa58e425f3a7eccc1e3349def37f7f" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>bombIt</name></member>
+      <member refid="classPathFinder_1a7db7fabe6225d5c6e1f506e3b4ba4d31" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>bombNb</name></member>
+      <member refid="classPathFinder_1a2b2140533bcebbe931d228a8f7144b14" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>bombs</name></member>
+      <member refid="classPathFinder_1ae2a71660ee48b35f610d26cbf2bb917a" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>breakShit</name></member>
+      <member refid="classPathFinder_1a6ec612d316e61667cc20628baeebc871" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>checkAction</name></member>
+      <member refid="classPathFinder_1abb4e53c3109bdf3709625948c2ba3b98" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>checkBonnus</name></member>
+      <member refid="classPathFinder_1a762127493b0473d433bc47c01007b86a" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>checkBreakable</name></member>
+      <member refid="classPathFinder_1a39bf32b59e2a0ad34c952f0f3516c859" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>chuckleImInDanger</name></member>
+      <member refid="classPathFinder_1a3a955a7551b2831f97d2c35dc744482a" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>countAction</name></member>
+      <member refid="classPathFinder_1acd60a5c9830f376b38d9d2f5a51ac53d" prot="public" virt="non-virtual"><scope>PathFinder</scope><name>cycle</name></member>
+      <member refid="classPathFinder_1a5fc596c1d1a12fe0396e945ebe98e9d5" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>device</name></member>
+      <member refid="classPathFinder_1a8f2b97fa4c7ac3da121c13d5e9358073" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>findDirection</name></member>
+      <member refid="classPathFinder_1a19fc7800dd16502e94d6855c47b1f3c9" prot="public" virt="non-virtual"><scope>PathFinder</scope><name>imHere</name></member>
+      <member refid="classPathFinder_1a5851f46159809b762bc6a466d441e109" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>invertedTrump</name></member>
+      <member refid="classPathFinder_1a3e93cc33fdd367d3d40c478499675abd" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>isMoving</name></member>
+      <member refid="classPathFinder_1a319062913c6f64110921e9045e995029" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>isPointWalkable</name></member>
+      <member refid="classPathFinder_1a33f400abcde9453d223c14653fb7b454" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>isWallBreakable</name></member>
+      <member refid="classPathFinder_1aced4a44a92652d5717ea08599f600afb" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>lastAction</name></member>
+      <member refid="classPathFinder_1add49295a08c559ac0b1dcf48f05fbb37" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>lockMove</name></member>
+      <member refid="classPathFinder_1ad16465bdb9feeafde62b054bf1273ee7" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>looping</name></member>
+      <member refid="classPathFinder_1ac83316280ebe15705e2fd115723201de" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>map</name></member>
+      <member refid="classPathFinder_1ad0004cc07a0861159b70c0713744fa29" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>mod</name></member>
+      <member refid="classPathFinder_1ae8d0c5bd83d0877a5efe878919b40d08" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>modifyPosAccordingToDirection</name></member>
+      <member refid="classPathFinder_1a1c8865b63e18c52f043b0816a625ebd0" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>moveAnimation</name></member>
+      <member refid="classPathFinder_1a7da1643c6f64170a17c995cae270e9be" prot="public" virt="non-virtual"><scope>PathFinder</scope><name>PathFinder</name></member>
+      <member refid="classPathFinder_1a355280b84c0eb1ce762e7de074574f07" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>pos</name></member>
+      <member refid="classPathFinder_1a92f95500ce7f986acf2673f2a3eea209" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>printMap</name></member>
+      <member refid="classPathFinder_1aa700415085855ca3c6724bf306fd3503" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>quit</name></member>
+      <member refid="classPathFinder_1a0d666808638a849e6f001ec02833099e" prot="public" virt="non-virtual"><scope>PathFinder</scope><name>runThread</name></member>
+      <member refid="classPathFinder_1a95f0b5272e64c86cf4631d8da4456d7a" prot="public" virt="non-virtual"><scope>PathFinder</scope><name>setCurrentMapState</name></member>
+      <member refid="classPathFinder_1a008c443d8acd9424c9ee4643797e0be4" prot="public" virt="non-virtual"><scope>PathFinder</scope><name>setCurrentPos</name></member>
+      <member refid="classPathFinder_1a670034ee385ba19f8f8582e6f201999b" prot="public" virt="non-virtual"><scope>PathFinder</scope><name>setDangerMap</name></member>
+      <member refid="classPathFinder_1a5496c27c17b3ad1f049488e2e1343ea0" prot="public" virt="non-virtual"><scope>PathFinder</scope><name>setLooping</name></member>
+      <member refid="classPathFinder_1a41c595648ef9764be9920ec207d24580" prot="public" virt="non-virtual"><scope>PathFinder</scope><name>setPointToGo</name></member>
+      <member refid="classPathFinder_1ac45b4684450c5e832f70eac09278c0ea" prot="public" virt="non-virtual"><scope>PathFinder</scope><name>setQuit</name></member>
+      <member refid="classPathFinder_1a1e4206d4bcdf6fc894da96757a3239f4" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>speed</name></member>
+      <member refid="classPathFinder_1ae76359f626c76a641307ed4d0c6ce8fc" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>stuck</name></member>
+      <member refid="classPathFinder_1afd2d3da37f094c3d5910f9725e0551e7" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>updateFormerPos</name></member>
+      <member refid="classPathFinder_1ae68a1b3c238c35f0f1afbb42d3ce2b01" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>XMap</name></member>
+      <member refid="classPathFinder_1a344c5d5d7b9e34f5bdad8f60f88b5e0d" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>XToGo</name></member>
+      <member refid="classPathFinder_1a6752cc081310cc3eaa905dea433f60da" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>YMap</name></member>
+      <member refid="classPathFinder_1a5954b79589120becdad1b33f6c346223" prot="private" virt="non-virtual"><scope>PathFinder</scope><name>YToGo</name></member>
+      <member refid="classPathFinder_1acc04bc8bcddfda54da6a2905b256cf90" prot="public" virt="non-virtual"><scope>PathFinder</scope><name>~PathFinder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

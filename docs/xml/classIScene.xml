@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classIScene" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IScene</compoundname>
+    <derivedcompoundref refid="classAScene" prot="public" virt="non-virtual">AScene</derivedcompoundref>
+    <includes refid="IScene_8hpp" local="no">IScene.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIScene_1a146b1101069efb7a46b3bb6e419bc2bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual IScene::~IScene</definition>
+        <argsstring>()=default</argsstring>
+        <name>~IScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/IScene.hpp" line="20" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classIScene_1a06a4c59f8bf0b6cbeeb3c479b83fa0d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int IScene::doScene</definition>
+        <argsstring>()=0</argsstring>
+        <name>doScene</name>
+        <reimplementedby refid="classWin_1a557dda068ecb1e62dfd8265242ced2fc">doScene</reimplementedby>
+        <reimplementedby refid="classGameOver_1a48a51962c4e0ed87337e67e824077cd9">doScene</reimplementedby>
+        <reimplementedby refid="classMenu_1ab4a14483d6f503c1a8ed667d6d723a30">doScene</reimplementedby>
+        <reimplementedby refid="classOption_1aa8d9bf063934030e175e227bc012456a">doScene</reimplementedby>
+        <reimplementedby refid="classAdventure_1a0e77bc2212edc8dc521479116de408cd">doScene</reimplementedby>
+        <reimplementedby refid="classArcade_1ac19a0fc5f4f7ca375242c17394479b45">doScene</reimplementedby>
+        <reimplementedby refid="classwindow_1a97e0f7a31cbbc43957d8d07c23a6076e">doScene</reimplementedby>
+        <briefdescription>
+<para>Funtion to print scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/IScene.hpp" line="24" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Interface class of SCene. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>Menu</label>
+        <link refid="classMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GameOver</label>
+        <link refid="classGameOver"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Arcade</label>
+        <link refid="classArcade"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>window</label>
+        <link refid="classwindow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Option</label>
+        <link refid="classOption"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IScene</label>
+        <link refid="classIScene"/>
+      </node>
+      <node id="2">
+        <label>AScene</label>
+        <link refid="classAScene"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Win</label>
+        <link refid="classWin"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Adventure</label>
+        <link refid="classAdventure"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/IScene.hpp" line="18" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/IScene.hpp" bodystart="18" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classIScene_1a06a4c59f8bf0b6cbeeb3c479b83fa0d6" prot="public" virt="pure-virtual"><scope>IScene</scope><name>doScene</name></member>
+      <member refid="classIScene_1a146b1101069efb7a46b3bb6e419bc2bc" prot="public" virt="virtual"><scope>IScene</scope><name>~IScene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

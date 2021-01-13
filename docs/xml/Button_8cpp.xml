@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="Button_8cpp" kind="file" language="C++">
+    <compoundname>Button.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="Button_8hpp" local="yes">Button.hpp</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Button.hpp</label>
+        <link refid="Button_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>irrlicht.h</label>
+      </node>
+      <node id="1">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.cpp</label>
+        <link refid="Button_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2020</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>Button</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>class<sp/>to<sp/>create<sp/>button<sp/>in<sp/>irrlicht</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Button.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classButton_1a7212807c6ed6fa3c7b189bddc62b64aa" kindref="member">Button::setVisible</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>state)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_button-&gt;setVisible(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_button-&gt;setVisible(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">irr::core::position2d&lt;irr::s32&gt;<sp/><ref refid="classButton_1a66dd210f0ea447b2d6029a4a235715e1" kindref="member">Button::getPosition</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(_position);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">irr::core::position2d&lt;irr::s32&gt;<sp/><ref refid="classButton_1ad5b7afdaf094ecf0bf8a21903c2909fb" kindref="member">Button::getPositionWithSize</ref>()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(_positionWithSize);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classButton_1a7161033742a2f2aa3777afa0cee2e052" kindref="member">Button::isclicked</ref>()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_button-&gt;isPressed()<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classButton_1ab83ae0e335eed730878056813cefee4f" kindref="member">Button::changeImage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>state)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_button-&gt;setImage(_driver-&gt;getTexture(pressed.c_str()));</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_button-&gt;setImage(_driver-&gt;getTexture(initial.c_str()));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">Button::Button(irr::gui::IGUIEnvironment*<sp/>guienv,<sp/>irr::video::IVideoDriver*<sp/>driver,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">irr::core::position2d&lt;irr::s32&gt;<sp/>position,<sp/>std::vector&lt;std::string&gt;<sp/>path)<sp/>:<sp/>_driver(driver),<sp/>pressed(path[1]),<sp/>_position(position),<sp/>initial(path[0])</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>_button<sp/>=<sp/>guienv-&gt;addButton(irr::core::rect&lt;irr::s32&gt;(0,0,<ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;getTexture(path[1].c_str())-&gt;getSize().Width<sp/>,<ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;getTexture(path[1].c_str())-&gt;getSize().Height),<sp/>0,<sp/>-1);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>_button-&gt;setUseAlphaChannel(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>_button-&gt;setDrawBorder(0);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>_button-&gt;setImage(<ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;getTexture(path[0].c_str()));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>_button-&gt;setPressedImage(<ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;getTexture(path[2].c_str()));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>_button-&gt;setRelativePosition(position);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>_positionWithSize<sp/>=<sp/>position;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>_positionWithSize.X<sp/>=<sp/>_positionWithSize.X<sp/>+<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;getTexture(path[0].c_str())-&gt;getSize().Width;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>_positionWithSize.Y<sp/>=<sp/>_positionWithSize.Y<sp/>+<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;getTexture(path[0].c_str())-&gt;getSize().Height;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">Button::~Button()</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.cpp"/>
+  </compounddef>
+</doxygen>

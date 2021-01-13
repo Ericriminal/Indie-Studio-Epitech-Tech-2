@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="Player_8hpp" kind="file" language="C++">
+    <compoundname>Player.hpp</compoundname>
+    <includes local="no">irrlicht.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">thread</includes>
+    <includes refid="InputEvent_8hpp" local="yes">InputEvent.hpp</includes>
+    <includes refid="map_8hpp" local="yes">map.hpp</includes>
+    <includes refid="Music_8hpp" local="yes">Music.hpp</includes>
+    <includes refid="bomb_8hpp" local="yes">bomb.hpp</includes>
+    <includes refid="Controle_8hpp" local="yes">../Controle.hpp</includes>
+    <includedby refid="UI_8hpp" local="yes">/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp</includedby>
+    <includedby refid="window_8hpp" local="yes">/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp</includedby>
+    <includedby refid="Player_8cpp" local="yes">/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp</includedby>
+    <incdepgraph>
+      <node id="13">
+        <label>Wall.hpp</label>
+        <link refid="Wall_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>map.hpp</label>
+        <link refid="map_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>SFML/Audio.hpp</label>
+      </node>
+      <node id="7">
+        <label>InputEvent.hpp</label>
+        <link refid="InputEvent_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Music.hpp</label>
+        <link refid="Music_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>bomb.hpp</label>
+        <link refid="bomb_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>fstream</label>
+      </node>
+      <node id="10">
+        <label>ostream</label>
+      </node>
+      <node id="12">
+        <label>random</label>
+      </node>
+      <node id="17">
+        <label>../Controle.hpp</label>
+        <link refid="Controle_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>mutex</label>
+      </node>
+      <node id="6">
+        <label>thread</label>
+      </node>
+      <node id="1">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp</label>
+        <link refid="Player_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>driverChoice.h</label>
+      </node>
+      <node id="2">
+        <label>irrlicht.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp</label>
+        <link refid="window_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Option.hpp</label>
+        <link refid="Option_8hpp_source"/>
+      </node>
+      <node id="2">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp</label>
+        <link refid="UI_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp</label>
+        <link refid="Player_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classPlayer" prot="public">Player</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2020</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>Player.hpp</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Player</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PLAYER_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PLAYER_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;irrlicht.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;InputEvent.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;map.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Music.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;bomb.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Controle.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>struct<sp/>Controle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>irr::EKEY_CODE<sp/>up;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>irr::EKEY_CODE<sp/>down;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>irr::EKEY_CODE<sp/>left;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>irr::EKEY_CODE<sp/>right;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>irr::EKEY_CODE<sp/>put;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>enum<sp/>TEXTURE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>TEXTURE_WHITE,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>TEXTURE_BLUE,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>TEXTURE_GREEN,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>TEXTURE_RED,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classPlayer" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPlayer" kindref="compound">Player</ref></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMusic" kindref="compound">Music</ref><sp/>*music;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>playerNb;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posX;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posY;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Bomberman::Controle&gt;<sp/>key;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structBomberman_1_1Controle" kindref="compound">Bomberman::Controle</ref><sp/>Movement;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>playerPos;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>life;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>speed;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bombFire;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bombNb;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>progress;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isAlive;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::scene::ISceneManager<sp/>*_smgr;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::video::IVideoDriver<sp/>*_driver;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::IrrlichtDevice<sp/>*_device;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::scene::IAnimatedMesh*<sp/>_player;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::scene::IAnimatedMeshSceneNode<sp/>*animModel;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isMoving;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>test;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref><sp/>receiver;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMap" kindref="compound">Map</ref><sp/>*map;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbombHandler" kindref="compound">bombHandler</ref><sp/>*bombs;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::ITimer<sp/>*clock;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;irr::u32&gt;<sp/>remainingTime;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>pos;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>AllowBomb;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPlayer" kindref="compound">Player</ref>(irr::IrrlichtDevice<sp/>*device,<sp/>irr::video::IVideoDriver<sp/>*driver,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::scene::ISceneManager<sp/>*smgr,<sp/><ref refid="classMap" kindref="compound">Map</ref><sp/>*map,<sp/><ref refid="classMusic" kindref="compound">Music</ref><sp/>*music,<sp/><ref refid="classbombHandler" kindref="compound">bombHandler</ref><sp/>*bombs,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::ITimer<sp/>*clock,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>playerNb,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posY,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type,</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Bomberman::Controle&gt;<sp/>_keybinding,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a0c98212a0ca7a1103fe5c03ccb07852c" kindref="member">useSave</ref>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classPlayer" kindref="compound">Player</ref>();</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a41771e90d834b71f0f69e0f382d348e9" kindref="member">move</ref>(<ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref><sp/>*receiver);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::scene::IAnimatedMeshSceneNode<sp/>*<ref refid="classPlayer_1a285c0d09bf78c25f9ea7e5b3cd1c347d" kindref="member">getAnimeModel</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="classPlayer_1ad59c2681c76d6a1819212f3a9e512d3c" kindref="member">getPlayerPos</ref>();</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a2b63850a65dc04ca8b20f76efaa016ec" kindref="member">moveAnimation</ref>(<ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref><sp/>*receiver);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1afe886e83cd15a84b3c859d6c112d5dac" kindref="member">checkBonnus</ref>();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a6210f697ba7ee1e7eaba1d63c8da7e50" kindref="member">action</ref>(<ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref><sp/>*receiver);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a237ae517fa306735b76f2f22066459bb" kindref="member">checkPlayerHit</ref>();</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a85b219115dd370a4d98faa74630b940c" kindref="member">updatePlayerDeathAnimation</ref>();</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1ae3932714817ccfa77a291958c81d90d5" kindref="member">getLife</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a9d284ba174e4f2655a7cae8088b7eb3d" kindref="member">getSpeed</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1af3d6fd8d7aec5f44623e65347ef9d902" kindref="member">getPower</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1ac45afa3db6b4a10de8ebd521307fa655" kindref="member">getNbBomb</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a180f2bcd9d370dd3dd8839f06fb1bb77" kindref="member">getIsAlive</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a94acb00e4332813c5de3d4361bd10b19" kindref="member">setNbBomb</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1ae9c166e4eed0106c7ac78449307a66e8" kindref="member">waitTime</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a7f2229517d4b44953929716501874058" kindref="member">timehandler</ref>();</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a2e1e3e7a1e2d375c2977059567d5bc4c" kindref="member">setMovement</ref>();</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1abb879679d224ca5b39c07d73b01a4ebb" kindref="member">setTexture</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a0c98212a0ca7a1103fe5c03ccb07852c" kindref="member">useSave</ref>();</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1abb36a08cb042a1b2deb6fe3753971f96" kindref="member">saveProgress</ref>();</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_b43036362fece0f978c3c8156df55d19" kind="dir">
+    <compoundname>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game</compoundname>
+    <innerfile refid="bomb_8cpp">bomb.cpp</innerfile>
+    <innerfile refid="bomb_8hpp">bomb.hpp</innerfile>
+    <innerfile refid="GameOver_8cpp">GameOver.cpp</innerfile>
+    <innerfile refid="GameOver_8hpp">GameOver.hpp</innerfile>
+    <innerfile refid="ground_8cpp">ground.cpp</innerfile>
+    <innerfile refid="ground_8hpp">ground.hpp</innerfile>
+    <innerfile refid="InputEvent_8hpp">InputEvent.hpp</innerfile>
+    <innerfile refid="map_8cpp">map.cpp</innerfile>
+    <innerfile refid="map_8hpp">map.hpp</innerfile>
+    <innerfile refid="Music_8cpp">Music.cpp</innerfile>
+    <innerfile refid="Music_8hpp">Music.hpp</innerfile>
+    <innerfile refid="Path_8cpp">Path.cpp</innerfile>
+    <innerfile refid="Path_8hpp">Path.hpp</innerfile>
+    <innerfile refid="Player_8cpp">Player.cpp</innerfile>
+    <innerfile refid="Player_8hpp">Player.hpp</innerfile>
+    <innerfile refid="UI_8cpp">UI.cpp</innerfile>
+    <innerfile refid="UI_8hpp">UI.hpp</innerfile>
+    <innerfile refid="Wall_8cpp">Wall.cpp</innerfile>
+    <innerfile refid="Wall_8hpp">Wall.hpp</innerfile>
+    <innerfile refid="Win_8cpp">Win.cpp</innerfile>
+    <innerfile refid="Win_8hpp">Win.hpp</innerfile>
+    <innerfile refid="window_8cpp">window.cpp</innerfile>
+    <innerfile refid="window_8hpp">window.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/"/>
+  </compounddef>
+</doxygen>

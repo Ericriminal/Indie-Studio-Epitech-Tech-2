@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classAdventure" kind="class" language="C++" prot="public">
+    <compoundname>Adventure</compoundname>
+    <basecompoundref refid="classAScene" prot="public" virt="non-virtual">AScene</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAdventure_1a7c23face4bbc0899a712ba9d938b74f6" prot="private" static="no" mutable="no">
+        <type>irr::gui::IGUIEnvironment *</type>
+        <definition>irr::gui::IGUIEnvironment* Adventure::guienv</definition>
+        <argsstring></argsstring>
+        <name>guienv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" line="28" column="35" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdventure_1a3f876d8f005a9107790a0dd0bfe764cc" prot="private" static="no" mutable="no">
+        <type>irr::video::ITexture *</type>
+        <definition>irr::video::ITexture* Adventure::background</definition>
+        <argsstring></argsstring>
+        <name>background</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" line="31" column="30" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdventure_1a659267732c59c72fcb4e0b9c4c59868d" prot="private" static="no" mutable="no">
+        <type>irr::video::ITexture *</type>
+        <definition>irr::video::ITexture* Adventure::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" line="34" column="30" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdventure_1adc70fc8d4b60a64c593cf805d629f621" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classButton" kindref="compound">Button</ref> &gt;</type>
+        <definition>std::vector&lt;Button&gt; Adventure::Button_list</definition>
+        <argsstring></argsstring>
+        <name>Button_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" line="37" column="21" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdventure_1a537f48cb09269e255bf07d1f1a0b2997" prot="private" static="no" mutable="no">
+        <type><ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref> *</type>
+        <definition>MyEventReceiver* Adventure::_receiver</definition>
+        <argsstring></argsstring>
+        <name>_receiver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" line="40" column="25" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdventure_1ab80cd1a824599eab0992cb2b993d880a" prot="private" static="no" mutable="no">
+        <type>irr::IrrlichtDevice *</type>
+        <definition>irr::IrrlichtDevice* Adventure::_device</definition>
+        <argsstring></argsstring>
+        <name>_device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" line="43" column="29" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAdventure_1a423ee418db7dd7a232a590be74af4fc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Adventure::Adventure</definition>
+        <argsstring>(irr::IrrlichtDevice *device, MyEventReceiver *receiver)</argsstring>
+        <name>Adventure</name>
+        <param>
+          <type>irr::IrrlichtDevice *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type><ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref> *</type>
+          <declname>receiver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" line="20" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.cpp" bodystart="62" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdventure_1a0e77bc2212edc8dc521479116de408cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Adventure::doScene</definition>
+        <argsstring>()</argsstring>
+        <name>doScene</name>
+        <reimplements refid="classIScene_1a06a4c59f8bf0b6cbeeb3c479b83fa0d6">doScene</reimplements>
+        <briefdescription>
+<para>Funtion to print scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" line="21" column="13" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.cpp" bodystart="36" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdventure_1af0104290ea0b56e8916ab8e8d111a468" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Adventure::~Adventure</definition>
+        <argsstring>()</argsstring>
+        <name>~Adventure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" line="22" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classAdventure_1a4f92806ffb8fdb40b509d47b47502065" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adventure::checkMouseButton</definition>
+        <argsstring>()</argsstring>
+        <name>checkMouseButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" line="25" column="14" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.cpp" bodystart="16" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdventure_1af13893110d9a5187896af66699fea6ed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adventure::setDefaultSave</definition>
+        <argsstring>()</argsstring>
+        <name>setDefaultSave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" line="26" column="14" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.cpp" bodystart="27" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>IScene</label>
+        <link refid="classIScene"/>
+      </node>
+      <node id="2">
+        <label>AScene</label>
+        <link refid="classAScene"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Adventure</label>
+        <link refid="classAdventure"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>IScene</label>
+        <link refid="classIScene"/>
+      </node>
+      <node id="2">
+        <label>AScene</label>
+        <link refid="classAScene"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Adventure</label>
+        <link refid="classAdventure"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" line="18" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp" bodystart="18" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classAdventure_1ab80cd1a824599eab0992cb2b993d880a" prot="private" virt="non-virtual"><scope>Adventure</scope><name>_device</name></member>
+      <member refid="classAdventure_1a537f48cb09269e255bf07d1f1a0b2997" prot="private" virt="non-virtual"><scope>Adventure</scope><name>_receiver</name></member>
+      <member refid="classAdventure_1a423ee418db7dd7a232a590be74af4fc3" prot="public" virt="non-virtual"><scope>Adventure</scope><name>Adventure</name></member>
+      <member refid="classAdventure_1a3f876d8f005a9107790a0dd0bfe764cc" prot="private" virt="non-virtual"><scope>Adventure</scope><name>background</name></member>
+      <member refid="classAdventure_1adc70fc8d4b60a64c593cf805d629f621" prot="private" virt="non-virtual"><scope>Adventure</scope><name>Button_list</name></member>
+      <member refid="classAdventure_1a4f92806ffb8fdb40b509d47b47502065" prot="private" virt="non-virtual"><scope>Adventure</scope><name>checkMouseButton</name></member>
+      <member refid="classAdventure_1a0e77bc2212edc8dc521479116de408cd" prot="public" virt="virtual"><scope>Adventure</scope><name>doScene</name></member>
+      <member refid="classAScene_1ae56af2648a100df159b037a9176e553b" prot="protected" virt="non-virtual"><scope>Adventure</scope><name>driver</name></member>
+      <member refid="classAdventure_1a7c23face4bbc0899a712ba9d938b74f6" prot="private" virt="non-virtual"><scope>Adventure</scope><name>guienv</name></member>
+      <member refid="classAdventure_1af13893110d9a5187896af66699fea6ed" prot="private" virt="non-virtual"><scope>Adventure</scope><name>setDefaultSave</name></member>
+      <member refid="classAScene_1a67c9a683bd486e4630bb2ce8777a44c1" prot="protected" virt="non-virtual"><scope>Adventure</scope><name>smgr</name></member>
+      <member refid="classAdventure_1a659267732c59c72fcb4e0b9c4c59868d" prot="private" virt="non-virtual"><scope>Adventure</scope><name>title</name></member>
+      <member refid="classAdventure_1af0104290ea0b56e8916ab8e8d111a468" prot="public" virt="non-virtual"><scope>Adventure</scope><name>~Adventure</name></member>
+      <member refid="classIScene_1a146b1101069efb7a46b3bb6e419bc2bc" prot="public" virt="virtual"><scope>Adventure</scope><name>~IScene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

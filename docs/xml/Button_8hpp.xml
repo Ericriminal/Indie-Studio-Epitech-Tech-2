@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="Button_8hpp" kind="file" language="C++">
+    <compoundname>Button.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">irrlicht.h</includes>
+    <includedby refid="Arcade_8hpp" local="yes">/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp</includedby>
+    <includedby refid="Option_8hpp" local="yes">/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Option.hpp</includedby>
+    <includedby refid="Menu_8hpp" local="yes">/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp</includedby>
+    <includedby refid="Adventure_8hpp" local="yes">/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp</includedby>
+    <includedby refid="Button_8cpp" local="yes">/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp</label>
+        <link refid="Button_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+      <node id="4">
+        <label>irrlicht.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Adventure.hpp</label>
+        <link refid="Adventure_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp</label>
+        <link refid="Button_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Option.hpp</label>
+        <link refid="Option_8hpp_source"/>
+      </node>
+      <node id="2">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp</label>
+        <link refid="Arcade_8hpp_source"/>
+      </node>
+      <node id="4">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp</label>
+        <link refid="Menu_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classButton" prot="public">Button</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2020</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>Button</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>class<sp/>Button<sp/>for<sp/>irrlicht</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BUTTON_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUTTON_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;irrlicht.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classButton" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classButton" kindref="compound">Button</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classButton" kindref="compound">Button</ref>(irr::gui::IGUIEnvironment*<sp/>guienv,<sp/>irr::video::IVideoDriver*<sp/>driver,<sp/>irr::core::position2d&lt;irr::s32&gt;<sp/>position,<sp/>std::vector&lt;std::string&gt;<sp/>path);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="classButton" kindref="compound">Button</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classButton_1ab83ae0e335eed730878056813cefee4f" kindref="member">changeImage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>state);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classButton_1a7161033742a2f2aa3777afa0cee2e052" kindref="member">isclicked</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::core::position2d&lt;irr::s32&gt;<sp/><ref refid="classButton_1a66dd210f0ea447b2d6029a4a235715e1" kindref="member">getPosition</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::core::position2d&lt;irr::s32&gt;<sp/><ref refid="classButton_1ad5b7afdaf094ecf0bf8a21903c2909fb" kindref="member">getPositionWithSize</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classButton_1a7212807c6ed6fa3c7b189bddc62b64aa" kindref="member">setVisible</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>state);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::gui::IGUIEnvironment*<sp/>guienv;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::video::IVideoDriver*<sp/>_driver;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::gui::IGUIButton<sp/>*_button;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>initial;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>pressed;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::core::position2d&lt;irr::s32&gt;<sp/>_position;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::core::position2d&lt;irr::s32&gt;<sp/>_positionWithSize;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!BUTTON_HPP_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp"/>
+  </compounddef>
+</doxygen>

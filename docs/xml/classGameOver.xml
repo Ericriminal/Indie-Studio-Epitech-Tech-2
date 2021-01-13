@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classGameOver" kind="class" language="C++" prot="public">
+    <compoundname>GameOver</compoundname>
+    <basecompoundref refid="classAScene" prot="public" virt="non-virtual">AScene</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGameOver_1aa1be7678e192c67a7a1d59ca8b74881d" prot="private" static="no" mutable="no">
+        <type>irr::video::ITexture *</type>
+        <definition>irr::video::ITexture* GameOver::background</definition>
+        <argsstring></argsstring>
+        <name>background</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/GameOver.hpp" line="21" column="30" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/GameOver.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGameOver_1aa297308467f206564e85ff0672bdf44b" prot="private" static="no" mutable="no">
+        <type>irr::IrrlichtDevice *</type>
+        <definition>irr::IrrlichtDevice* GameOver::_device</definition>
+        <argsstring></argsstring>
+        <name>_device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/GameOver.hpp" line="22" column="29" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/GameOver.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGameOver_1a29837386b37094c8adc6be2196faeedb" prot="private" static="no" mutable="no">
+        <type>irr::u32</type>
+        <definition>irr::u32 GameOver::waitTime</definition>
+        <argsstring></argsstring>
+        <name>waitTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/GameOver.hpp" line="23" column="18" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/GameOver.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGameOver_1a09eac228b83520e5118f0f981d5516d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GameOver::GameOver</definition>
+        <argsstring>(irr::IrrlichtDevice *device)</argsstring>
+        <name>GameOver</name>
+        <param>
+          <type>irr::IrrlichtDevice *</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/GameOver.hpp" line="15" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/GameOver.cpp" bodystart="24" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classGameOver_1ae36951a153d25d52fab7cbc7a85bbbbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GameOver::~GameOver</definition>
+        <argsstring>()</argsstring>
+        <name>~GameOver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/GameOver.hpp" line="16" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/GameOver.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classGameOver_1a48a51962c4e0ed87337e67e824077cd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int GameOver::doScene</definition>
+        <argsstring>()</argsstring>
+        <name>doScene</name>
+        <reimplements refid="classIScene_1a06a4c59f8bf0b6cbeeb3c479b83fa0d6">doScene</reimplements>
+        <briefdescription>
+<para>Funtion to print scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/GameOver.hpp" line="17" column="13" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/GameOver.cpp" bodystart="12" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>GameOver</label>
+        <link refid="classGameOver"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IScene</label>
+        <link refid="classIScene"/>
+      </node>
+      <node id="2">
+        <label>AScene</label>
+        <link refid="classAScene"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>GameOver</label>
+        <link refid="classGameOver"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IScene</label>
+        <link refid="classIScene"/>
+      </node>
+      <node id="2">
+        <label>AScene</label>
+        <link refid="classAScene"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/GameOver.hpp" line="13" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/GameOver.hpp" bodystart="13" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classGameOver_1aa297308467f206564e85ff0672bdf44b" prot="private" virt="non-virtual"><scope>GameOver</scope><name>_device</name></member>
+      <member refid="classGameOver_1aa1be7678e192c67a7a1d59ca8b74881d" prot="private" virt="non-virtual"><scope>GameOver</scope><name>background</name></member>
+      <member refid="classGameOver_1a48a51962c4e0ed87337e67e824077cd9" prot="public" virt="virtual"><scope>GameOver</scope><name>doScene</name></member>
+      <member refid="classAScene_1ae56af2648a100df159b037a9176e553b" prot="protected" virt="non-virtual"><scope>GameOver</scope><name>driver</name></member>
+      <member refid="classGameOver_1a09eac228b83520e5118f0f981d5516d9" prot="public" virt="non-virtual"><scope>GameOver</scope><name>GameOver</name></member>
+      <member refid="classAScene_1a67c9a683bd486e4630bb2ce8777a44c1" prot="protected" virt="non-virtual"><scope>GameOver</scope><name>smgr</name></member>
+      <member refid="classGameOver_1a29837386b37094c8adc6be2196faeedb" prot="private" virt="non-virtual"><scope>GameOver</scope><name>waitTime</name></member>
+      <member refid="classGameOver_1ae36951a153d25d52fab7cbc7a85bbbbd" prot="public" virt="non-virtual"><scope>GameOver</scope><name>~GameOver</name></member>
+      <member refid="classIScene_1a146b1101069efb7a46b3bb6e419bc2bc" prot="public" virt="virtual"><scope>GameOver</scope><name>~IScene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

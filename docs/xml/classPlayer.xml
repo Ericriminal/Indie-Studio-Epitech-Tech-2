@@ -1,0 +1,1045 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classPlayer" kind="class" language="C++" prot="public">
+    <compoundname>Player</compoundname>
+    <includes refid="Player_8hpp" local="no">Player.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPlayer_1a357f0bb49cec8a48becdd471c1901d46" prot="private" static="no" mutable="no">
+        <type><ref refid="classMusic" kindref="compound">Music</ref> *</type>
+        <definition>Music* Player::music</definition>
+        <argsstring></argsstring>
+        <name>music</name>
+        <briefdescription>
+<para>music pointer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="49" column="11" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a28290042325593ec88ac19b4342bda50" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::playerNb</definition>
+        <argsstring></argsstring>
+        <name>playerNb</name>
+        <briefdescription>
+<para>number to diffenciate players </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="53" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a5d5b38d7fb6ef85d927acd110dc533b1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::posX</definition>
+        <argsstring></argsstring>
+        <name>posX</name>
+        <briefdescription>
+<para>position x of player </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="57" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a05c928cd298cc19c5f37b15dac679a06" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::posY</definition>
+        <argsstring></argsstring>
+        <name>posY</name>
+        <briefdescription>
+<para>position y of player </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="61" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a01a7c3fd0f47b1fae933bb60a6801ae3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structBomberman_1_1Controle" kindref="compound">Bomberman::Controle</ref> &gt;</type>
+        <definition>std::vector&lt;Bomberman::Controle&gt; Player::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+<para>Movement key binding. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="65" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a2bcc769434660c4bd979ad1465ab9646" prot="private" static="no" mutable="no">
+        <type><ref refid="structBomberman_1_1Controle" kindref="compound">Bomberman::Controle</ref></type>
+        <definition>Bomberman::Controle Player::Movement</definition>
+        <argsstring></argsstring>
+        <name>Movement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="66" column="25" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1abf20235b4619cc2eac5c311e3f6dfd10" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Player::playerPos</definition>
+        <argsstring></argsstring>
+        <name>playerPos</name>
+        <briefdescription>
+<para>vector of position </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="70" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a505c5da08bfb03d355b964dfceb3284d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::life</definition>
+        <argsstring></argsstring>
+        <name>life</name>
+        <briefdescription>
+<para>number of life </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="74" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a0349855298626faed9f05f86965ff689" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <briefdescription>
+<para>speed of player </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="78" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1aae51a1a775a7c8e8041811ab968f2dae" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::bombFire</definition>
+        <argsstring></argsstring>
+        <name>bombFire</name>
+        <briefdescription>
+<para>range of exposion </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="82" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a6d5f67a2e96ab49f37f415ba9a0e7e50" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::bombNb</definition>
+        <argsstring></argsstring>
+        <name>bombNb</name>
+        <briefdescription>
+<para>number bomb </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="86" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a20f16a64c81c95bb71779332d97e87d1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::progress</definition>
+        <argsstring></argsstring>
+        <name>progress</name>
+        <briefdescription>
+<para>progress of adventure </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="90" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a9c0c126f73f78e21fa3473ba42e1d271" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Player::isAlive</definition>
+        <argsstring></argsstring>
+        <name>isAlive</name>
+        <briefdescription>
+<para>boolean to check if the player is alive </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="94" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a1f3f1f5baa0ede5ac8d25fa55ec3aa94" prot="private" static="no" mutable="no">
+        <type>irr::scene::ISceneManager *</type>
+        <definition>irr::scene::ISceneManager* Player::_smgr</definition>
+        <argsstring></argsstring>
+        <name>_smgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="95" column="31" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1af0a6147bf6120a3461c1df67a4c7d00a" prot="private" static="no" mutable="no">
+        <type>irr::video::IVideoDriver *</type>
+        <definition>irr::video::IVideoDriver* Player::_driver</definition>
+        <argsstring></argsstring>
+        <name>_driver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="96" column="30" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1ae77776e505b85f9d422d4ee2851dab3b" prot="private" static="no" mutable="no">
+        <type>irr::IrrlichtDevice *</type>
+        <definition>irr::IrrlichtDevice* Player::_device</definition>
+        <argsstring></argsstring>
+        <name>_device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="97" column="25" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a05451911039babb46038795e50d99a65" prot="private" static="no" mutable="no">
+        <type>irr::scene::IAnimatedMesh *</type>
+        <definition>irr::scene::IAnimatedMesh* Player::_player</definition>
+        <argsstring></argsstring>
+        <name>_player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="98" column="31" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a0bc781ce4ba3e45bb50f6431cc2e2cb2" prot="private" static="no" mutable="no">
+        <type>irr::scene::IAnimatedMeshSceneNode *</type>
+        <definition>irr::scene::IAnimatedMeshSceneNode* Player::animModel</definition>
+        <argsstring></argsstring>
+        <name>animModel</name>
+        <briefdescription>
+<para>animated mesh of player </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="102" column="40" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1ab7d15897ddde5fe3f7fc88d889ef5bcb" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Player::isMoving</definition>
+        <argsstring></argsstring>
+        <name>isMoving</name>
+        <briefdescription>
+<para>boolean if the player is moving </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="106" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1aa5c46154afabc5caf3fe422f40efa103" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Player::test</definition>
+        <argsstring></argsstring>
+        <name>test</name>
+        <briefdescription>
+<para>boolean status </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="110" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a27311bc5da98e540e3b96daae07f46d4" prot="private" static="no" mutable="no">
+        <type><ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref></type>
+        <definition>MyEventReceiver Player::receiver</definition>
+        <argsstring></argsstring>
+        <name>receiver</name>
+        <briefdescription>
+<para>Input receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="114" column="21" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a7d9453f2b4b411ab670e20a4cc2691ca" prot="private" static="no" mutable="no">
+        <type><ref refid="classMap" kindref="compound">Map</ref> *</type>
+        <definition>Map* Player::map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <briefdescription>
+<para>pointer to map object </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="118" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a81459139c472d18afb652865cd1ccca2" prot="private" static="no" mutable="no">
+        <type><ref refid="classbombHandler" kindref="compound">bombHandler</ref> *</type>
+        <definition>bombHandler* Player::bombs</definition>
+        <argsstring></argsstring>
+        <name>bombs</name>
+        <briefdescription>
+<para>pointer to bomb object </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="122" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1ad10591f14c650199bdae0fa18a2a8965" prot="private" static="no" mutable="no">
+        <type>irr::ITimer *</type>
+        <definition>irr::ITimer* Player::clock</definition>
+        <argsstring></argsstring>
+        <name>clock</name>
+        <briefdescription>
+<para>timer clock </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="126" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1acdb36f9f58ef02ca54fbbb0c518becdb" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; irr::u32 &gt;</type>
+        <definition>std::vector&lt;irr::u32&gt; Player::remainingTime</definition>
+        <argsstring></argsstring>
+        <name>remainingTime</name>
+        <briefdescription>
+<para>vector of each timer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="130" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a4ba3d89f86c3b65c452b1b3bdcc9ef71" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Player::pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <briefdescription>
+<para>pos of bomb </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="134" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlayer_1a488e7b34ed0c515b15a91f1dc77ebd47" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Player::AllowBomb</definition>
+        <argsstring></argsstring>
+        <name>AllowBomb</name>
+        <briefdescription>
+<para>boolean to now if we can put a bomb </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="138" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPlayer_1a773e829fa29e5c69f931b6c6a691c7cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Player::Player</definition>
+        <argsstring>(irr::IrrlichtDevice *device, irr::video::IVideoDriver *driver, irr::scene::ISceneManager *smgr, Map *map, Music *music, bombHandler *bombs, irr::ITimer *clock, int playerNb, int posX, int posY, int type, std::vector&lt; Bomberman::Controle &gt; _keybinding, bool useSave)</argsstring>
+        <name>Player</name>
+        <param>
+          <type>irr::IrrlichtDevice *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>irr::video::IVideoDriver *</type>
+          <declname>driver</declname>
+        </param>
+        <param>
+          <type>irr::scene::ISceneManager *</type>
+          <declname>smgr</declname>
+        </param>
+        <param>
+          <type><ref refid="classMap" kindref="compound">Map</ref> *</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type><ref refid="classMusic" kindref="compound">Music</ref> *</type>
+          <declname>music</declname>
+        </param>
+        <param>
+          <type><ref refid="classbombHandler" kindref="compound">bombHandler</ref> *</type>
+          <declname>bombs</declname>
+        </param>
+        <param>
+          <type>irr::ITimer *</type>
+          <declname>clock</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>playerNb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structBomberman_1_1Controle" kindref="compound">Bomberman::Controle</ref> &gt;</type>
+          <declname>_keybinding</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useSave</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="140" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="10" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1a749d2c00e1fe0f5c2746f7505a58c062" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Player::~Player</definition>
+        <argsstring>()</argsstring>
+        <name>~Player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="144" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1a41771e90d834b71f0f69e0f382d348e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::move</definition>
+        <argsstring>(MyEventReceiver *receiver)</argsstring>
+        <name>move</name>
+        <param>
+          <type><ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref> *</type>
+          <declname>receiver</declname>
+        </param>
+        <briefdescription>
+<para>function that allow the movement and the rotation of player </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>receiver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the object that receive any key input </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="150" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="115" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1a285c0d09bf78c25f9ea7e5b3cd1c347d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>irr::scene::IAnimatedMeshSceneNode *</type>
+        <definition>irr::scene::IAnimatedMeshSceneNode * Player::getAnimeModel</definition>
+        <argsstring>() const</argsstring>
+        <name>getAnimeModel</name>
+        <briefdescription>
+<para>function that get the model of player </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the model of player (irr::scene::IAnimatedMeshSceneNode) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="156" column="40" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1ad59c2681c76d6a1819212f3a9e512d3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; Player::getPlayerPos</definition>
+        <argsstring>()</argsstring>
+        <name>getPlayerPos</name>
+        <briefdescription>
+<para>getter of pos x and y </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vector of posX and PosY </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="162" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="257" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1a2b63850a65dc04ca8b20f76efaa016ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::moveAnimation</definition>
+        <argsstring>(MyEventReceiver *receiver)</argsstring>
+        <name>moveAnimation</name>
+        <param>
+          <type><ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref> *</type>
+          <declname>receiver</declname>
+        </param>
+        <briefdescription>
+<para>function that animate the player </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>receiver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input receiver </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="168" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="146" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1afe886e83cd15a84b3c859d6c112d5dac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::checkBonnus</definition>
+        <argsstring>()</argsstring>
+        <name>checkBonnus</name>
+        <briefdescription>
+<para>function that check if there is collision between player and bonus itme </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="174" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="210" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1a6210f697ba7ee1e7eaba1d63c8da7e50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::action</definition>
+        <argsstring>(MyEventReceiver *receiver)</argsstring>
+        <name>action</name>
+        <param>
+          <type><ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref> *</type>
+          <declname>receiver</declname>
+        </param>
+        <briefdescription>
+<para>function that put a bomb to the map </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>receiver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input receiver </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="180" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="160" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1a237ae517fa306735b76f2f22066459bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::checkPlayerHit</definition>
+        <argsstring>()</argsstring>
+        <name>checkPlayerHit</name>
+        <briefdescription>
+<para>function that detect if the player got hit by a bomb </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="186" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="236" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1a85b219115dd370a4d98faa74630b940c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::updatePlayerDeathAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>updatePlayerDeathAnimation</name>
+        <briefdescription>
+<para>function anime the player when he got hit by a bomb </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="192" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="249" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1ae3932714817ccfa77a291958c81d90d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Player::getLife</definition>
+        <argsstring>() const</argsstring>
+        <name>getLife</name>
+        <briefdescription>
+<para>function anime the player when he got hit by a bomb </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="198" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="264" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1a9d284ba174e4f2655a7cae8088b7eb3d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Player::getSpeed</definition>
+        <argsstring>() const</argsstring>
+        <name>getSpeed</name>
+        <briefdescription>
+<para>getter of the nb life </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>nb of life (int) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="204" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="269" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1af3d6fd8d7aec5f44623e65347ef9d902" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Player::getPower</definition>
+        <argsstring>() const</argsstring>
+        <name>getPower</name>
+        <briefdescription>
+<para>getter of the speed </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the speed value (int) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="210" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="274" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1ac45afa3db6b4a10de8ebd521307fa655" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Player::getNbBomb</definition>
+        <argsstring>() const</argsstring>
+        <name>getNbBomb</name>
+        <briefdescription>
+<para>getter of the bomb power </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the bomb power value (int) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="216" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="279" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1a180f2bcd9d370dd3dd8839f06fb1bb77" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Player::getIsAlive</definition>
+        <argsstring>() const</argsstring>
+        <name>getIsAlive</name>
+        <briefdescription>
+<para>getter of the checker if the player is alive </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>checker of isalive (bool) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="222" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="284" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1a94acb00e4332813c5de3d4361bd10b19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::setNbBomb</definition>
+        <argsstring>(int nb)</argsstring>
+        <name>setNbBomb</name>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <briefdescription>
+<para>setter of the number max of bomb </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new number max of bomb </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="228" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="289" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1ae9c166e4eed0106c7ac78449307a66e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::waitTime</definition>
+        <argsstring>(int count)</argsstring>
+        <name>waitTime</name>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>counter of the explosion time increment bomb number after 3 sec </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the vector remainingTime </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="234" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="189" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1a7f2229517d4b44953929716501874058" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::timehandler</definition>
+        <argsstring>()</argsstring>
+        <name>timehandler</name>
+        <briefdescription>
+<para>function that loop on the vector of all timer (remainingTime) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="240" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="174" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1a2e1e3e7a1e2d375c2977059567d5bc4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::setMovement</definition>
+        <argsstring>()</argsstring>
+        <name>setMovement</name>
+        <briefdescription>
+<para>function that set the key binding of the player </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="246" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="97" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1abb879679d224ca5b39c07d73b01a4ebb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::setTexture</definition>
+        <argsstring>(int type)</argsstring>
+        <name>setTexture</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>function that allow the player to load a texture </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TEXTURE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type type of texture we want to load </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="252" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="79" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1a0c98212a0ca7a1103fe5c03ccb07852c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::useSave</definition>
+        <argsstring>()</argsstring>
+        <name>useSave</name>
+        <briefdescription>
+<para>use Save file to get stats for player </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>vector of ints of all saved data </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="257" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="63" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlayer_1abb36a08cb042a1b2deb6fe3753971f96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::saveProgress</definition>
+        <argsstring>()</argsstring>
+        <name>saveProgress</name>
+        <briefdescription>
+<para>save progress in save file </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="262" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp" bodystart="294" bodyend="305"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class which allows access to all player information </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" line="43" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.hpp" bodystart="44" bodyend="263"/>
+    <listofallmembers>
+      <member refid="classPlayer_1ae77776e505b85f9d422d4ee2851dab3b" prot="private" virt="non-virtual"><scope>Player</scope><name>_device</name></member>
+      <member refid="classPlayer_1af0a6147bf6120a3461c1df67a4c7d00a" prot="private" virt="non-virtual"><scope>Player</scope><name>_driver</name></member>
+      <member refid="classPlayer_1a05451911039babb46038795e50d99a65" prot="private" virt="non-virtual"><scope>Player</scope><name>_player</name></member>
+      <member refid="classPlayer_1a1f3f1f5baa0ede5ac8d25fa55ec3aa94" prot="private" virt="non-virtual"><scope>Player</scope><name>_smgr</name></member>
+      <member refid="classPlayer_1a6210f697ba7ee1e7eaba1d63c8da7e50" prot="public" virt="non-virtual"><scope>Player</scope><name>action</name></member>
+      <member refid="classPlayer_1a488e7b34ed0c515b15a91f1dc77ebd47" prot="private" virt="non-virtual"><scope>Player</scope><name>AllowBomb</name></member>
+      <member refid="classPlayer_1a0bc781ce4ba3e45bb50f6431cc2e2cb2" prot="private" virt="non-virtual"><scope>Player</scope><name>animModel</name></member>
+      <member refid="classPlayer_1aae51a1a775a7c8e8041811ab968f2dae" prot="private" virt="non-virtual"><scope>Player</scope><name>bombFire</name></member>
+      <member refid="classPlayer_1a6d5f67a2e96ab49f37f415ba9a0e7e50" prot="private" virt="non-virtual"><scope>Player</scope><name>bombNb</name></member>
+      <member refid="classPlayer_1a81459139c472d18afb652865cd1ccca2" prot="private" virt="non-virtual"><scope>Player</scope><name>bombs</name></member>
+      <member refid="classPlayer_1afe886e83cd15a84b3c859d6c112d5dac" prot="public" virt="non-virtual"><scope>Player</scope><name>checkBonnus</name></member>
+      <member refid="classPlayer_1a237ae517fa306735b76f2f22066459bb" prot="public" virt="non-virtual"><scope>Player</scope><name>checkPlayerHit</name></member>
+      <member refid="classPlayer_1ad10591f14c650199bdae0fa18a2a8965" prot="private" virt="non-virtual"><scope>Player</scope><name>clock</name></member>
+      <member refid="classPlayer_1a285c0d09bf78c25f9ea7e5b3cd1c347d" prot="public" virt="non-virtual"><scope>Player</scope><name>getAnimeModel</name></member>
+      <member refid="classPlayer_1a180f2bcd9d370dd3dd8839f06fb1bb77" prot="public" virt="non-virtual"><scope>Player</scope><name>getIsAlive</name></member>
+      <member refid="classPlayer_1ae3932714817ccfa77a291958c81d90d5" prot="public" virt="non-virtual"><scope>Player</scope><name>getLife</name></member>
+      <member refid="classPlayer_1ac45afa3db6b4a10de8ebd521307fa655" prot="public" virt="non-virtual"><scope>Player</scope><name>getNbBomb</name></member>
+      <member refid="classPlayer_1ad59c2681c76d6a1819212f3a9e512d3c" prot="public" virt="non-virtual"><scope>Player</scope><name>getPlayerPos</name></member>
+      <member refid="classPlayer_1af3d6fd8d7aec5f44623e65347ef9d902" prot="public" virt="non-virtual"><scope>Player</scope><name>getPower</name></member>
+      <member refid="classPlayer_1a9d284ba174e4f2655a7cae8088b7eb3d" prot="public" virt="non-virtual"><scope>Player</scope><name>getSpeed</name></member>
+      <member refid="classPlayer_1a9c0c126f73f78e21fa3473ba42e1d271" prot="private" virt="non-virtual"><scope>Player</scope><name>isAlive</name></member>
+      <member refid="classPlayer_1ab7d15897ddde5fe3f7fc88d889ef5bcb" prot="private" virt="non-virtual"><scope>Player</scope><name>isMoving</name></member>
+      <member refid="classPlayer_1a01a7c3fd0f47b1fae933bb60a6801ae3" prot="private" virt="non-virtual"><scope>Player</scope><name>key</name></member>
+      <member refid="classPlayer_1a505c5da08bfb03d355b964dfceb3284d" prot="private" virt="non-virtual"><scope>Player</scope><name>life</name></member>
+      <member refid="classPlayer_1a7d9453f2b4b411ab670e20a4cc2691ca" prot="private" virt="non-virtual"><scope>Player</scope><name>map</name></member>
+      <member refid="classPlayer_1a41771e90d834b71f0f69e0f382d348e9" prot="public" virt="non-virtual"><scope>Player</scope><name>move</name></member>
+      <member refid="classPlayer_1a2b63850a65dc04ca8b20f76efaa016ec" prot="public" virt="non-virtual"><scope>Player</scope><name>moveAnimation</name></member>
+      <member refid="classPlayer_1a2bcc769434660c4bd979ad1465ab9646" prot="private" virt="non-virtual"><scope>Player</scope><name>Movement</name></member>
+      <member refid="classPlayer_1a357f0bb49cec8a48becdd471c1901d46" prot="private" virt="non-virtual"><scope>Player</scope><name>music</name></member>
+      <member refid="classPlayer_1a773e829fa29e5c69f931b6c6a691c7cf" prot="public" virt="non-virtual"><scope>Player</scope><name>Player</name></member>
+      <member refid="classPlayer_1a28290042325593ec88ac19b4342bda50" prot="private" virt="non-virtual"><scope>Player</scope><name>playerNb</name></member>
+      <member refid="classPlayer_1abf20235b4619cc2eac5c311e3f6dfd10" prot="private" virt="non-virtual"><scope>Player</scope><name>playerPos</name></member>
+      <member refid="classPlayer_1a4ba3d89f86c3b65c452b1b3bdcc9ef71" prot="private" virt="non-virtual"><scope>Player</scope><name>pos</name></member>
+      <member refid="classPlayer_1a5d5b38d7fb6ef85d927acd110dc533b1" prot="private" virt="non-virtual"><scope>Player</scope><name>posX</name></member>
+      <member refid="classPlayer_1a05c928cd298cc19c5f37b15dac679a06" prot="private" virt="non-virtual"><scope>Player</scope><name>posY</name></member>
+      <member refid="classPlayer_1a20f16a64c81c95bb71779332d97e87d1" prot="private" virt="non-virtual"><scope>Player</scope><name>progress</name></member>
+      <member refid="classPlayer_1a27311bc5da98e540e3b96daae07f46d4" prot="private" virt="non-virtual"><scope>Player</scope><name>receiver</name></member>
+      <member refid="classPlayer_1acdb36f9f58ef02ca54fbbb0c518becdb" prot="private" virt="non-virtual"><scope>Player</scope><name>remainingTime</name></member>
+      <member refid="classPlayer_1abb36a08cb042a1b2deb6fe3753971f96" prot="public" virt="non-virtual"><scope>Player</scope><name>saveProgress</name></member>
+      <member refid="classPlayer_1a2e1e3e7a1e2d375c2977059567d5bc4c" prot="public" virt="non-virtual"><scope>Player</scope><name>setMovement</name></member>
+      <member refid="classPlayer_1a94acb00e4332813c5de3d4361bd10b19" prot="public" virt="non-virtual"><scope>Player</scope><name>setNbBomb</name></member>
+      <member refid="classPlayer_1abb879679d224ca5b39c07d73b01a4ebb" prot="public" virt="non-virtual"><scope>Player</scope><name>setTexture</name></member>
+      <member refid="classPlayer_1a0349855298626faed9f05f86965ff689" prot="private" virt="non-virtual"><scope>Player</scope><name>speed</name></member>
+      <member refid="classPlayer_1aa5c46154afabc5caf3fe422f40efa103" prot="private" virt="non-virtual"><scope>Player</scope><name>test</name></member>
+      <member refid="classPlayer_1a7f2229517d4b44953929716501874058" prot="public" virt="non-virtual"><scope>Player</scope><name>timehandler</name></member>
+      <member refid="classPlayer_1a85b219115dd370a4d98faa74630b940c" prot="public" virt="non-virtual"><scope>Player</scope><name>updatePlayerDeathAnimation</name></member>
+      <member refid="classPlayer_1a0c98212a0ca7a1103fe5c03ccb07852c" prot="public" virt="non-virtual"><scope>Player</scope><name>useSave</name></member>
+      <member refid="classPlayer_1ae9c166e4eed0106c7ac78449307a66e8" prot="public" virt="non-virtual"><scope>Player</scope><name>waitTime</name></member>
+      <member refid="classPlayer_1a749d2c00e1fe0f5c2746f7505a58c062" prot="public" virt="non-virtual"><scope>Player</scope><name>~Player</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

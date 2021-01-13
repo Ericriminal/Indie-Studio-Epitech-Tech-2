@@ -1,0 +1,529 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.18">
+  <compound refid="classAdventure" kind="class"><name>Adventure</name>
+    <member refid="classAdventure_1a7c23face4bbc0899a712ba9d938b74f6" kind="variable"><name>guienv</name></member>
+    <member refid="classAdventure_1a3f876d8f005a9107790a0dd0bfe764cc" kind="variable"><name>background</name></member>
+    <member refid="classAdventure_1a659267732c59c72fcb4e0b9c4c59868d" kind="variable"><name>title</name></member>
+    <member refid="classAdventure_1adc70fc8d4b60a64c593cf805d629f621" kind="variable"><name>Button_list</name></member>
+    <member refid="classAdventure_1a537f48cb09269e255bf07d1f1a0b2997" kind="variable"><name>_receiver</name></member>
+    <member refid="classAdventure_1ab80cd1a824599eab0992cb2b993d880a" kind="variable"><name>_device</name></member>
+    <member refid="classAdventure_1a423ee418db7dd7a232a590be74af4fc3" kind="function"><name>Adventure</name></member>
+    <member refid="classAdventure_1a0e77bc2212edc8dc521479116de408cd" kind="function"><name>doScene</name></member>
+    <member refid="classAdventure_1af0104290ea0b56e8916ab8e8d111a468" kind="function"><name>~Adventure</name></member>
+    <member refid="classAdventure_1a4f92806ffb8fdb40b509d47b47502065" kind="function"><name>checkMouseButton</name></member>
+    <member refid="classAdventure_1af13893110d9a5187896af66699fea6ed" kind="function"><name>setDefaultSave</name></member>
+  </compound>
+  <compound refid="classArcade" kind="class"><name>Arcade</name>
+    <member refid="classArcade_1ae8473ee184e36c3551935bab2c124157" kind="variable"><name>background</name></member>
+    <member refid="classArcade_1acc7d0ccf9b88a97caeab7db227c0a39f" kind="variable"><name>title</name></member>
+    <member refid="classArcade_1a64ff9960b77e6d1ca0391033c8f0eec3" kind="variable"><name>launch</name></member>
+    <member refid="classArcade_1afca6e93df46dd5cf10c925686e8f0e1f" kind="variable"><name>guienv</name></member>
+    <member refid="classArcade_1a20b295e7da79c6e9848f3e5c497aff99" kind="variable"><name>P1</name></member>
+    <member refid="classArcade_1ac6e32894210ed52119ebc45eec90d469" kind="variable"><name>P1_color</name></member>
+    <member refid="classArcade_1ac743c3952184d00e2e59676830eb501f" kind="variable"><name>P1_text</name></member>
+    <member refid="classArcade_1a88f9619b7576ee0acc4550cc0e5da862" kind="variable"><name>P2</name></member>
+    <member refid="classArcade_1aefe18c07f24c1f2712a4fc1605c30d51" kind="variable"><name>P2_color</name></member>
+    <member refid="classArcade_1a9a0623f8ad213e7eec303e46a01db7a3" kind="variable"><name>P2_text</name></member>
+    <member refid="classArcade_1a00e1bf5b247aa829c1e3c268c9774d0e" kind="variable"><name>Button_list</name></member>
+    <member refid="classArcade_1a2768761ae6c8a9139a214ff915059d11" kind="variable"><name>_device</name></member>
+    <member refid="classArcade_1a4a84009febd1f8cbeacd9f192da421cd" kind="variable"><name>_color</name></member>
+    <member refid="classArcade_1aaea59abd53affa4c8537029c600fcadf" kind="function"><name>Arcade</name></member>
+    <member refid="classArcade_1ac19a0fc5f4f7ca375242c17394479b45" kind="function"><name>doScene</name></member>
+    <member refid="classArcade_1a086282e1d75300e3a93734ec2a596e0b" kind="function"><name>~Arcade</name></member>
+    <member refid="classArcade_1ad6477b2f26948239b92234794ed774a6" kind="function"><name>checkMouseButton</name></member>
+  </compound>
+  <compound refid="classAScene" kind="class"><name>AScene</name>
+    <member refid="classAScene_1a67c9a683bd486e4630bb2ce8777a44c1" kind="variable"><name>smgr</name></member>
+    <member refid="classAScene_1ae56af2648a100df159b037a9176e553b" kind="variable"><name>driver</name></member>
+  </compound>
+  <compound refid="classbombHandler" kind="class"><name>bombHandler</name>
+    <member refid="classbombHandler_1ac32f6300a9b1c7de3eab0a05db9fd982" kind="variable"><name>map</name></member>
+    <member refid="classbombHandler_1a4ee989dde90797bbddaa329bf61c3d56" kind="variable"><name>smgr</name></member>
+    <member refid="classbombHandler_1aecedb2ccab2b6a0bfc4b011c5def1ff8" kind="variable"><name>driver</name></member>
+    <member refid="classbombHandler_1ae885ed99d709f6f26d943386059228c9" kind="variable"><name>music</name></member>
+    <member refid="classbombHandler_1a49abfcf46576c22a3fa1ed53c5d56a3e" kind="variable"><name>bombPos</name></member>
+    <member refid="classbombHandler_1a1e331669f688fe5289d93140f096c39c" kind="variable"><name>bombEffectZone</name></member>
+    <member refid="classbombHandler_1afea2730ccfc29758720d962f62521f31" kind="variable"><name>wallExplosed</name></member>
+    <member refid="classbombHandler_1a86ddccae0fa21d11af67d4228ced680d" kind="variable"><name>bombParticles</name></member>
+    <member refid="classbombHandler_1ad52bb7cabc82f2991920f28f46bd1193" kind="variable"><name>mapEffectZone</name></member>
+    <member refid="classbombHandler_1abf3f4579d68145db756d30a4afa6a7b6" kind="variable"><name>bombStatus</name></member>
+    <member refid="classbombHandler_1af1926e37e18b05d7536cba88c4c43364" kind="variable"><name>remainingTime</name></member>
+    <member refid="classbombHandler_1a0ac86f8a01408f3045103817875f3334" kind="variable"><name>clock</name></member>
+    <member refid="classbombHandler_1abb11611a619acad18b8a691979c4f53a" kind="variable"><name>bombMesh</name></member>
+    <member refid="classbombHandler_1a60061bce7c22d9aeac30b5a94c012e60" kind="variable"><name>bombMeshSceneNode</name></member>
+    <member refid="classbombHandler_1a84e1a2f0da1df5cc7ee051140a7f8730" kind="variable"><name>pause</name></member>
+    <member refid="classbombHandler_1ad412602cff65ae12db1296e0b31d3501" kind="function"><name>bombHandler</name></member>
+    <member refid="classbombHandler_1ad6b5308871c6f650ec5f4f1bdbdbaccd" kind="function"><name>~bombHandler</name></member>
+    <member refid="classbombHandler_1a1bf6bb843941ce190044c2560e8c4b98" kind="function"><name>addBomb</name></member>
+    <member refid="classbombHandler_1a65ed78824969ea583e73fd1800673b3b" kind="function"><name>SetPause</name></member>
+    <member refid="classbombHandler_1afc7e6a87dbe540cbfb14e10f9e72aa3a" kind="function"><name>checkBomb</name></member>
+    <member refid="classbombHandler_1a7a4a3d013569397263a39fd57f5a4663" kind="function"><name>getDangerZone</name></member>
+    <member refid="classbombHandler_1aabbd9752a31b861f5ff9cd6fb9b16ba8" kind="function"><name>checkWaitTime</name></member>
+    <member refid="classbombHandler_1a6bbd79250e2965b851b124cfde3662e7" kind="function"><name>setBombExplosion</name></member>
+    <member refid="classbombHandler_1addf15463871c503471d138f648f57bce" kind="function"><name>addParticles</name></member>
+    <member refid="classbombHandler_1a8b3b0f93a9c43458a55b5d7b885f3292" kind="function"><name>removeParticles</name></member>
+    <member refid="classbombHandler_1a59bf2c8075b27dea7a558cd531fecb89" kind="function"><name>bombRadiusVertical</name></member>
+    <member refid="classbombHandler_1a5ca624a4f054421731fd4e7a2340400f" kind="function"><name>bombRadiusHorizontal</name></member>
+    <member refid="classbombHandler_1a09cb2519623ef2ace0a4c625bf2e8d1c" kind="function"><name>getBombRadius</name></member>
+    <member refid="classbombHandler_1a69f855083905a6070d048c2cb763f141" kind="function"><name>setDangerZone</name></member>
+    <member refid="classbombHandler_1a3eb9f12c38aaf37cfbb6adb7e1fe134d" kind="function"><name>updateDangerZone</name></member>
+    <member refid="classbombHandler_1a8a79d8341f5f2e473d20412ab9682877" kind="function"><name>addHorizontalDangerZone</name></member>
+    <member refid="classbombHandler_1ae56284dbf1228d5c032285c2d9faebdd" kind="function"><name>addVerticalDangerZone</name></member>
+    <member refid="classbombHandler_1aaf8cf7e108c16cf874634c61e248612d" kind="function"><name>removeOldPointer</name></member>
+  </compound>
+  <compound refid="classButton" kind="class"><name>Button</name>
+    <member refid="classButton_1adb4e815552243925bf626c49ce660bc2" kind="variable"><name>guienv</name></member>
+    <member refid="classButton_1af5cdb24ad3d4738737048403e0535863" kind="variable"><name>_driver</name></member>
+    <member refid="classButton_1a8dcfd4ad1c6b10f72b45c96bc8ab3f80" kind="variable"><name>_button</name></member>
+    <member refid="classButton_1aded8db38a993a6fa20303dc0e4415cfe" kind="variable"><name>initial</name></member>
+    <member refid="classButton_1afbac993ca0210696ba439611fa7082f0" kind="variable"><name>pressed</name></member>
+    <member refid="classButton_1a9c418847aa9d3b3407fc2466f7cd09b1" kind="variable"><name>_position</name></member>
+    <member refid="classButton_1a843af716715a3397d5fcd7266eb50cf0" kind="variable"><name>_positionWithSize</name></member>
+    <member refid="classButton_1aa89585d033f688df7fddf1bad77e3f7f" kind="function"><name>Button</name></member>
+    <member refid="classButton_1a2a001eb9c3cc8ae54768a850dd345002" kind="function"><name>~Button</name></member>
+    <member refid="classButton_1ab83ae0e335eed730878056813cefee4f" kind="function"><name>changeImage</name></member>
+    <member refid="classButton_1a7161033742a2f2aa3777afa0cee2e052" kind="function"><name>isclicked</name></member>
+    <member refid="classButton_1a66dd210f0ea447b2d6029a4a235715e1" kind="function"><name>getPosition</name></member>
+    <member refid="classButton_1ad5b7afdaf094ecf0bf8a21903c2909fb" kind="function"><name>getPositionWithSize</name></member>
+    <member refid="classButton_1a7212807c6ed6fa3c7b189bddc62b64aa" kind="function"><name>setVisible</name></member>
+  </compound>
+  <compound refid="structBomberman_1_1Controle" kind="struct"><name>Bomberman::Controle</name>
+    <member refid="structBomberman_1_1Controle_1a7af97ddec193c903de98f882a3549e32" kind="variable"><name>up</name></member>
+    <member refid="structBomberman_1_1Controle_1a3120036461d4aac4e520596e6e62c6db" kind="variable"><name>down</name></member>
+    <member refid="structBomberman_1_1Controle_1a5df8409105b31837270723281d5b272d" kind="variable"><name>left</name></member>
+    <member refid="structBomberman_1_1Controle_1a571667d9c161f5719a12a128235cb7d1" kind="variable"><name>right</name></member>
+    <member refid="structBomberman_1_1Controle_1a42a39af0faff9b13f38fdc4b2ce1623b" kind="variable"><name>put</name></member>
+  </compound>
+  <compound refid="classcore" kind="class"><name>core</name>
+    <member refid="classcore_1ae1508406d58a8c6fe2713711add5ecda" kind="variable"><name>device</name></member>
+    <member refid="classcore_1a62be9f6f5892186020cd0681f4375239" kind="variable"><name>my_scene</name></member>
+    <member refid="classcore_1a85d032d53abfd62bc158d057b0501066" kind="variable"><name>receiver</name></member>
+    <member refid="classcore_1a1eae2aa59e17d003c9378cda9a614406" kind="variable"><name>music</name></member>
+    <member refid="classcore_1acf947273e7e6b37bc6c64cf153b689e4" kind="variable"><name>_keybinding</name></member>
+    <member refid="classcore_1a6243345c89a71eafce526ea1dd690a13" kind="variable"><name>_color</name></member>
+    <member refid="classcore_1a6819b5057b808b7ded8bc126f6cc22bd" kind="function"><name>coreManager</name></member>
+    <member refid="classcore_1a571c913b422e4213a9fdebbb26d4bcd9" kind="function"><name>changeScene</name></member>
+    <member refid="classcore_1a0aa526d3b73832c31b96611f59ffc719" kind="function"><name>goMenu</name></member>
+    <member refid="classcore_1ae607256741dbcb0da75a9a293b77d3e3" kind="function"><name>goGameSolo</name></member>
+    <member refid="classcore_1a83e73b55a818bce9139b51930e95b28b" kind="function"><name>goGameAdventure</name></member>
+    <member refid="classcore_1a3bb6536402bbb54d85fb26f658821397" kind="function"><name>goGameMulti</name></member>
+    <member refid="classcore_1ac47e2f20b7a84b59323d9a0d78fa0c83" kind="function"><name>goOption</name></member>
+    <member refid="classcore_1ad99d3d6ce8257233ff03ce8afb01dee8" kind="function"><name>goGameOver</name></member>
+    <member refid="classcore_1a5e97a7eabf2ee9b66da8194350b34e45" kind="function"><name>goWin</name></member>
+    <member refid="classcore_1a5aa651571aa70f2836786734dfd99695" kind="function"><name>goAdventure</name></member>
+    <member refid="classcore_1a10da8bff337894bbf2e21bd27080d8b4" kind="function"><name>goArcade</name></member>
+    <member refid="classcore_1a80fcee9cff8016506d97aaa915c3cb0c" kind="function"><name>core</name></member>
+    <member refid="classcore_1a9026f259315e60898c73a8a1f41b8dfe" kind="function"><name>start</name></member>
+  </compound>
+  <compound refid="classGameOver" kind="class"><name>GameOver</name>
+    <member refid="classGameOver_1aa1be7678e192c67a7a1d59ca8b74881d" kind="variable"><name>background</name></member>
+    <member refid="classGameOver_1aa297308467f206564e85ff0672bdf44b" kind="variable"><name>_device</name></member>
+    <member refid="classGameOver_1a29837386b37094c8adc6be2196faeedb" kind="variable"><name>waitTime</name></member>
+    <member refid="classGameOver_1a09eac228b83520e5118f0f981d5516d9" kind="function"><name>GameOver</name></member>
+    <member refid="classGameOver_1ae36951a153d25d52fab7cbc7a85bbbbd" kind="function"><name>~GameOver</name></member>
+    <member refid="classGameOver_1a48a51962c4e0ed87337e67e824077cd9" kind="function"><name>doScene</name></member>
+  </compound>
+  <compound refid="classground" kind="class"><name>ground</name>
+    <member refid="classground_1a53e1659b99acf637ff796087a4151e9a" kind="variable"><name>groundMesh</name></member>
+    <member refid="classground_1a7adf19f9b5956d887daf7cfffb33fbc0" kind="variable"><name>groundNode</name></member>
+    <member refid="classground_1a5e6794c01c251452711b81ea087a048f" kind="variable"><name>smgr</name></member>
+    <member refid="classground_1a77789161a027b02fdb6ef8ec9d3701dc" kind="variable"><name>groundAnim</name></member>
+    <member refid="classground_1a10e7839aaa4f17b3f0fd87e9a1ae9dc2" kind="function"><name>ground</name></member>
+    <member refid="classground_1a3bc192a200b96ca35fef94f0c5429d8e" kind="function"><name>~ground</name></member>
+    <member refid="classground_1a5bf2b1765479dc4ad084f598ad579194" kind="function"><name>getSelector</name></member>
+  </compound>
+  <compound refid="classIScene" kind="class"><name>IScene</name>
+    <member refid="classIScene_1a146b1101069efb7a46b3bb6e419bc2bc" kind="function"><name>~IScene</name></member>
+    <member refid="classIScene_1a06a4c59f8bf0b6cbeeb3c479b83fa0d6" kind="function"><name>doScene</name></member>
+  </compound>
+  <compound refid="classMap" kind="class"><name>Map</name>
+    <member refid="classMap_1a6b8ab15ba5a4d4b50e17ce50e83a66cb" kind="variable"><name>x</name></member>
+    <member refid="classMap_1a94da184f644e9b8a3e7f2ba107255531" kind="variable"><name>y</name></member>
+    <member refid="classMap_1a2150dc36888421312944d2c2bde1f789" kind="variable"><name>device</name></member>
+    <member refid="classMap_1aa263720194e80f61f381cf82afd1fb24" kind="variable"><name>game_map</name></member>
+    <member refid="classMap_1a51fc52df714308a66f32cbf8a2e6ecbc" kind="variable"><name>new_game_map</name></member>
+    <member refid="classMap_1a37e4b93fd5f193e4f236925b5386c392" kind="variable"><name>destructible_wall</name></member>
+    <member refid="classMap_1a11111a1df170f168358f6ed9d3d7201f" kind="variable"><name>bonnus</name></member>
+    <member refid="classMap_1aa7d93c627530b9d68a296a76a4cba9b8" kind="variable"><name>allEntityChar</name></member>
+    <member refid="classMap_1a8b879d18fc483bb1d0e42cfa25131734" kind="variable"><name>wallAnimator</name></member>
+    <member refid="classMap_1a082d0e587eab71242066958dcf909056" kind="function"><name>Map</name></member>
+    <member refid="classMap_1aa403fbe09394ccf39747588f5168e3b2" kind="function"><name>~Map</name></member>
+    <member refid="classMap_1ab7b1730ff654dd83ea9628997f104e8d" kind="function"><name>is_protected_place</name></member>
+    <member refid="classMap_1af7eeed905803416b2496ae53794bead2" kind="function"><name>generate_block</name></member>
+    <member refid="classMap_1abd90761404b6e9df006ac7f7fffadc73" kind="function"><name>generate_map</name></member>
+    <member refid="classMap_1a35efa11c5caddb37e1ce511671bdf9a6" kind="function"><name>dump_map</name></member>
+    <member refid="classMap_1aeacdb5eb477a0b31b2ec2b77d4247300" kind="function"><name>loadMap</name></member>
+    <member refid="classMap_1a8557842171fd3554b7b667437b142e4e" kind="function"><name>createMap</name></member>
+    <member refid="classMap_1aa91c1d6daf6fbcf1b439f708e8949470" kind="function"><name>collision</name></member>
+    <member refid="classMap_1ab874d807dc2b01d6ff304ac694f93760" kind="function"><name>getMap</name></member>
+    <member refid="classMap_1a34a4252c673f3b3e9139d34a5199ce81" kind="function"><name>getDestructibleWall</name></member>
+    <member refid="classMap_1a4d05a6bb491df4b03505e521e0f98a8a" kind="function"><name>getBonnus</name></member>
+    <member refid="classMap_1ac83f759ed24e6d66e85b7fc609cc5f42" kind="function"><name>removeWall</name></member>
+    <member refid="classMap_1aa688c301470a03eccf792d7d264c2d37" kind="function"><name>getMapSize</name></member>
+    <member refid="classMap_1a64dee4ed6f876b447d8b396a2dae0c05" kind="function"><name>setMap</name></member>
+    <member refid="classMap_1ab42217d3312ee32bafaf72b982c88430" kind="function"><name>removeMeshBonnus</name></member>
+    <member refid="classMap_1a7735c4422ee170c9cb90a56d56a8dfd0" kind="function"><name>getProgress</name></member>
+  </compound>
+  <compound refid="classMenu" kind="class"><name>Menu</name>
+    <member refid="classMenu_1a55014a7f3e51eaacd58b4c6d67b98bfb" kind="variable"><name>guienv</name></member>
+    <member refid="classMenu_1a2fefe6ea66cb9b333ab7d050df66e901" kind="variable"><name>background</name></member>
+    <member refid="classMenu_1a594b39c037da137f722c1d6fe31a8cce" kind="variable"><name>title</name></member>
+    <member refid="classMenu_1a38e333c4123aa7b19ba1d02f8947b235" kind="variable"><name>Button_list</name></member>
+    <member refid="classMenu_1aedbee199c90615a0a16f5abf6017218b" kind="variable"><name>_receiver</name></member>
+    <member refid="classMenu_1a04f437ace22b18a4a60c2a0193d72ce6" kind="variable"><name>_device</name></member>
+    <member refid="classMenu_1acc2639fc7539c0b5b32eef90fa13f566" kind="function"><name>Menu</name></member>
+    <member refid="classMenu_1ab4a14483d6f503c1a8ed667d6d723a30" kind="function"><name>doScene</name></member>
+    <member refid="classMenu_1a831387f51358cfb88cd018e1777bc980" kind="function"><name>~Menu</name></member>
+    <member refid="classMenu_1ae953044cb82ac974cad9b4dec72a887b" kind="function"><name>checkMouseButton</name></member>
+  </compound>
+  <compound refid="classMusic" kind="class"><name>Music</name>
+    <member refid="classMusic_1ad91c91fba62090b78e73357c5579d100" kind="variable"><name>volumeMusic</name></member>
+    <member refid="classMusic_1aca646c744ae10d230da89bc0cb740cd1" kind="variable"><name>volumeSound</name></member>
+    <member refid="classMusic_1a9545dadb47c1cb1279c73589059f50c1" kind="variable"><name>explosion</name></member>
+    <member refid="classMusic_1ac937d732617983212717fa6874abc2c7" kind="variable"><name>pickup</name></member>
+    <member refid="classMusic_1a281dded6ea83d98ddf2662c6bf47bd53" kind="variable"><name>click</name></member>
+    <member refid="classMusic_1a83a53392a164b6b9f840f3a50f5c5883" kind="variable"><name>putBomb</name></member>
+    <member refid="classMusic_1a5f04720d3e0c072db6203b49ebd68301" kind="variable"><name>sound</name></member>
+    <member refid="classMusic_1a8900cb5bfb5f9ffa79682df8b79ba43f" kind="variable"><name>sound1</name></member>
+    <member refid="classMusic_1a5b82a3a6c154d5ddd3f1a22e5bde672c" kind="variable"><name>sound2</name></member>
+    <member refid="classMusic_1a5b300a70ca62ec94d0e41c71bc0f9e40" kind="variable"><name>music</name></member>
+    <member refid="classMusic_1ab5143f67c021bc77894c8e91de2b916b" kind="function"><name>Music</name></member>
+    <member refid="classMusic_1a0b4f3b9a018207e0c08003505f1f87fe" kind="function"><name>~Music</name></member>
+    <member refid="classMusic_1a51ffad6eaa2b71d13966ae66c0399932" kind="function"><name>loadMusic</name></member>
+    <member refid="classMusic_1a4b7c191c6bae70db92125b3886dbadd6" kind="function"><name>playMusic</name></member>
+    <member refid="classMusic_1a572a660ef167226d78105fad6df52197" kind="function"><name>playSound</name></member>
+    <member refid="classMusic_1af9c29dda3fa4d8c9c579e9b7abfdfaa5" kind="function"><name>setSoundVolume</name></member>
+    <member refid="classMusic_1abf25e613ae56d4e255be0bc7e2f346b6" kind="function"><name>setMusicVolume</name></member>
+    <member refid="classMusic_1a854742db6d6dcbc5fecd512ce92bf702" kind="function"><name>getMusicVolume</name></member>
+  </compound>
+  <compound refid="classMyEventReceiver" kind="class"><name>MyEventReceiver</name>
+    <member refid="classMyEventReceiver_1a8a00bf782fbcbea2a85f7903eb195cca" kind="variable"><name>KeyIsDown</name></member>
+    <member refid="classMyEventReceiver_1af00138b43423b074769c2920238e1aec" kind="function"><name>OnEvent</name></member>
+    <member refid="classMyEventReceiver_1a5c02b2408e841857658ae355a265ff23" kind="function"><name>IsKeyDown</name></member>
+    <member refid="classMyEventReceiver_1ac77fa3ab56ff576cdaf9464ba7b4f1a4" kind="function"><name>getKey</name></member>
+    <member refid="classMyEventReceiver_1aee872bb650c49c210c8ca75eba6fa6a2" kind="function"><name>MyEventReceiver</name></member>
+  </compound>
+  <compound refid="classOption" kind="class"><name>Option</name>
+    <member refid="classOption_1af5e4a54d2f2b045e1082a80a0baae620" kind="variable"><name>guienv</name></member>
+    <member refid="classOption_1a8e4dd259758d48a70a7f67b35ba6cafe" kind="variable"><name>background</name></member>
+    <member refid="classOption_1af8b107f678b337f9b39d33756f32a8c5" kind="variable"><name>logo</name></member>
+    <member refid="classOption_1ac801816db91459e3426f5044d6c2e718" kind="variable"><name>Button_list</name></member>
+    <member refid="classOption_1ab54e85162d22bc2c017c614ca826f436" kind="variable"><name>_device</name></member>
+    <member refid="classOption_1ab267309646fc73e57526b5d1246f8cd6" kind="variable"><name>_music</name></member>
+    <member refid="classOption_1a35195df4dc96b1ad0aae96d6fc3cc24b" kind="variable"><name>texte</name></member>
+    <member refid="classOption_1a61cedf9bf4ab840bd2585171fc0f8be8" kind="variable"><name>_keybinding</name></member>
+    <member refid="classOption_1a77520e6cb6e57cbcab0d388bd49eeaeb" kind="variable"><name>_event</name></member>
+    <member refid="classOption_1a9d60981112c04d2092a5bef89e50cda5" kind="variable"><name>P1_UP</name></member>
+    <member refid="classOption_1a7eaa62bb5b47b3f0d3b0095fe4bfbcc9" kind="variable"><name>P1_DOWN</name></member>
+    <member refid="classOption_1a0c59242f237d6a558f277b21bdfa0a44" kind="variable"><name>P1_LEFT</name></member>
+    <member refid="classOption_1ac56b6c3714105968d99fce192d035be0" kind="variable"><name>P1_RIGHT</name></member>
+    <member refid="classOption_1abbdb3815c661eaa5f0d934d95f40380e" kind="variable"><name>P1_BOMB</name></member>
+    <member refid="classOption_1a56c46aac528d940b98859c70f61ecf71" kind="variable"><name>P2_UP</name></member>
+    <member refid="classOption_1abf5df1ba2804a10f1574c9cbc8fd26b1" kind="variable"><name>P2_DOWN</name></member>
+    <member refid="classOption_1a3305430e1d51a07fc0876c929406113f" kind="variable"><name>P2_LEFT</name></member>
+    <member refid="classOption_1a9edebc19c6412ffb8f8d6facb461188a" kind="variable"><name>P2_RIGHT</name></member>
+    <member refid="classOption_1aaaf2082a5b12e97d5cdcc0bf367ebdeb" kind="variable"><name>P2_BOMB</name></member>
+    <member refid="classOption_1aae357bf164a9be7555fe30975dcb9c90" kind="variable"><name>check</name></member>
+    <member refid="classOption_1ae4a8e8cf83f135a75dedab7724159d31" kind="function"><name>Option</name></member>
+    <member refid="classOption_1aa8d9bf063934030e175e227bc012456a" kind="function"><name>doScene</name></member>
+    <member refid="classOption_1a04b908a0ba9b1909ae378ca2a07fda61" kind="function"><name>~Option</name></member>
+    <member refid="classOption_1a417ac49bffb4934d709beac9c99a3cf1" kind="function"><name>checkMouseButton</name></member>
+    <member refid="classOption_1a24f41918e127c876d9a5829ff64f5815" kind="function"><name>changeKeyBinding</name></member>
+    <member refid="classOption_1a433175bd2f91bf70eeeceb9e8e52e93f" kind="function"><name>change_text</name></member>
+  </compound>
+  <compound refid="classPathFinder" kind="class"><name>PathFinder</name>
+    <member refid="classPathFinder_1abd8d9938c381be02e401341995b98090" kind="variable"><name>_originalMap</name></member>
+    <member refid="classPathFinder_1ab6c6a8cd9d66b97a0c79ed4916992729" kind="variable"><name>_dangerMap</name></member>
+    <member refid="classPathFinder_1a8c17fa6c3b8bb110c36fef9e4a9f563f" kind="variable"><name>_map</name></member>
+    <member refid="classPathFinder_1a6752cc081310cc3eaa905dea433f60da" kind="variable"><name>YMap</name></member>
+    <member refid="classPathFinder_1ae68a1b3c238c35f0f1afbb42d3ce2b01" kind="variable"><name>XMap</name></member>
+    <member refid="classPathFinder_1a4f4d8ebd2f6fddc6d36d3a698886b276" kind="variable"><name>aiMesh</name></member>
+    <member refid="classPathFinder_1ab162274c6930971b6db23043f63a37c3" kind="variable"><name>animModel</name></member>
+    <member refid="classPathFinder_1a5fc596c1d1a12fe0396e945ebe98e9d5" kind="variable"><name>device</name></member>
+    <member refid="classPathFinder_1a355280b84c0eb1ce762e7de074574f07" kind="variable"><name>pos</name></member>
+    <member refid="classPathFinder_1a2b2140533bcebbe931d228a8f7144b14" kind="variable"><name>bombs</name></member>
+    <member refid="classPathFinder_1ac83316280ebe15705e2fd115723201de" kind="variable"><name>map</name></member>
+    <member refid="classPathFinder_1a16239f9c818cc953af71ba37db6aa21b" kind="variable"><name>aiNb</name></member>
+    <member refid="classPathFinder_1a2a94daae32a11b456e4d34a52f344ef0" kind="variable"><name>_alive</name></member>
+    <member refid="classPathFinder_1aa700415085855ca3c6724bf306fd3503" kind="variable"><name>quit</name></member>
+    <member refid="classPathFinder_1ad16465bdb9feeafde62b054bf1273ee7" kind="variable"><name>looping</name></member>
+    <member refid="classPathFinder_1a1e4206d4bcdf6fc894da96757a3239f4" kind="variable"><name>speed</name></member>
+    <member refid="classPathFinder_1a2c79c8596549f161732676746e9ed266" kind="variable"><name>bombFire</name></member>
+    <member refid="classPathFinder_1a7db7fabe6225d5c6e1f506e3b4ba4d31" kind="variable"><name>bombNb</name></member>
+    <member refid="classPathFinder_1a47090e902fa5383542079e5e41a3141c" kind="variable"><name>_x</name></member>
+    <member refid="classPathFinder_1a21f9d268cfa3bfab74b122948355931c" kind="variable"><name>_y</name></member>
+    <member refid="classPathFinder_1a344c5d5d7b9e34f5bdad8f60f88b5e0d" kind="variable"><name>XToGo</name></member>
+    <member refid="classPathFinder_1a5954b79589120becdad1b33f6c346223" kind="variable"><name>YToGo</name></member>
+    <member refid="classPathFinder_1ad0004cc07a0861159b70c0713744fa29" kind="variable"><name>mod</name></member>
+    <member refid="classPathFinder_1a3e93cc33fdd367d3d40c478499675abd" kind="variable"><name>isMoving</name></member>
+    <member refid="classPathFinder_1add49295a08c559ac0b1dcf48f05fbb37" kind="variable"><name>lockMove</name></member>
+    <member refid="classPathFinder_1a7da1643c6f64170a17c995cae270e9be" kind="function"><name>PathFinder</name></member>
+    <member refid="classPathFinder_1acc04bc8bcddfda54da6a2905b256cf90" kind="function"><name>~PathFinder</name></member>
+    <member refid="classPathFinder_1a41c595648ef9764be9920ec207d24580" kind="function"><name>setPointToGo</name></member>
+    <member refid="classPathFinder_1a008c443d8acd9424c9ee4643797e0be4" kind="function"><name>setCurrentPos</name></member>
+    <member refid="classPathFinder_1a95f0b5272e64c86cf4631d8da4456d7a" kind="function"><name>setCurrentMapState</name></member>
+    <member refid="classPathFinder_1a670034ee385ba19f8f8582e6f201999b" kind="function"><name>setDangerMap</name></member>
+    <member refid="classPathFinder_1acd60a5c9830f376b38d9d2f5a51ac53d" kind="function"><name>cycle</name></member>
+    <member refid="classPathFinder_1a5496c27c17b3ad1f049488e2e1343ea0" kind="function"><name>setLooping</name></member>
+    <member refid="classPathFinder_1ac45b4684450c5e832f70eac09278c0ea" kind="function"><name>setQuit</name></member>
+    <member refid="classPathFinder_1a281090a10eeb389ecf119081b13f0247" kind="function"><name>arrived</name></member>
+    <member refid="classPathFinder_1ab369f8dd1c66036f3e250606661e786c" kind="function"><name>alive</name></member>
+    <member refid="classPathFinder_1a19fc7800dd16502e94d6855c47b1f3c9" kind="function"><name>imHere</name></member>
+    <member refid="classPathFinder_1a0d666808638a849e6f001ec02833099e" kind="function"><name>runThread</name></member>
+    <member refid="classPathFinder_1ae8d0c5bd83d0877a5efe878919b40d08" kind="function"><name>modifyPosAccordingToDirection</name></member>
+    <member refid="classPathFinder_1a92f95500ce7f986acf2673f2a3eea209" kind="function"><name>printMap</name></member>
+    <member refid="classPathFinder_1ae2a71660ee48b35f610d26cbf2bb917a" kind="function"><name>breakShit</name></member>
+    <member refid="classPathFinder_1a1cfa58e425f3a7eccc1e3349def37f7f" kind="function"><name>bombIt</name></member>
+    <member refid="classPathFinder_1ae76359f626c76a641307ed4d0c6ce8fc" kind="function"><name>stuck</name></member>
+    <member refid="classPathFinder_1a5851f46159809b762bc6a466d441e109" kind="function"><name>invertedTrump</name></member>
+    <member refid="classPathFinder_1afd2d3da37f094c3d5910f9725e0551e7" kind="function"><name>updateFormerPos</name></member>
+    <member refid="classPathFinder_1a319062913c6f64110921e9045e995029" kind="function"><name>isPointWalkable</name></member>
+    <member refid="classPathFinder_1aced4a44a92652d5717ea08599f600afb" kind="function"><name>lastAction</name></member>
+    <member refid="classPathFinder_1a6ec612d316e61667cc20628baeebc871" kind="function"><name>checkAction</name></member>
+    <member refid="classPathFinder_1a762127493b0473d433bc47c01007b86a" kind="function"><name>checkBreakable</name></member>
+    <member refid="classPathFinder_1a33f400abcde9453d223c14653fb7b454" kind="function"><name>isWallBreakable</name></member>
+    <member refid="classPathFinder_1a39bf32b59e2a0ad34c952f0f3516c859" kind="function"><name>chuckleImInDanger</name></member>
+    <member refid="classPathFinder_1a3a955a7551b2831f97d2c35dc744482a" kind="function"><name>countAction</name></member>
+    <member refid="classPathFinder_1a8f2b97fa4c7ac3da121c13d5e9358073" kind="function"><name>findDirection</name></member>
+    <member refid="classPathFinder_1abb4e53c3109bdf3709625948c2ba3b98" kind="function"><name>checkBonnus</name></member>
+    <member refid="classPathFinder_1a1c8865b63e18c52f043b0816a625ebd0" kind="function"><name>moveAnimation</name></member>
+  </compound>
+  <compound refid="classPlayer" kind="class"><name>Player</name>
+    <member refid="classPlayer_1a357f0bb49cec8a48becdd471c1901d46" kind="variable"><name>music</name></member>
+    <member refid="classPlayer_1a28290042325593ec88ac19b4342bda50" kind="variable"><name>playerNb</name></member>
+    <member refid="classPlayer_1a5d5b38d7fb6ef85d927acd110dc533b1" kind="variable"><name>posX</name></member>
+    <member refid="classPlayer_1a05c928cd298cc19c5f37b15dac679a06" kind="variable"><name>posY</name></member>
+    <member refid="classPlayer_1a01a7c3fd0f47b1fae933bb60a6801ae3" kind="variable"><name>key</name></member>
+    <member refid="classPlayer_1a2bcc769434660c4bd979ad1465ab9646" kind="variable"><name>Movement</name></member>
+    <member refid="classPlayer_1abf20235b4619cc2eac5c311e3f6dfd10" kind="variable"><name>playerPos</name></member>
+    <member refid="classPlayer_1a505c5da08bfb03d355b964dfceb3284d" kind="variable"><name>life</name></member>
+    <member refid="classPlayer_1a0349855298626faed9f05f86965ff689" kind="variable"><name>speed</name></member>
+    <member refid="classPlayer_1aae51a1a775a7c8e8041811ab968f2dae" kind="variable"><name>bombFire</name></member>
+    <member refid="classPlayer_1a6d5f67a2e96ab49f37f415ba9a0e7e50" kind="variable"><name>bombNb</name></member>
+    <member refid="classPlayer_1a20f16a64c81c95bb71779332d97e87d1" kind="variable"><name>progress</name></member>
+    <member refid="classPlayer_1a9c0c126f73f78e21fa3473ba42e1d271" kind="variable"><name>isAlive</name></member>
+    <member refid="classPlayer_1a1f3f1f5baa0ede5ac8d25fa55ec3aa94" kind="variable"><name>_smgr</name></member>
+    <member refid="classPlayer_1af0a6147bf6120a3461c1df67a4c7d00a" kind="variable"><name>_driver</name></member>
+    <member refid="classPlayer_1ae77776e505b85f9d422d4ee2851dab3b" kind="variable"><name>_device</name></member>
+    <member refid="classPlayer_1a05451911039babb46038795e50d99a65" kind="variable"><name>_player</name></member>
+    <member refid="classPlayer_1a0bc781ce4ba3e45bb50f6431cc2e2cb2" kind="variable"><name>animModel</name></member>
+    <member refid="classPlayer_1ab7d15897ddde5fe3f7fc88d889ef5bcb" kind="variable"><name>isMoving</name></member>
+    <member refid="classPlayer_1aa5c46154afabc5caf3fe422f40efa103" kind="variable"><name>test</name></member>
+    <member refid="classPlayer_1a27311bc5da98e540e3b96daae07f46d4" kind="variable"><name>receiver</name></member>
+    <member refid="classPlayer_1a7d9453f2b4b411ab670e20a4cc2691ca" kind="variable"><name>map</name></member>
+    <member refid="classPlayer_1a81459139c472d18afb652865cd1ccca2" kind="variable"><name>bombs</name></member>
+    <member refid="classPlayer_1ad10591f14c650199bdae0fa18a2a8965" kind="variable"><name>clock</name></member>
+    <member refid="classPlayer_1acdb36f9f58ef02ca54fbbb0c518becdb" kind="variable"><name>remainingTime</name></member>
+    <member refid="classPlayer_1a4ba3d89f86c3b65c452b1b3bdcc9ef71" kind="variable"><name>pos</name></member>
+    <member refid="classPlayer_1a488e7b34ed0c515b15a91f1dc77ebd47" kind="variable"><name>AllowBomb</name></member>
+    <member refid="classPlayer_1a773e829fa29e5c69f931b6c6a691c7cf" kind="function"><name>Player</name></member>
+    <member refid="classPlayer_1a749d2c00e1fe0f5c2746f7505a58c062" kind="function"><name>~Player</name></member>
+    <member refid="classPlayer_1a41771e90d834b71f0f69e0f382d348e9" kind="function"><name>move</name></member>
+    <member refid="classPlayer_1a285c0d09bf78c25f9ea7e5b3cd1c347d" kind="function"><name>getAnimeModel</name></member>
+    <member refid="classPlayer_1ad59c2681c76d6a1819212f3a9e512d3c" kind="function"><name>getPlayerPos</name></member>
+    <member refid="classPlayer_1a2b63850a65dc04ca8b20f76efaa016ec" kind="function"><name>moveAnimation</name></member>
+    <member refid="classPlayer_1afe886e83cd15a84b3c859d6c112d5dac" kind="function"><name>checkBonnus</name></member>
+    <member refid="classPlayer_1a6210f697ba7ee1e7eaba1d63c8da7e50" kind="function"><name>action</name></member>
+    <member refid="classPlayer_1a237ae517fa306735b76f2f22066459bb" kind="function"><name>checkPlayerHit</name></member>
+    <member refid="classPlayer_1a85b219115dd370a4d98faa74630b940c" kind="function"><name>updatePlayerDeathAnimation</name></member>
+    <member refid="classPlayer_1ae3932714817ccfa77a291958c81d90d5" kind="function"><name>getLife</name></member>
+    <member refid="classPlayer_1a9d284ba174e4f2655a7cae8088b7eb3d" kind="function"><name>getSpeed</name></member>
+    <member refid="classPlayer_1af3d6fd8d7aec5f44623e65347ef9d902" kind="function"><name>getPower</name></member>
+    <member refid="classPlayer_1ac45afa3db6b4a10de8ebd521307fa655" kind="function"><name>getNbBomb</name></member>
+    <member refid="classPlayer_1a180f2bcd9d370dd3dd8839f06fb1bb77" kind="function"><name>getIsAlive</name></member>
+    <member refid="classPlayer_1a94acb00e4332813c5de3d4361bd10b19" kind="function"><name>setNbBomb</name></member>
+    <member refid="classPlayer_1ae9c166e4eed0106c7ac78449307a66e8" kind="function"><name>waitTime</name></member>
+    <member refid="classPlayer_1a7f2229517d4b44953929716501874058" kind="function"><name>timehandler</name></member>
+    <member refid="classPlayer_1a2e1e3e7a1e2d375c2977059567d5bc4c" kind="function"><name>setMovement</name></member>
+    <member refid="classPlayer_1abb879679d224ca5b39c07d73b01a4ebb" kind="function"><name>setTexture</name></member>
+    <member refid="classPlayer_1a0c98212a0ca7a1103fe5c03ccb07852c" kind="function"><name>useSave</name></member>
+    <member refid="classPlayer_1abb36a08cb042a1b2deb6fe3753971f96" kind="function"><name>saveProgress</name></member>
+  </compound>
+  <compound refid="classUI" kind="class"><name>UI</name>
+    <member refid="classUI_1a69ab5698e6dfb1429e3c77ff820c9367" kind="variable"><name>device</name></member>
+    <member refid="classUI_1aaab7f0f8efb9c4570c6f91eee76eabfb" kind="variable"><name>driver</name></member>
+    <member refid="classUI_1a21c81b433e0878c0f9cac61b5b735455" kind="variable"><name>smgr</name></member>
+    <member refid="classUI_1a5ab201f485623d93e5bba7e605b7054b" kind="variable"><name>guienv</name></member>
+    <member refid="classUI_1ae119446820f462c517d60c0281a7543f" kind="variable"><name>font</name></member>
+    <member refid="classUI_1a00da820f693fb6d96caa63780356b457" kind="variable"><name>bomb</name></member>
+    <member refid="classUI_1a4570995cf70414c8af5ead66c1c5fa0d" kind="variable"><name>fire</name></member>
+    <member refid="classUI_1a3c697eb5c5752f9a69ded2ee3ba96ff5" kind="variable"><name>skate</name></member>
+    <member refid="classUI_1ac7c4e827226160f64d7cf2c3de88b4e2" kind="function"><name>UI</name></member>
+    <member refid="classUI_1a1b23d0c64c7cbb3d143d90ec532a7ccd" kind="function"><name>~UI</name></member>
+    <member refid="classUI_1aaa1c88e189549db0181a3ab83d49cabe" kind="function"><name>loadFont</name></member>
+    <member refid="classUI_1ad548eedf7ece2742bc2caa68501064ef" kind="function"><name>loadFont</name></member>
+    <member refid="classUI_1a9ea8f718a8c251ba0c860b81e0cd6770" kind="function"><name>load2dImage</name></member>
+    <member refid="classUI_1a8b1bb61967db03000f90cdcda77c75b1" kind="function"><name>draw2DImage</name></member>
+    <member refid="classUI_1a9118e7708463f7c649606685c5bc8074" kind="function"><name>printPlayerInfo</name></member>
+  </compound>
+  <compound refid="classWall" kind="class"><name>Wall</name>
+    <member refid="classWall_1a6c90778823b2a3c90db4227ea65fd0c6" kind="variable"><name>posX</name></member>
+    <member refid="classWall_1ab59df255d3eb5bf46917fb415ca338d5" kind="variable"><name>posY</name></member>
+    <member refid="classWall_1a0aa5d33d0d6a2ad14a579aa3e3f703bf" kind="variable"><name>destructible</name></member>
+    <member refid="classWall_1a1fe2fd978ca8aad4bf12d419292452fc" kind="variable"><name>device</name></member>
+    <member refid="classWall_1a7f3aa5d94489deefd71694a31e8a8950" kind="variable"><name>cube</name></member>
+    <member refid="classWall_1a0e038e1fabcd1b5159df555e4af1548d" kind="variable"><name>bonnus</name></member>
+    <member refid="classWall_1a65ac78aabbd944eca38e11ef9f4074c0" kind="variable"><name>selector</name></member>
+    <member refid="classWall_1a10526f3f90523937d033ed455620dc4b" kind="variable"><name>wall_pos</name></member>
+    <member refid="classWall_1ac0c0bb3d500dedac25eb9c3ab10b7fb4" kind="variable"><name>anim</name></member>
+    <member refid="classWall_1ade0d9a0017f27341458e85f38cbbb7a6" kind="function"><name>Wall</name></member>
+    <member refid="classWall_1a9a2992f2b533e1c160513d1e719f920c" kind="function"><name>~Wall</name></member>
+    <member refid="classWall_1ad795edbe513cdbe730c861933a2782e9" kind="function"><name>isDestructible</name></member>
+    <member refid="classWall_1a1dbc7b6ca7c704e330e9ea854cdf7662" kind="function"><name>getCubePos</name></member>
+    <member refid="classWall_1a6b961e8b10581afac917d6f45a1d5ba7" kind="function"><name>getSelector</name></member>
+    <member refid="classWall_1a4c43b5bce522566775f020b5bcaaf01c" kind="function"><name>getWallPosition</name></member>
+    <member refid="classWall_1a19755185e324087245889b9a309a4371" kind="function"><name>getcubeMesh</name></member>
+    <member refid="classWall_1a04fabec8becef9f4ec08cac13fb2ae47" kind="function"><name>removeWall</name></member>
+    <member refid="classWall_1a062dd722a465aeedb622dc841b231449" kind="function"><name>getBonnusMesh</name></member>
+  </compound>
+  <compound refid="classWin" kind="class"><name>Win</name>
+    <member refid="classWin_1a366da657adb1088418276f5a83b1d845" kind="variable"><name>background</name></member>
+    <member refid="classWin_1a97762590a40f24ede34a643aeef9c6e9" kind="variable"><name>_device</name></member>
+    <member refid="classWin_1a9549b95addc2478db4dc83f87afceac3" kind="variable"><name>waitTime</name></member>
+    <member refid="classWin_1aab82b53500b8d11a36361829b99f518e" kind="function"><name>Win</name></member>
+    <member refid="classWin_1a2a356df5290c18b5636cbf2a584557c2" kind="function"><name>~Win</name></member>
+    <member refid="classWin_1a557dda068ecb1e62dfd8265242ced2fc" kind="function"><name>doScene</name></member>
+  </compound>
+  <compound refid="classwindow" kind="class"><name>window</name>
+    <member refid="classwindow_1ac32c1e9f0dc813b0c27798b9734f9806" kind="variable"><name>saveMode</name></member>
+    <member refid="classwindow_1aa0f0c216a87812a621fb88320523a261" kind="variable"><name>keybinding</name></member>
+    <member refid="classwindow_1ad4012585732f6f5a8f1d66b12454280c" kind="variable"><name>_ground</name></member>
+    <member refid="classwindow_1ad7acaee25c8c18736c24658fda8b2ac1" kind="variable"><name>player</name></member>
+    <member refid="classwindow_1a6d81383383f1b63fc4e267e1569837cd" kind="variable"><name>ai</name></member>
+    <member refid="classwindow_1a30ad01c1688d6d1f463ac9ce061b119e" kind="variable"><name>allThread</name></member>
+    <member refid="classwindow_1a8198c8609a7adbaf7b170310a29cf63d" kind="variable"><name>mutex</name></member>
+    <member refid="classwindow_1a498058a42fea7cd4ede22694dfa3c489" kind="variable"><name>map</name></member>
+    <member refid="classwindow_1a91e473e280f5b4eb7d89a1a259de5d89" kind="variable"><name>ui</name></member>
+    <member refid="classwindow_1a7e857324c8013f3b5da97aa785e9e880" kind="variable"><name>bombs</name></member>
+    <member refid="classwindow_1a39fc4fb8afe098d19f49638d23b9f177" kind="variable"><name>destructible_wall</name></member>
+    <member refid="classwindow_1ab29522edf20b831f911735b1177bfe3b" kind="variable"><name>allEntityChar</name></member>
+    <member refid="classwindow_1a9aa6c264ddd1a3b16b88526bccc82273" kind="variable"><name>music</name></member>
+    <member refid="classwindow_1a63fdf750dc828835ba6c8918f7e3740c" kind="variable"><name>receiver</name></member>
+    <member refid="classwindow_1a4a13051165b1759b6cdad0bb8ece4b8a" kind="variable"><name>device</name></member>
+    <member refid="classwindow_1a135bd889f5ace41c08549cf08a63686d" kind="variable"><name>driver</name></member>
+    <member refid="classwindow_1a269a63b08a551225a05c2d090bc1acbe" kind="variable"><name>guienv</name></member>
+    <member refid="classwindow_1aa0332e7d0dc6aa782186129a7d03235e" kind="variable"><name>smgr</name></member>
+    <member refid="classwindow_1ae24c42c0b11575ee93c2d441e79d0b8a" kind="function"><name>window</name></member>
+    <member refid="classwindow_1a52e1afbd53c8796522a180b144c375a0" kind="function"><name>~window</name></member>
+    <member refid="classwindow_1a97e0f7a31cbbc43957d8d07c23a6076e" kind="function"><name>doScene</name></member>
+    <member refid="classwindow_1a5cabf72e00d1998839b081c726705b1f" kind="function"><name>nbPlayersAlive</name></member>
+    <member refid="classwindow_1a2737e2b6e9edce1d36dee92593a102ce" kind="function"><name>nbAisAlive</name></member>
+  </compound>
+  <compound refid="namespaceBomberman" kind="namespace"><name>Bomberman</name>
+  </compound>
+  <compound refid="CMakeLists_8txt" kind="file"><name>CMakeLists.txt</name>
+    <member refid="CMakeLists_8txt_1a06ff59c19a71bb69b115b6de4f3fb15f" kind="function"><name>cmake_minimum_required</name></member>
+    <member refid="CMakeLists_8txt_1ac63aca49bd421ebef13572df6f1f9f1d" kind="function"><name>set</name></member>
+    <member refid="CMakeLists_8txt_1ad87abadf12c437eca5ce2d42198dadb1" kind="function"><name>if</name></member>
+    <member refid="CMakeLists_8txt_1a96ea077e0933fe768d31abe61a6b88b9" kind="function"><name>file</name></member>
+  </compound>
+  <compound refid="AScene_8hpp" kind="file"><name>AScene.hpp</name>
+  </compound>
+  <compound refid="Controle_8hpp" kind="file"><name>Controle.hpp</name>
+  </compound>
+  <compound refid="Core_8cpp" kind="file"><name>Core.cpp</name>
+  </compound>
+  <compound refid="Core_8hpp" kind="file"><name>Core.hpp</name>
+  </compound>
+  <compound refid="bomb_8cpp" kind="file"><name>bomb.cpp</name>
+  </compound>
+  <compound refid="bomb_8hpp" kind="file"><name>bomb.hpp</name>
+    <member refid="bomb_8hpp_1a5c036b023eeb2b8d1b19e610d1166ea8" kind="enum"><name>BOMB_STATUS</name></member>
+    <member refid="bomb_8hpp_1a5c036b023eeb2b8d1b19e610d1166ea8ac157bdf0b85a40d2619cbc8bc1ae5fe2" kind="enumvalue"><name>NONE</name></member>
+    <member refid="bomb_8hpp_1a5c036b023eeb2b8d1b19e610d1166ea8a46a8b7915191a24229de52ff2d7e5f7f" kind="enumvalue"><name>EXPLODING</name></member>
+    <member refid="bomb_8hpp_1a5c036b023eeb2b8d1b19e610d1166ea8ac453c9fc61bcab16ca3eb3bafc9e99fb" kind="enumvalue"><name>EXPLODED</name></member>
+  </compound>
+  <compound refid="GameOver_8cpp" kind="file"><name>GameOver.cpp</name>
+  </compound>
+  <compound refid="GameOver_8hpp" kind="file"><name>GameOver.hpp</name>
+  </compound>
+  <compound refid="ground_8cpp" kind="file"><name>ground.cpp</name>
+  </compound>
+  <compound refid="ground_8hpp" kind="file"><name>ground.hpp</name>
+  </compound>
+  <compound refid="InputEvent_8hpp" kind="file"><name>InputEvent.hpp</name>
+  </compound>
+  <compound refid="map_8cpp" kind="file"><name>map.cpp</name>
+  </compound>
+  <compound refid="map_8hpp" kind="file"><name>map.hpp</name>
+  </compound>
+  <compound refid="Music_8cpp" kind="file"><name>Music.cpp</name>
+  </compound>
+  <compound refid="Music_8hpp" kind="file"><name>Music.hpp</name>
+    <member refid="Music_8hpp_1ab5ab7fc0f682a82736f8455c7a9b8648" kind="enum"><name>SOUND</name></member>
+    <member refid="Music_8hpp_1ab5ab7fc0f682a82736f8455c7a9b8648a0755372f61dedcc3e20ca0324c1b5652" kind="enumvalue"><name>EXPLOSION</name></member>
+    <member refid="Music_8hpp_1ab5ab7fc0f682a82736f8455c7a9b8648abd6c69691b68642f5c619c8be829d3db" kind="enumvalue"><name>PICKUP</name></member>
+    <member refid="Music_8hpp_1ab5ab7fc0f682a82736f8455c7a9b8648ab03e8ec91b0d074a03df67327675f025" kind="enumvalue"><name>CLICK</name></member>
+    <member refid="Music_8hpp_1ab5ab7fc0f682a82736f8455c7a9b8648a80215d53422443b4cdbefc04d62c3f84" kind="enumvalue"><name>PUTBOMB</name></member>
+    <member refid="Music_8hpp_1ab5ab7fc0f682a82736f8455c7a9b8648a775d96b207f514523302b1a8de9ead04" kind="enumvalue"><name>TOUCHED</name></member>
+  </compound>
+  <compound refid="Path_8cpp" kind="file"><name>Path.cpp</name>
+  </compound>
+  <compound refid="Path_8hpp" kind="file"><name>Path.hpp</name>
+    <member refid="Path_8hpp_1a224b9163917ac32fc95a60d8c1eec3aa" kind="enum"><name>Direction</name></member>
+    <member refid="Path_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaadb45120aafd37a973140edee24708065" kind="enumvalue"><name>LEFT</name></member>
+    <member refid="Path_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaec8379af7490bb9eaaf579cf17876f38" kind="enumvalue"><name>RIGHT</name></member>
+    <member refid="Path_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa" kind="enumvalue"><name>UP</name></member>
+    <member refid="Path_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa9b0b4a95b99523966e0e34ffdadac9da" kind="enumvalue"><name>DOWN</name></member>
+    <member refid="Path_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa605159e8a4c32319fd69b5d151369d93" kind="enumvalue"><name>UNDEFINED</name></member>
+  </compound>
+  <compound refid="Player_8cpp" kind="file"><name>Player.cpp</name>
+  </compound>
+  <compound refid="Player_8hpp" kind="file"><name>Player.hpp</name>
+  </compound>
+  <compound refid="UI_8cpp" kind="file"><name>UI.cpp</name>
+  </compound>
+  <compound refid="UI_8hpp" kind="file"><name>UI.hpp</name>
+  </compound>
+  <compound refid="Wall_8cpp" kind="file"><name>Wall.cpp</name>
+  </compound>
+  <compound refid="Wall_8hpp" kind="file"><name>Wall.hpp</name>
+    <member refid="Wall_8hpp_1a0864a01b2f6b1325a7fc167be5ac08b5" kind="enum"><name>WALL_TYPE</name></member>
+    <member refid="Wall_8hpp_1a0864a01b2f6b1325a7fc167be5ac08b5a02fc27068fe9a3c151ffcc08ec5bb65d" kind="enumvalue"><name>BLOCK</name></member>
+    <member refid="Wall_8hpp_1a0864a01b2f6b1325a7fc167be5ac08b5a50d1448013c6f17125caee18aa418af7" kind="enumvalue"><name>NORMAL</name></member>
+    <member refid="Wall_8hpp_1a0864a01b2f6b1325a7fc167be5ac08b5a84433c4bc10d4f0ef8b61feb2b29cb65" kind="enumvalue"><name>DESTRUCTIBLE</name></member>
+    <member refid="Wall_8hpp_1a0864a01b2f6b1325a7fc167be5ac08b5a1fb3554200c1173d24e97e9d32283ead" kind="enumvalue"><name>SPEED</name></member>
+    <member refid="Wall_8hpp_1a0864a01b2f6b1325a7fc167be5ac08b5a316771101d4b4b1dea7d7e2a82ef1658" kind="enumvalue"><name>POWER</name></member>
+    <member refid="Wall_8hpp_1a0864a01b2f6b1325a7fc167be5ac08b5ac5c8385e5618a8d7176e5de8bd9234ea" kind="enumvalue"><name>BOMB_NB</name></member>
+    <member refid="Wall_8hpp_1a0864a01b2f6b1325a7fc167be5ac08b5a0bbfc7cff42950a3a2f202bb44f27afb" kind="enumvalue"><name>LIFE</name></member>
+  </compound>
+  <compound refid="Win_8cpp" kind="file"><name>Win.cpp</name>
+  </compound>
+  <compound refid="Win_8hpp" kind="file"><name>Win.hpp</name>
+  </compound>
+  <compound refid="window_8cpp" kind="file"><name>window.cpp</name>
+  </compound>
+  <compound refid="window_8hpp" kind="file"><name>window.hpp</name>
+  </compound>
+  <compound refid="IScene_8hpp" kind="file"><name>IScene.hpp</name>
+  </compound>
+  <compound refid="Main_8cpp" kind="file"><name>Main.cpp</name>
+    <member refid="Main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="Adventure_8cpp" kind="file"><name>Adventure.cpp</name>
+  </compound>
+  <compound refid="Adventure_8hpp" kind="file"><name>Adventure.hpp</name>
+  </compound>
+  <compound refid="Arcade_8cpp" kind="file"><name>Arcade.cpp</name>
+  </compound>
+  <compound refid="Arcade_8hpp" kind="file"><name>Arcade.hpp</name>
+  </compound>
+  <compound refid="Button_8cpp" kind="file"><name>Button.cpp</name>
+  </compound>
+  <compound refid="Button_8hpp" kind="file"><name>Button.hpp</name>
+  </compound>
+  <compound refid="Menu_8cpp" kind="file"><name>Menu.cpp</name>
+  </compound>
+  <compound refid="Menu_8hpp" kind="file"><name>Menu.hpp</name>
+  </compound>
+  <compound refid="Option_8cpp" kind="file"><name>Option.cpp</name>
+  </compound>
+  <compound refid="Option_8hpp" kind="file"><name>Option.hpp</name>
+  </compound>
+  <compound refid="dir_b43036362fece0f978c3c8156df55d19" kind="dir"><name>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game</name>
+  </compound>
+  <compound refid="dir_48c7164168dca01d479414587f75dc62" kind="dir"><name>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src</compoundname>
+    <innerdir refid="dir_b43036362fece0f978c3c8156df55d19">/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game</innerdir>
+    <innerdir refid="dir_48c7164168dca01d479414587f75dc62">/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu</innerdir>
+    <innerfile refid="AScene_8hpp">AScene.hpp</innerfile>
+    <innerfile refid="Controle_8hpp">Controle.hpp</innerfile>
+    <innerfile refid="Core_8cpp">Core.cpp</innerfile>
+    <innerfile refid="Core_8hpp">Core.hpp</innerfile>
+    <innerfile refid="IScene_8hpp">IScene.hpp</innerfile>
+    <innerfile refid="Main_8cpp">Main.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/"/>
+  </compounddef>
+</doxygen>

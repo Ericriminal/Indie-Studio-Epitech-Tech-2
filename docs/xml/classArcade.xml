@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classArcade" kind="class" language="C++" prot="public">
+    <compoundname>Arcade</compoundname>
+    <basecompoundref refid="classAScene" prot="public" virt="non-virtual">AScene</basecompoundref>
+    <includes refid="Arcade_8hpp" local="no">Arcade.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classArcade_1ae8473ee184e36c3551935bab2c124157" prot="private" static="no" mutable="no">
+        <type>irr::video::ITexture *</type>
+        <definition>irr::video::ITexture* Arcade::background</definition>
+        <argsstring></argsstring>
+        <name>background</name>
+        <briefdescription>
+<para>backgorund_image </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="34" column="30" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArcade_1acc7d0ccf9b88a97caeab7db227c0a39f" prot="private" static="no" mutable="no">
+        <type>irr::video::ITexture *</type>
+        <definition>irr::video::ITexture* Arcade::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <briefdescription>
+<para>Title_image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="39" column="30" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArcade_1a64ff9960b77e6d1ca0391033c8f0eec3" prot="private" static="no" mutable="no">
+        <type>irr::video::ITexture *</type>
+        <definition>irr::video::ITexture* Arcade::launch</definition>
+        <argsstring></argsstring>
+        <name>launch</name>
+        <briefdescription>
+<para>Launch_game_image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="44" column="30" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArcade_1afca6e93df46dd5cf10c925686e8f0e1f" prot="private" static="no" mutable="no">
+        <type>irr::gui::IGUIEnvironment *</type>
+        <definition>irr::gui::IGUIEnvironment* Arcade::guienv</definition>
+        <argsstring></argsstring>
+        <name>guienv</name>
+        <briefdescription>
+<para>pointer to guienv class in irrlicht </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="49" column="35" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArcade_1a20b295e7da79c6e9848f3e5c497aff99" prot="private" static="no" mutable="no">
+        <type>irr::video::ITexture *</type>
+        <definition>irr::video::ITexture* Arcade::P1</definition>
+        <argsstring></argsstring>
+        <name>P1</name>
+        <briefdescription>
+<para>Texture for P1_image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="54" column="30" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArcade_1ac6e32894210ed52119ebc45eec90d469" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Arcade::P1_color</definition>
+        <argsstring></argsstring>
+        <name>P1_color</name>
+        <briefdescription>
+<para>String for P1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="58" column="21" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArcade_1ac743c3952184d00e2e59676830eb501f" prot="private" static="no" mutable="no">
+        <type>irr::gui::IGUIStaticText *</type>
+        <definition>irr::gui::IGUIStaticText* Arcade::P1_text</definition>
+        <argsstring></argsstring>
+        <name>P1_text</name>
+        <briefdescription>
+<para>Text that show P1 skin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="62" column="34" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArcade_1a88f9619b7576ee0acc4550cc0e5da862" prot="private" static="no" mutable="no">
+        <type>irr::video::ITexture *</type>
+        <definition>irr::video::ITexture* Arcade::P2</definition>
+        <argsstring></argsstring>
+        <name>P2</name>
+        <briefdescription>
+<para>Texture for P2_image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="67" column="30" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArcade_1aefe18c07f24c1f2712a4fc1605c30d51" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Arcade::P2_color</definition>
+        <argsstring></argsstring>
+        <name>P2_color</name>
+        <briefdescription>
+<para>String for P2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="71" column="21" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArcade_1a9a0623f8ad213e7eec303e46a01db7a3" prot="private" static="no" mutable="no">
+        <type>irr::gui::IGUIStaticText *</type>
+        <definition>irr::gui::IGUIStaticText* Arcade::P2_text</definition>
+        <argsstring></argsstring>
+        <name>P2_text</name>
+        <briefdescription>
+<para>Text that show P2 skin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="75" column="34" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArcade_1a00e1bf5b247aa829c1e3c268c9774d0e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classButton" kindref="compound">Button</ref> &gt;</type>
+        <definition>std::vector&lt;Button&gt; Arcade::Button_list</definition>
+        <argsstring></argsstring>
+        <name>Button_list</name>
+        <briefdescription>
+<para>vector of button </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="80" column="21" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArcade_1a2768761ae6c8a9139a214ff915059d11" prot="private" static="no" mutable="no">
+        <type>irr::IrrlichtDevice *</type>
+        <definition>irr::IrrlichtDevice* Arcade::_device</definition>
+        <argsstring></argsstring>
+        <name>_device</name>
+        <briefdescription>
+<para>pointer to device of irrlicht </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="85" column="29" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArcade_1a4a84009febd1f8cbeacd9f192da421cd" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt; *</type>
+        <definition>std::vector&lt;int&gt;* Arcade::_color</definition>
+        <argsstring></argsstring>
+        <name>_color</name>
+        <briefdescription>
+<para>Color of player. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="90" column="21" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classArcade_1aaea59abd53affa4c8537029c600fcadf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Arcade::Arcade</definition>
+        <argsstring>(irr::IrrlichtDevice *device, std::vector&lt; int &gt; *color)</argsstring>
+        <name>Arcade</name>
+        <param>
+          <type>irr::IrrlichtDevice *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; *</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="21" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.cpp" bodystart="88" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classArcade_1ac19a0fc5f4f7ca375242c17394479b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Arcade::doScene</definition>
+        <argsstring>()</argsstring>
+        <name>doScene</name>
+        <reimplements refid="classIScene_1a06a4c59f8bf0b6cbeeb3c479b83fa0d6">doScene</reimplements>
+        <briefdescription>
+<para>Funtion to print scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="22" column="13" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.cpp" bodystart="21" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classArcade_1a086282e1d75300e3a93734ec2a596e0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Arcade::~Arcade</definition>
+        <argsstring>()</argsstring>
+        <name>~Arcade</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="23" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.cpp" bodystart="135" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classArcade_1ad6477b2f26948239b92234794ed774a6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Arcade::checkMouseButton</definition>
+        <argsstring>()</argsstring>
+        <name>checkMouseButton</name>
+        <briefdescription>
+<para>function to check if cursor is on the button </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="30" column="14" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.cpp" bodystart="10" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>function to check if cursor is on the button </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Arcade</label>
+        <link refid="classArcade"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IScene</label>
+        <link refid="classIScene"/>
+      </node>
+      <node id="2">
+        <label>AScene</label>
+        <link refid="classAScene"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Arcade</label>
+        <link refid="classArcade"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IScene</label>
+        <link refid="classIScene"/>
+      </node>
+      <node id="2">
+        <label>AScene</label>
+        <link refid="classAScene"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" line="19" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.hpp" bodystart="19" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classArcade_1a4a84009febd1f8cbeacd9f192da421cd" prot="private" virt="non-virtual"><scope>Arcade</scope><name>_color</name></member>
+      <member refid="classArcade_1a2768761ae6c8a9139a214ff915059d11" prot="private" virt="non-virtual"><scope>Arcade</scope><name>_device</name></member>
+      <member refid="classArcade_1aaea59abd53affa4c8537029c600fcadf" prot="public" virt="non-virtual"><scope>Arcade</scope><name>Arcade</name></member>
+      <member refid="classArcade_1ae8473ee184e36c3551935bab2c124157" prot="private" virt="non-virtual"><scope>Arcade</scope><name>background</name></member>
+      <member refid="classArcade_1a00e1bf5b247aa829c1e3c268c9774d0e" prot="private" virt="non-virtual"><scope>Arcade</scope><name>Button_list</name></member>
+      <member refid="classArcade_1ad6477b2f26948239b92234794ed774a6" prot="private" virt="non-virtual"><scope>Arcade</scope><name>checkMouseButton</name></member>
+      <member refid="classArcade_1ac19a0fc5f4f7ca375242c17394479b45" prot="public" virt="virtual"><scope>Arcade</scope><name>doScene</name></member>
+      <member refid="classAScene_1ae56af2648a100df159b037a9176e553b" prot="protected" virt="non-virtual"><scope>Arcade</scope><name>driver</name></member>
+      <member refid="classArcade_1afca6e93df46dd5cf10c925686e8f0e1f" prot="private" virt="non-virtual"><scope>Arcade</scope><name>guienv</name></member>
+      <member refid="classArcade_1a64ff9960b77e6d1ca0391033c8f0eec3" prot="private" virt="non-virtual"><scope>Arcade</scope><name>launch</name></member>
+      <member refid="classArcade_1a20b295e7da79c6e9848f3e5c497aff99" prot="private" virt="non-virtual"><scope>Arcade</scope><name>P1</name></member>
+      <member refid="classArcade_1ac6e32894210ed52119ebc45eec90d469" prot="private" virt="non-virtual"><scope>Arcade</scope><name>P1_color</name></member>
+      <member refid="classArcade_1ac743c3952184d00e2e59676830eb501f" prot="private" virt="non-virtual"><scope>Arcade</scope><name>P1_text</name></member>
+      <member refid="classArcade_1a88f9619b7576ee0acc4550cc0e5da862" prot="private" virt="non-virtual"><scope>Arcade</scope><name>P2</name></member>
+      <member refid="classArcade_1aefe18c07f24c1f2712a4fc1605c30d51" prot="private" virt="non-virtual"><scope>Arcade</scope><name>P2_color</name></member>
+      <member refid="classArcade_1a9a0623f8ad213e7eec303e46a01db7a3" prot="private" virt="non-virtual"><scope>Arcade</scope><name>P2_text</name></member>
+      <member refid="classAScene_1a67c9a683bd486e4630bb2ce8777a44c1" prot="protected" virt="non-virtual"><scope>Arcade</scope><name>smgr</name></member>
+      <member refid="classArcade_1acc7d0ccf9b88a97caeab7db227c0a39f" prot="private" virt="non-virtual"><scope>Arcade</scope><name>title</name></member>
+      <member refid="classArcade_1a086282e1d75300e3a93734ec2a596e0b" prot="public" virt="non-virtual"><scope>Arcade</scope><name>~Arcade</name></member>
+      <member refid="classIScene_1a146b1101069efb7a46b3bb6e419bc2bc" prot="public" virt="virtual"><scope>Arcade</scope><name>~IScene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

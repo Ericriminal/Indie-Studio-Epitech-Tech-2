@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classwindow" kind="class" language="C++" prot="public">
+    <compoundname>window</compoundname>
+    <basecompoundref refid="classAScene" prot="public" virt="non-virtual">AScene</basecompoundref>
+    <includes refid="window_8hpp" local="no">window.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classwindow_1ac32c1e9f0dc813b0c27798b9734f9806" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool window::saveMode</definition>
+        <argsstring></argsstring>
+        <name>saveMode</name>
+        <briefdescription>
+<para>vector of controle </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="48" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwindow_1aa0f0c216a87812a621fb88320523a261" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structBomberman_1_1Controle" kindref="compound">Bomberman::Controle</ref> &gt;</type>
+        <definition>std::vector&lt;Bomberman::Controle&gt; window::keybinding</definition>
+        <argsstring></argsstring>
+        <name>keybinding</name>
+        <briefdescription>
+<para>vector of controle </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="52" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwindow_1ad4012585732f6f5a8f1d66b12454280c" prot="private" static="no" mutable="no">
+        <type><ref refid="classground" kindref="compound">ground</ref></type>
+        <definition>ground window::_ground</definition>
+        <argsstring></argsstring>
+        <name>_ground</name>
+        <briefdescription>
+<para>object creating ground </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="56" column="12" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwindow_1ad7acaee25c8c18736c24658fda8b2ac1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classPlayer" kindref="compound">Player</ref> &gt;</type>
+        <definition>std::vector&lt;Player&gt; window::player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <briefdescription>
+<para>vector of all player object </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="60" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwindow_1a6d81383383f1b63fc4e267e1569837cd" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classPathFinder" kindref="compound">PathFinder</ref> &gt;</type>
+        <definition>std::vector&lt;PathFinder&gt; window::ai</definition>
+        <argsstring></argsstring>
+        <name>ai</name>
+        <briefdescription>
+<para>vector of all ai object </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="64" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwindow_1a30ad01c1688d6d1f463ac9ce061b119e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::thread &gt;</type>
+        <definition>std::vector&lt;std::thread&gt; window::allThread</definition>
+        <argsstring></argsstring>
+        <name>allThread</name>
+        <briefdescription>
+<para>vector of all thread from ai </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="68" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwindow_1a8198c8609a7adbaf7b170310a29cf63d" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex window::mutex</definition>
+        <argsstring></argsstring>
+        <name>mutex</name>
+        <briefdescription>
+<para>mutex of the thread </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="72" column="16" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwindow_1a498058a42fea7cd4ede22694dfa3c489" prot="private" static="no" mutable="no">
+        <type><ref refid="classMap" kindref="compound">Map</ref></type>
+        <definition>Map window::map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <briefdescription>
+<para>object creating map </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="76" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwindow_1a91e473e280f5b4eb7d89a1a259de5d89" prot="private" static="no" mutable="no">
+        <type><ref refid="classUI" kindref="compound">UI</ref></type>
+        <definition>UI window::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+<para>object creating user interface </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="80" column="8" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwindow_1a7e857324c8013f3b5da97aa785e9e880" prot="private" static="no" mutable="no">
+        <type><ref refid="classbombHandler" kindref="compound">bombHandler</ref></type>
+        <definition>bombHandler window::bombs</definition>
+        <argsstring></argsstring>
+        <name>bombs</name>
+        <briefdescription>
+<para>object creating the bomb handler </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="84" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwindow_1a39fc4fb8afe098d19f49638d23b9f177" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classWall" kindref="compound">Wall</ref> &gt;</type>
+        <definition>std::vector&lt;Wall&gt; window::destructible_wall</definition>
+        <argsstring></argsstring>
+        <name>destructible_wall</name>
+        <briefdescription>
+<para>vector of destructible wall object </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="88" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwindow_1ab29522edf20b831f911735b1177bfe3b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; irr::scene::ISceneNode * &gt;</type>
+        <definition>std::vector&lt;irr::scene::ISceneNode*&gt; window::allEntityChar</definition>
+        <argsstring></argsstring>
+        <name>allEntityChar</name>
+        <briefdescription>
+<para>vector of irrlicht object of each player </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="92" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwindow_1a9aa6c264ddd1a3b16b88526bccc82273" prot="private" static="no" mutable="no">
+        <type><ref refid="classMusic" kindref="compound">Music</ref></type>
+        <definition>Music window::music</definition>
+        <argsstring></argsstring>
+        <name>music</name>
+        <briefdescription>
+<para>object for the music </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="96" column="11" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwindow_1a63fdf750dc828835ba6c8918f7e3740c" prot="private" static="no" mutable="no">
+        <type><ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref> *</type>
+        <definition>MyEventReceiver* window::receiver</definition>
+        <argsstring></argsstring>
+        <name>receiver</name>
+        <briefdescription>
+<para>object to receive keyboard info </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="101" column="21" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwindow_1a4a13051165b1759b6cdad0bb8ece4b8a" prot="private" static="no" mutable="no">
+        <type>irr::IrrlichtDevice *</type>
+        <definition>irr::IrrlichtDevice* window::device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <briefdescription>
+<para>main object to use irrlicht </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="105" column="25" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwindow_1a135bd889f5ace41c08549cf08a63686d" prot="private" static="no" mutable="no">
+        <type>irr::video::IVideoDriver *</type>
+        <definition>irr::video::IVideoDriver* window::driver</definition>
+        <argsstring></argsstring>
+        <name>driver</name>
+        <briefdescription>
+<para>object to have the device used by irrlicht </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="109" column="30" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwindow_1a269a63b08a551225a05c2d090bc1acbe" prot="private" static="no" mutable="no">
+        <type>irr::gui::IGUIEnvironment *</type>
+        <definition>irr::gui::IGUIEnvironment* window::guienv</definition>
+        <argsstring></argsstring>
+        <name>guienv</name>
+        <briefdescription>
+<para>object to create ui based in irrlicht </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="113" column="31" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwindow_1aa0332e7d0dc6aa782186129a7d03235e" prot="private" static="no" mutable="no">
+        <type>irr::scene::ISceneManager *</type>
+        <definition>irr::scene::ISceneManager* window::smgr</definition>
+        <argsstring></argsstring>
+        <name>smgr</name>
+        <briefdescription>
+<para>object to create any object in a scene </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="117" column="31" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classwindow_1ae24c42c0b11575ee93c2d441e79d0b8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>window::window</definition>
+        <argsstring>(irr::IrrlichtDevice *device, MyEventReceiver *receiver, std::vector&lt; Bomberman::Controle &gt; _keybinding, Music *music, int mode, std::vector&lt; int &gt; _color)</argsstring>
+        <name>window</name>
+        <param>
+          <type>irr::IrrlichtDevice *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type><ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref> *</type>
+          <declname>receiver</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structBomberman_1_1Controle" kindref="compound">Bomberman::Controle</ref> &gt;</type>
+          <declname>_keybinding</declname>
+        </param>
+        <param>
+          <type><ref refid="classMusic" kindref="compound">Music</ref> *</type>
+          <declname>music</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>_color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="34" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.cpp" bodystart="10" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classwindow_1a52e1afbd53c8796522a180b144c375a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>window::~window</definition>
+        <argsstring>()</argsstring>
+        <name>~window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="37" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.cpp" bodystart="138" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classwindow_1a97e0f7a31cbbc43957d8d07c23a6076e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int window::doScene</definition>
+        <argsstring>()</argsstring>
+        <name>doScene</name>
+        <reimplements refid="classIScene_1a06a4c59f8bf0b6cbeeb3c479b83fa0d6">doScene</reimplements>
+        <briefdescription>
+<para>function to make one loop of the game </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="42" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.cpp" bodystart="168" bodyend="213"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classwindow_1a5cabf72e00d1998839b081c726705b1f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int window::nbPlayersAlive</definition>
+        <argsstring>()</argsstring>
+        <name>nbPlayersAlive</name>
+        <briefdescription>
+<para>function to make one loop of the game </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="122" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.cpp" bodystart="144" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classwindow_1a2737e2b6e9edce1d36dee92593a102ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int window::nbAisAlive</definition>
+        <argsstring>()</argsstring>
+        <name>nbAisAlive</name>
+        <briefdescription>
+<para>function to make one loop of the game </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="127" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.cpp" bodystart="156" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class containing all the logic of the bomberman game </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>window</label>
+        <link refid="classwindow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IScene</label>
+        <link refid="classIScene"/>
+      </node>
+      <node id="2">
+        <label>AScene</label>
+        <link refid="classAScene"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>window</label>
+        <link refid="classwindow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IScene</label>
+        <link refid="classIScene"/>
+      </node>
+      <node id="2">
+        <label>AScene</label>
+        <link refid="classAScene"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" line="32" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/window.hpp" bodystart="32" bodyend="128"/>
+    <listofallmembers>
+      <member refid="classwindow_1ad4012585732f6f5a8f1d66b12454280c" prot="private" virt="non-virtual"><scope>window</scope><name>_ground</name></member>
+      <member refid="classwindow_1a6d81383383f1b63fc4e267e1569837cd" prot="private" virt="non-virtual"><scope>window</scope><name>ai</name></member>
+      <member refid="classwindow_1ab29522edf20b831f911735b1177bfe3b" prot="private" virt="non-virtual"><scope>window</scope><name>allEntityChar</name></member>
+      <member refid="classwindow_1a30ad01c1688d6d1f463ac9ce061b119e" prot="private" virt="non-virtual"><scope>window</scope><name>allThread</name></member>
+      <member refid="classwindow_1a7e857324c8013f3b5da97aa785e9e880" prot="private" virt="non-virtual"><scope>window</scope><name>bombs</name></member>
+      <member refid="classwindow_1a39fc4fb8afe098d19f49638d23b9f177" prot="private" virt="non-virtual"><scope>window</scope><name>destructible_wall</name></member>
+      <member refid="classwindow_1a4a13051165b1759b6cdad0bb8ece4b8a" prot="private" virt="non-virtual"><scope>window</scope><name>device</name></member>
+      <member refid="classwindow_1a97e0f7a31cbbc43957d8d07c23a6076e" prot="public" virt="virtual"><scope>window</scope><name>doScene</name></member>
+      <member refid="classwindow_1a135bd889f5ace41c08549cf08a63686d" prot="private" virt="non-virtual"><scope>window</scope><name>driver</name></member>
+      <member refid="classwindow_1a269a63b08a551225a05c2d090bc1acbe" prot="private" virt="non-virtual"><scope>window</scope><name>guienv</name></member>
+      <member refid="classwindow_1aa0f0c216a87812a621fb88320523a261" prot="private" virt="non-virtual"><scope>window</scope><name>keybinding</name></member>
+      <member refid="classwindow_1a498058a42fea7cd4ede22694dfa3c489" prot="private" virt="non-virtual"><scope>window</scope><name>map</name></member>
+      <member refid="classwindow_1a9aa6c264ddd1a3b16b88526bccc82273" prot="private" virt="non-virtual"><scope>window</scope><name>music</name></member>
+      <member refid="classwindow_1a8198c8609a7adbaf7b170310a29cf63d" prot="private" virt="non-virtual"><scope>window</scope><name>mutex</name></member>
+      <member refid="classwindow_1a2737e2b6e9edce1d36dee92593a102ce" prot="private" virt="non-virtual"><scope>window</scope><name>nbAisAlive</name></member>
+      <member refid="classwindow_1a5cabf72e00d1998839b081c726705b1f" prot="private" virt="non-virtual"><scope>window</scope><name>nbPlayersAlive</name></member>
+      <member refid="classwindow_1ad7acaee25c8c18736c24658fda8b2ac1" prot="private" virt="non-virtual"><scope>window</scope><name>player</name></member>
+      <member refid="classwindow_1a63fdf750dc828835ba6c8918f7e3740c" prot="private" virt="non-virtual"><scope>window</scope><name>receiver</name></member>
+      <member refid="classwindow_1ac32c1e9f0dc813b0c27798b9734f9806" prot="private" virt="non-virtual"><scope>window</scope><name>saveMode</name></member>
+      <member refid="classwindow_1aa0332e7d0dc6aa782186129a7d03235e" prot="private" virt="non-virtual"><scope>window</scope><name>smgr</name></member>
+      <member refid="classwindow_1a91e473e280f5b4eb7d89a1a259de5d89" prot="private" virt="non-virtual"><scope>window</scope><name>ui</name></member>
+      <member refid="classwindow_1ae24c42c0b11575ee93c2d441e79d0b8a" prot="public" virt="non-virtual"><scope>window</scope><name>window</name></member>
+      <member refid="classIScene_1a146b1101069efb7a46b3bb6e419bc2bc" prot="public" virt="virtual"><scope>window</scope><name>~IScene</name></member>
+      <member refid="classwindow_1a52e1afbd53c8796522a180b144c375a0" prot="public" virt="non-virtual"><scope>window</scope><name>~window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

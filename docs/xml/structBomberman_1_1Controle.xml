@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structBomberman_1_1Controle" kind="struct" language="C++" prot="public">
+    <compoundname>Bomberman::Controle</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structBomberman_1_1Controle_1a7af97ddec193c903de98f882a3549e32" prot="public" static="no" mutable="no">
+        <type>irr::EKEY_CODE</type>
+        <definition>irr::EKEY_CODE Bomberman::Controle::up</definition>
+        <argsstring></argsstring>
+        <name>up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Controle.hpp" line="15" column="28" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Controle.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBomberman_1_1Controle_1a3120036461d4aac4e520596e6e62c6db" prot="public" static="no" mutable="no">
+        <type>irr::EKEY_CODE</type>
+        <definition>irr::EKEY_CODE Bomberman::Controle::down</definition>
+        <argsstring></argsstring>
+        <name>down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Controle.hpp" line="16" column="28" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Controle.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBomberman_1_1Controle_1a5df8409105b31837270723281d5b272d" prot="public" static="no" mutable="no">
+        <type>irr::EKEY_CODE</type>
+        <definition>irr::EKEY_CODE Bomberman::Controle::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Controle.hpp" line="17" column="28" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Controle.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBomberman_1_1Controle_1a571667d9c161f5719a12a128235cb7d1" prot="public" static="no" mutable="no">
+        <type>irr::EKEY_CODE</type>
+        <definition>irr::EKEY_CODE Bomberman::Controle::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Controle.hpp" line="18" column="28" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Controle.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBomberman_1_1Controle_1a42a39af0faff9b13f38fdc4b2ce1623b" prot="public" static="no" mutable="no">
+        <type>irr::EKEY_CODE</type>
+        <definition>irr::EKEY_CODE Bomberman::Controle::put</definition>
+        <argsstring></argsstring>
+        <name>put</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Controle.hpp" line="19" column="28" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Controle.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Controle.hpp" line="14" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Controle.hpp" bodystart="14" bodyend="20"/>
+    <listofallmembers>
+      <member refid="structBomberman_1_1Controle_1a3120036461d4aac4e520596e6e62c6db" prot="public" virt="non-virtual"><scope>Bomberman::Controle</scope><name>down</name></member>
+      <member refid="structBomberman_1_1Controle_1a5df8409105b31837270723281d5b272d" prot="public" virt="non-virtual"><scope>Bomberman::Controle</scope><name>left</name></member>
+      <member refid="structBomberman_1_1Controle_1a42a39af0faff9b13f38fdc4b2ce1623b" prot="public" virt="non-virtual"><scope>Bomberman::Controle</scope><name>put</name></member>
+      <member refid="structBomberman_1_1Controle_1a571667d9c161f5719a12a128235cb7d1" prot="public" virt="non-virtual"><scope>Bomberman::Controle</scope><name>right</name></member>
+      <member refid="structBomberman_1_1Controle_1a7af97ddec193c903de98f882a3549e32" prot="public" virt="non-virtual"><scope>Bomberman::Controle</scope><name>up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

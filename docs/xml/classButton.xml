@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classButton" kind="class" language="C++" prot="public">
+    <compoundname>Button</compoundname>
+    <includes refid="Button_8hpp" local="no">Button.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classButton_1adb4e815552243925bf626c49ce660bc2" prot="private" static="no" mutable="no">
+        <type>irr::gui::IGUIEnvironment *</type>
+        <definition>irr::gui::IGUIEnvironment* Button::guienv</definition>
+        <argsstring></argsstring>
+        <name>guienv</name>
+        <briefdescription>
+<para>pointer to guienv of irrlicht window </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" line="48" column="35" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classButton_1af5cdb24ad3d4738737048403e0535863" prot="private" static="no" mutable="no">
+        <type>irr::video::IVideoDriver *</type>
+        <definition>irr::video::IVideoDriver* Button::_driver</definition>
+        <argsstring></argsstring>
+        <name>_driver</name>
+        <briefdescription>
+<para>pointer to guienv of driver window </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" line="52" column="34" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classButton_1a8dcfd4ad1c6b10f72b45c96bc8ab3f80" prot="private" static="no" mutable="no">
+        <type>irr::gui::IGUIButton *</type>
+        <definition>irr::gui::IGUIButton* Button::_button</definition>
+        <argsstring></argsstring>
+        <name>_button</name>
+        <briefdescription>
+<para>pointer to guienv of igui window </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" line="56" column="30" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classButton_1aded8db38a993a6fa20303dc0e4415cfe" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Button::initial</definition>
+        <argsstring></argsstring>
+        <name>initial</name>
+        <briefdescription>
+<para>path to the button image </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" line="60" column="21" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classButton_1afbac993ca0210696ba439611fa7082f0" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Button::pressed</definition>
+        <argsstring></argsstring>
+        <name>pressed</name>
+        <briefdescription>
+<para>path to the button image </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" line="64" column="21" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classButton_1a9c418847aa9d3b3407fc2466f7cd09b1" prot="private" static="no" mutable="no">
+        <type>irr::core::position2d&lt; irr::s32 &gt;</type>
+        <definition>irr::core::position2d&lt;irr::s32&gt; Button::_position</definition>
+        <argsstring></argsstring>
+        <name>_position</name>
+        <briefdescription>
+<para>position of button </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" line="68" column="31" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classButton_1a843af716715a3397d5fcd7266eb50cf0" prot="private" static="no" mutable="no">
+        <type>irr::core::position2d&lt; irr::s32 &gt;</type>
+        <definition>irr::core::position2d&lt;irr::s32&gt; Button::_positionWithSize</definition>
+        <argsstring></argsstring>
+        <name>_positionWithSize</name>
+        <briefdescription>
+<para>position with the size of the button </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" line="72" column="31" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classButton_1aa89585d033f688df7fddf1bad77e3f7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Button::Button</definition>
+        <argsstring>(irr::gui::IGUIEnvironment *guienv, irr::video::IVideoDriver *driver, irr::core::position2d&lt; irr::s32 &gt; position, std::vector&lt; std::string &gt; path)</argsstring>
+        <name>Button</name>
+        <param>
+          <type>irr::gui::IGUIEnvironment *</type>
+          <declname>guienv</declname>
+        </param>
+        <param>
+          <type>irr::video::IVideoDriver *</type>
+          <declname>driver</declname>
+        </param>
+        <param>
+          <type>irr::core::position2d&lt; irr::s32 &gt;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" line="21" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.cpp" bodystart="43" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classButton_1a2a001eb9c3cc8ae54768a850dd345002" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Button::~Button</definition>
+        <argsstring>()</argsstring>
+        <name>~Button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" line="22" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.cpp" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classButton_1ab83ae0e335eed730878056813cefee4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Button::changeImage</definition>
+        <argsstring>(int state)</argsstring>
+        <name>changeImage</name>
+        <param>
+          <type>int</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>change the image of the button </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" line="26" column="14" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.cpp" bodystart="35" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classButton_1a7161033742a2f2aa3777afa0cee2e052" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Button::isclicked</definition>
+        <argsstring>()</argsstring>
+        <name>isclicked</name>
+        <briefdescription>
+<para>check if clicked return 1 / else 0 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" line="30" column="13" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.cpp" bodystart="28" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classButton_1a66dd210f0ea447b2d6029a4a235715e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>irr::core::position2d&lt; irr::s32 &gt;</type>
+        <definition>irr::core::position2d&lt; irr::s32 &gt; Button::getPosition</definition>
+        <argsstring>()</argsstring>
+        <name>getPosition</name>
+        <briefdescription>
+<para>position of the button </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" line="34" column="31" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classButton_1ad5b7afdaf094ecf0bf8a21903c2909fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>irr::core::position2d&lt; irr::s32 &gt;</type>
+        <definition>irr::core::position2d&lt; irr::s32 &gt; Button::getPositionWithSize</definition>
+        <argsstring>()</argsstring>
+        <name>getPositionWithSize</name>
+        <briefdescription>
+<para>position with the size of the button </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" line="38" column="31" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.cpp" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classButton_1a7212807c6ed6fa3c7b189bddc62b64aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Button::setVisible</definition>
+        <argsstring>(int state)</argsstring>
+        <name>setVisible</name>
+        <param>
+          <type>int</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>change the state of the button visible or not </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" line="42" column="14" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.cpp" bodystart="11" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>function to check if cursor is on the button </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" line="19" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Button.hpp" bodystart="19" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classButton_1a8dcfd4ad1c6b10f72b45c96bc8ab3f80" prot="private" virt="non-virtual"><scope>Button</scope><name>_button</name></member>
+      <member refid="classButton_1af5cdb24ad3d4738737048403e0535863" prot="private" virt="non-virtual"><scope>Button</scope><name>_driver</name></member>
+      <member refid="classButton_1a9c418847aa9d3b3407fc2466f7cd09b1" prot="private" virt="non-virtual"><scope>Button</scope><name>_position</name></member>
+      <member refid="classButton_1a843af716715a3397d5fcd7266eb50cf0" prot="private" virt="non-virtual"><scope>Button</scope><name>_positionWithSize</name></member>
+      <member refid="classButton_1aa89585d033f688df7fddf1bad77e3f7f" prot="public" virt="non-virtual"><scope>Button</scope><name>Button</name></member>
+      <member refid="classButton_1ab83ae0e335eed730878056813cefee4f" prot="public" virt="non-virtual"><scope>Button</scope><name>changeImage</name></member>
+      <member refid="classButton_1a66dd210f0ea447b2d6029a4a235715e1" prot="public" virt="non-virtual"><scope>Button</scope><name>getPosition</name></member>
+      <member refid="classButton_1ad5b7afdaf094ecf0bf8a21903c2909fb" prot="public" virt="non-virtual"><scope>Button</scope><name>getPositionWithSize</name></member>
+      <member refid="classButton_1adb4e815552243925bf626c49ce660bc2" prot="private" virt="non-virtual"><scope>Button</scope><name>guienv</name></member>
+      <member refid="classButton_1aded8db38a993a6fa20303dc0e4415cfe" prot="private" virt="non-virtual"><scope>Button</scope><name>initial</name></member>
+      <member refid="classButton_1a7161033742a2f2aa3777afa0cee2e052" prot="public" virt="non-virtual"><scope>Button</scope><name>isclicked</name></member>
+      <member refid="classButton_1afbac993ca0210696ba439611fa7082f0" prot="private" virt="non-virtual"><scope>Button</scope><name>pressed</name></member>
+      <member refid="classButton_1a7212807c6ed6fa3c7b189bddc62b64aa" prot="public" virt="non-virtual"><scope>Button</scope><name>setVisible</name></member>
+      <member refid="classButton_1a2a001eb9c3cc8ae54768a850dd345002" prot="public" virt="non-virtual"><scope>Button</scope><name>~Button</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

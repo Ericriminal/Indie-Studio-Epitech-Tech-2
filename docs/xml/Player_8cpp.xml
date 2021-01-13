@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="Player_8cpp" kind="file" language="C++">
+    <compoundname>Player.cpp</compoundname>
+    <includes refid="Player_8hpp" local="yes">Player.hpp</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>Wall.hpp</label>
+        <link refid="Wall_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>map.hpp</label>
+        <link refid="map_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>SFML/Audio.hpp</label>
+      </node>
+      <node id="8">
+        <label>InputEvent.hpp</label>
+        <link refid="InputEvent_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Music.hpp</label>
+        <link refid="Music_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>bomb.hpp</label>
+        <link refid="bomb_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>fstream</label>
+      </node>
+      <node id="11">
+        <label>ostream</label>
+      </node>
+      <node id="13">
+        <label>random</label>
+      </node>
+      <node id="18">
+        <label>../Controle.hpp</label>
+        <link refid="Controle_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+      <node id="1">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp</label>
+        <link refid="Player_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>mutex</label>
+      </node>
+      <node id="7">
+        <label>thread</label>
+      </node>
+      <node id="2">
+        <label>Player.hpp</label>
+        <link refid="Player_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>driverChoice.h</label>
+      </node>
+      <node id="3">
+        <label>irrlicht.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2020</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>Player.cpp</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Player</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Player.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">Player::Player(irr::IrrlichtDevice<sp/>*device,<sp/>irr::video::IVideoDriver<sp/>*driver,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">irr::scene::ISceneManager<sp/>*smgr,<sp/><ref refid="classMap" kindref="compound">Map</ref><sp/>*map,<sp/><ref refid="classMusic" kindref="compound">Music</ref><sp/>*music,<sp/><ref refid="classbombHandler" kindref="compound">bombHandler</ref><sp/>*bombs,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">irr::ITimer<sp/>*clock,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>playerNb,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posY,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type,<sp/>std::vector&lt;Bomberman::Controle&gt;<sp/>_keybinding,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>useSave)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">:<sp/>_device(device),<sp/>_driver(driver),<sp/>_smgr(smgr)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;playerNb<sp/>=<sp/>playerNb;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>posX<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>posY<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;posX<sp/>=<sp/>posX;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;posY<sp/>=<sp/>posY;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>this-&gt;posX<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>posY<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;bombs<sp/>=<sp/>bombs;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;music<sp/>=<sp/>music;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;map<sp/>=<sp/>map;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;receiver<sp/>=<sp/>receiver;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;_player<sp/>=<sp/>this-&gt;_device-&gt;getSceneManager()-&gt;getMesh(</highlight><highlight class="stringliteral">&quot;../ressources/images/character/ninja.b3d&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;animModel<sp/>=<sp/>this-&gt;_device-&gt;getSceneManager()-&gt;addAnimatedMeshSceneNode(this-&gt;_player);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>setTexture(type);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setScale(irr::core::vector3df(3.f,3.f,3.f));</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setMaterialFlag(irr::video::EMF_LIGHTING,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setMaterialFlag(irr::video::EMF_NORMALIZE_NORMALS,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setPosition(irr::core::vector3df(this-&gt;posY*20,10,this-&gt;posX*20));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;life<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(useSave)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;useSave();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;progress<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;speed<sp/>=<sp/>60;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;bombFire<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;bombNb<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;isMoving<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;test<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;playerPos.push_back(this-&gt;posX-1);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;playerPos.push_back(this-&gt;posY-1);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;AllowBomb<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;isAlive<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;clock<sp/>=<sp/>clock;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;clock-&gt;setTime(0);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;clock-&gt;start();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;key<sp/>=<sp/>_keybinding;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>setMovement();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">Player::~Player()</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">irr::scene::IAnimatedMeshSceneNode<sp/>*<ref refid="classPlayer_1a285c0d09bf78c25f9ea7e5b3cd1c347d" kindref="member">Player::getAnimeModel</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="59"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;animModel);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a0c98212a0ca7a1103fe5c03ccb07852c" kindref="member">Player::useSave</ref>()</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ifstream<sp/>ifs(</highlight><highlight class="stringliteral">&quot;save.bomberman&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>read[100];</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>ifs.getline(read,<sp/>100);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;progress<sp/>=<sp/>std::stoi(read);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>ifs.getline(read,<sp/>100);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;bombNb<sp/>=<sp/>std::stoi(read);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>ifs.getline(read,<sp/>100);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;bombFire<sp/>=<sp/>std::stoi(read);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>ifs.getline(read,<sp/>100);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;speed<sp/>=<sp/>std::stoi(read);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1abb879679d224ca5b39c07d73b01a4ebb" kindref="member">Player::setTexture</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(type)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setMaterialTexture(0,<sp/>_driver-&gt;getTexture(</highlight><highlight class="stringliteral">&quot;../ressources/images/character/nskinbl.jpg&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setMaterialTexture(0,<sp/>_driver-&gt;getTexture(</highlight><highlight class="stringliteral">&quot;../ressources/images/character/nskinbl2.jpg&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setMaterialTexture(0,<sp/>_driver-&gt;getTexture(</highlight><highlight class="stringliteral">&quot;../ressources/images/character/nskinbl3.jpg&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setMaterialTexture(0,<sp/>_driver-&gt;getTexture(</highlight><highlight class="stringliteral">&quot;../ressources/images/character/nskinbl4.jpg&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a2e1e3e7a1e2d375c2977059567d5bc4c" kindref="member">Player::setMovement</ref>()</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;playerNb<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;Movement.up<sp/>=<sp/>key[0].up;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;Movement.down<sp/>=<sp/>key[0].down;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;Movement.left<sp/>=<sp/>key[0].left;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;Movement.right<sp/>=<sp/>key[0].right;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;Movement.put<sp/>=<sp/>key[0].put;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;Movement.up<sp/>=<sp/>key[1].up;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;Movement.down<sp/>=<sp/>key[1].down;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;Movement.left<sp/>=<sp/>key[1].left;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;Movement.right<sp/>=<sp/>key[1].right;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;Movement.put<sp/>=<sp/>key[1].put;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a41771e90d834b71f0f69e0f382d348e9" kindref="member">Player::move</ref>(<ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref><sp/>*receiver)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::core::vector3df<sp/>pos<sp/>=<sp/>this-&gt;animModel-&gt;getPosition();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(receiver-&gt;IsKeyDown(this-&gt;Movement.up))<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;isMoving<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setRotation(irr::core::vector3df(0.0,<sp/>270.0,<sp/>0.0));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pos.X<sp/>-=<sp/>speed<sp/>*<sp/>0.015;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(receiver-&gt;IsKeyDown(this-&gt;Movement.down))<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;isMoving<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setRotation(irr::core::vector3df(0.0,<sp/>90.0,<sp/>0.0));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pos.X<sp/>+=<sp/>speed<sp/>*<sp/>0.015;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(receiver-&gt;IsKeyDown(this-&gt;Movement.left))<sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;isMoving<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setRotation(irr::core::vector3df(0.0,<sp/>180.0,<sp/>0.0));</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pos.Z<sp/>-=<sp/>speed<sp/>*<sp/>0.015;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(receiver-&gt;IsKeyDown(this-&gt;Movement.right))<sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;isMoving<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setRotation(irr::core::vector3df(0.0,<sp/>0.0,<sp/>0.0));</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pos.Z<sp/>+=<sp/>speed<sp/>*<sp/>0.015;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;isMoving<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;posX<sp/>=<sp/>((pos.Z<sp/>+<sp/>10)<sp/>/<sp/>20);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;posY<sp/>=<sp/>((pos.X<sp/>+<sp/>10)<sp/>/<sp/>20);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>&quot;move&quot;<sp/>&lt;&lt;<sp/>&quot;player<sp/>nb<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>this-&gt;playerNb<sp/>&lt;&lt;<sp/>&quot;<sp/>x<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>this-&gt;posX<sp/>&lt;&lt;<sp/>&quot;<sp/>y<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>this-&gt;posY<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setPosition(pos);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a2b63850a65dc04ca8b20f76efaa016ec" kindref="member">Player::moveAnimation</ref>(<ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref><sp/>*receiver)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;isMoving<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>this-&gt;test<sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setFrameLoop(15,<sp/>30);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setAnimationSpeed(this-&gt;speed<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;test<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;isMoving<sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>this-&gt;test<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setFrameLoop(184,<sp/>205);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setAnimationSpeed(this-&gt;speed<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;test<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a6210f697ba7ee1e7eaba1d63c8da7e50" kindref="member">Player::action</ref>(<ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref><sp/>*receiver)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;AllowBomb<sp/>&amp;&amp;<sp/>receiver-&gt;IsKeyDown(this-&gt;Movement.put)<sp/>&amp;&amp;<sp/>this-&gt;bombNb<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>music-&gt;playSound(SOUND::PUTBOMB);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;bombs-&gt;<ref refid="classbombHandler_1a1bf6bb843941ce190044c2560e8c4b98" kindref="member">addBomb</ref>(std::vector&lt;int&gt;<sp/>{this-&gt;<ref refid="classPlayer_1ad59c2681c76d6a1819212f3a9e512d3c" kindref="member">getPlayerPos</ref>()[0],<sp/>this-&gt;<ref refid="classPlayer_1ad59c2681c76d6a1819212f3a9e512d3c" kindref="member">getPlayerPos</ref>()[1]},<sp/>this-&gt;<ref refid="classPlayer_1af3d6fd8d7aec5f44623e65347ef9d902" kindref="member">getPower</ref>());</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;bombNb<sp/>-=<sp/>1;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;remainingTime.push_back((this-&gt;clock-&gt;getTime()<sp/>+<sp/>3000)<sp/>%<sp/>100000);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;pos.push_back(this-&gt;posX);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;pos.push_back(this-&gt;posY);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;AllowBomb<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>&quot;action<sp/>:<sp/>&quot;<sp/>&lt;&lt;<sp/>&quot;player<sp/>nb<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>this-&gt;playerNb<sp/>&lt;&lt;<sp/>&quot;<sp/>x<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>this-&gt;posX<sp/>&lt;&lt;<sp/>&quot;<sp/>y<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>this-&gt;posY<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a7f2229517d4b44953929716501874058" kindref="member">Player::timehandler</ref>()</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bombCounter<sp/>=<sp/>0;<sp/>bombCounter<sp/>&lt;<sp/>this-&gt;remainingTime.size();<sp/>bombCounter++)<sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classPlayer_1ae9c166e4eed0106c7ac78449307a66e8" kindref="member">waitTime</ref>(bombCounter);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bombCounter<sp/>=<sp/>0;<sp/>bombCounter<sp/>&lt;<sp/>this-&gt;pos.size();<sp/>bombCounter+=2)<sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;pos[bombCounter]<sp/>==<sp/>this-&gt;posX<sp/>&amp;&amp;<sp/>this-&gt;pos[bombCounter+1]<sp/>==<sp/>this-&gt;posY)<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;AllowBomb<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;AllowBomb<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>&quot;timeHandler&quot;<sp/>&lt;&lt;<sp/>&quot;player<sp/>nb<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>this-&gt;playerNb<sp/>&lt;&lt;<sp/>&quot;<sp/>x<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>this-&gt;posX<sp/>&lt;&lt;<sp/>&quot;<sp/>y<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>this-&gt;posY<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1ae9c166e4eed0106c7ac78449307a66e8" kindref="member">Player::waitTime</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::u32<sp/>actualTime<sp/>=<sp/>this-&gt;clock-&gt;getTime();</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isOnRightTiming<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(actualTime<sp/>&gt;=<sp/>100000)<sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;clock-&gt;setTime(irr::u32(0));</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actualTime<sp/>=<sp/>this-&gt;clock-&gt;getTime();</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(actualTime<sp/>&gt;<sp/>97000<sp/>&amp;&amp;<sp/>this-&gt;remainingTime[count]<sp/>&lt;<sp/>3000)<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isOnRightTiming<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isOnRightTiming<sp/>&amp;&amp;<sp/>actualTime<sp/>&gt;<sp/>this-&gt;remainingTime[count])<sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//this-&gt;remainingTime[count]<sp/>=<sp/>(this-&gt;clock-&gt;getTime()<sp/>+<sp/>1000)<sp/>%<sp/>100000;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;bombNb<sp/>+=1;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;remainingTime.erase(this-&gt;remainingTime.begin());</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;pos.erase(this-&gt;pos.begin());</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;pos.erase(this-&gt;pos.begin());</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1afe886e83cd15a84b3c859d6c112d5dac" kindref="member">Player::checkBonnus</ref>()</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>&quot;checkBonnus&quot;<sp/>&lt;&lt;<sp/>&quot;player<sp/>nb<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>this-&gt;playerNb<sp/>&lt;&lt;<sp/>&quot;<sp/>x<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>this-&gt;posX<sp/>&lt;&lt;<sp/>&quot;<sp/>y<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>this-&gt;posY<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Wall&gt;<sp/>bonnus<sp/>=<sp/>map-&gt;<ref refid="classMap_1a4d05a6bb491df4b03505e521e0f98a8a" kindref="member">getBonnus</ref>();</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>0;<sp/>count<sp/>!=<sp/>bonnus.size();<sp/>count++)<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bonnus[count].getWallPosition().front()<sp/>==<sp/>this-&gt;posY</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>bonnus[count].getWallPosition().back()<sp/>==<sp/>this-&gt;posX)<sp/>{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>&quot;y<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>this-&gt;posY<sp/>&lt;&lt;<sp/>&quot;<sp/>x<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>this-&gt;posX<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>map-&gt;getMap()[this-&gt;posY][this-&gt;posX]<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>music-&gt;playSound(SOUND::PICKUP);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(map-&gt;<ref refid="classMap_1ab874d807dc2b01d6ff304ac694f93760" kindref="member">getMap</ref>()[this-&gt;posY][this-&gt;posX]<sp/>==<sp/>6)<sp/>{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;speed<sp/>+=<sp/>10;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(map-&gt;<ref refid="classMap_1ab874d807dc2b01d6ff304ac694f93760" kindref="member">getMap</ref>()[this-&gt;posY][this-&gt;posX]<sp/>==<sp/>7)<sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;bombFire<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(map-&gt;<ref refid="classMap_1ab874d807dc2b01d6ff304ac694f93760" kindref="member">getMap</ref>()[this-&gt;posY][this-&gt;posX]<sp/>==<sp/>8)<sp/>{</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;bombNb<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="classMap_1a64dee4ed6f876b447d8b396a2dae0c05" kindref="member">setMap</ref>(this-&gt;posY,<sp/>this-&gt;posX,<sp/>0);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="classMap_1ab42217d3312ee32bafaf72b982c88430" kindref="member">removeMeshBonnus</ref>(count);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a237ae517fa306735b76f2f22066459bb" kindref="member">Player::checkPlayerHit</ref>()</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;int&gt;&gt;<sp/>mapDangerZone<sp/>=<sp/>bombs-&gt;<ref refid="classbombHandler_1a7a4a3d013569397263a39fd57f5a4663" kindref="member">getDangerZone</ref>();</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>&quot;Y<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>this-&gt;posY<sp/>&lt;&lt;<sp/>&quot;X<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>this-&gt;posX<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mapDangerZone[this-&gt;posY][this-&gt;posX]<sp/>==<sp/>2)<sp/>{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;life<sp/>-=<sp/>1;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;isAlive<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setFrameLoop(166,<sp/>173);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setAnimationSpeed(5);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a85b219115dd370a4d98faa74630b940c" kindref="member">Player::updatePlayerDeathAnimation</ref>()</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;animModel-&gt;getFrameNr()<sp/>&gt;=<sp/>172)<sp/>{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setFrameLoop(172,<sp/>173);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;animModel-&gt;setAnimationSpeed(0);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal">std::vector&lt;int&gt;<sp/><ref refid="classPlayer_1ad59c2681c76d6a1819212f3a9e512d3c" kindref="member">Player::getPlayerPos</ref>()</highlight></codeline>
+<codeline lineno="258"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;playerPos[0]<sp/>=<sp/>this-&gt;posY;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;playerPos[1]<sp/>=<sp/>this-&gt;posX;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;playerPos);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1ae3932714817ccfa77a291958c81d90d5" kindref="member">Player::getLife</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="265"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;life);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a9d284ba174e4f2655a7cae8088b7eb3d" kindref="member">Player::getSpeed</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="270"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;speed);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1af3d6fd8d7aec5f44623e65347ef9d902" kindref="member">Player::getPower</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="275"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;bombFire);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1ac45afa3db6b4a10de8ebd521307fa655" kindref="member">Player::getNbBomb</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="280"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;bombNb);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a180f2bcd9d370dd3dd8839f06fb1bb77" kindref="member">Player::getIsAlive</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="285"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;isAlive);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1a94acb00e4332813c5de3d4361bd10b19" kindref="member">Player::setNbBomb</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb)</highlight></codeline>
+<codeline lineno="290"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;bombNb<sp/>+=<sp/>nb;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPlayer_1abb36a08cb042a1b2deb6fe3753971f96" kindref="member">Player::saveProgress</ref>()</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>ofs(</highlight><highlight class="stringliteral">&quot;save.bomberman&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(progress<sp/>!=<sp/>3)</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ofs<sp/>&lt;&lt;<sp/>std::to_string(this-&gt;progress<sp/>+<sp/>1)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>progression</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ofs<sp/>&lt;&lt;<sp/>std::to_string(this-&gt;progress)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>progression</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>ofs<sp/>&lt;&lt;<sp/>std::to_string(this-&gt;bombNb)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>nb<sp/>bomb</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>ofs<sp/>&lt;&lt;<sp/>std::to_string(this-&gt;bombFire)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>puissance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>ofs<sp/>&lt;&lt;<sp/>std::to_string(this-&gt;speed)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>vitesse</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Player.cpp"/>
+  </compounddef>
+</doxygen>

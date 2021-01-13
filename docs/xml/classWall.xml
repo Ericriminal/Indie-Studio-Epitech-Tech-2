@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classWall" kind="class" language="C++" prot="public">
+    <compoundname>Wall</compoundname>
+    <includes refid="Wall_8hpp" local="no">Wall.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWall_1a6c90778823b2a3c90db4227ea65fd0c6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Wall::posX</definition>
+        <argsstring></argsstring>
+        <name>posX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="37" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWall_1ab59df255d3eb5bf46917fb415ca338d5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Wall::posY</definition>
+        <argsstring></argsstring>
+        <name>posY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="38" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWall_1a0aa5d33d0d6a2ad14a579aa3e3f703bf" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Wall::destructible</definition>
+        <argsstring></argsstring>
+        <name>destructible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="39" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWall_1a1fe2fd978ca8aad4bf12d419292452fc" prot="private" static="no" mutable="no">
+        <type>irr::IrrlichtDevice *</type>
+        <definition>irr::IrrlichtDevice* Wall::device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <briefdescription>
+<para>device of the game </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="43" column="25" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWall_1a7f3aa5d94489deefd71694a31e8a8950" prot="private" static="no" mutable="no">
+        <type>irr::scene::IMeshSceneNode *</type>
+        <definition>irr::scene::IMeshSceneNode* Wall::cube</definition>
+        <argsstring></argsstring>
+        <name>cube</name>
+        <briefdescription>
+<para>mesh of cube </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="47" column="32" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWall_1a0e038e1fabcd1b5159df555e4af1548d" prot="private" static="no" mutable="no">
+        <type>irr::scene::IMeshSceneNode *</type>
+        <definition>irr::scene::IMeshSceneNode* Wall::bonnus</definition>
+        <argsstring></argsstring>
+        <name>bonnus</name>
+        <briefdescription>
+<para>mesh of cube </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="51" column="32" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWall_1a65ac78aabbd944eca38e11ef9f4074c0" prot="private" static="no" mutable="no">
+        <type>irr::scene::ITriangleSelector *</type>
+        <definition>irr::scene::ITriangleSelector* Wall::selector</definition>
+        <argsstring></argsstring>
+        <name>selector</name>
+        <briefdescription>
+<para>selector of player </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="56" column="35" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWall_1a10526f3f90523937d033ed455620dc4b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Wall::wall_pos</definition>
+        <argsstring></argsstring>
+        <name>wall_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="57" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWall_1ac0c0bb3d500dedac25eb9c3ab10b7fb4" prot="private" static="no" mutable="no">
+        <type>irr::scene::ISceneNodeAnimator *</type>
+        <definition>irr::scene::ISceneNodeAnimator* Wall::anim</definition>
+        <argsstring></argsstring>
+        <name>anim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="58" column="36" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWall_1ade0d9a0017f27341458e85f38cbbb7a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Wall::Wall</definition>
+        <argsstring>(irr::IrrlichtDevice *device, WALL_TYPE type, int i, int y)</argsstring>
+        <name>Wall</name>
+        <param>
+          <type>irr::IrrlichtDevice *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>WALL_TYPE</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="60" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.cpp" bodystart="10" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classWall_1a9a2992f2b533e1c160513d1e719f920c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Wall::~Wall</definition>
+        <argsstring>()</argsstring>
+        <name>~Wall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="61" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.cpp" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classWall_1ad795edbe513cdbe730c861933a2782e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Wall::isDestructible</definition>
+        <argsstring>() const</argsstring>
+        <name>isDestructible</name>
+        <briefdescription>
+<para>function that get the position of the cube </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>position of cube (vector3df) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="67" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.cpp" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classWall_1a1dbc7b6ca7c704e330e9ea854cdf7662" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>irr::core::vector3df const  &amp;</type>
+        <definition>irr::core::vector3df const  &amp; Wall::getCubePos</definition>
+        <argsstring>() const</argsstring>
+        <name>getCubePos</name>
+        <briefdescription>
+<para>function that get the type of wall </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="73" column="32" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.cpp" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classWall_1a6b961e8b10581afac917d6f45a1d5ba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>irr::scene::ITriangleSelector *</type>
+        <definition>irr::scene::ITriangleSelector * Wall::getSelector</definition>
+        <argsstring>()</argsstring>
+        <name>getSelector</name>
+        <briefdescription>
+<para>function that get the selector of the cube </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the selector of the cube (irr::scene::ITriangleSelector *) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="79" column="35" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.cpp" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classWall_1a4c43b5bce522566775f020b5bcaaf01c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; Wall::getWallPosition</definition>
+        <argsstring>()</argsstring>
+        <name>getWallPosition</name>
+        <briefdescription>
+<para>function that get the pos osition of the wall(cube) in the map of int </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the vecor of position in X and Y of the wall </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="85" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.cpp" bodystart="110" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classWall_1a19755185e324087245889b9a309a4371" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>irr::scene::IMeshSceneNode *</type>
+        <definition>irr::scene::IMeshSceneNode * Wall::getcubeMesh</definition>
+        <argsstring>() const</argsstring>
+        <name>getcubeMesh</name>
+        <briefdescription>
+<para>function that get the mesh of the cube </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the mesh of cube (irr::scene::IMeshSceneNode *) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="91" column="32" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.cpp" bodystart="118" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classWall_1a04fabec8becef9f4ec08cac13fb2ae47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Wall::removeWall</definition>
+        <argsstring>()</argsstring>
+        <name>removeWall</name>
+        <briefdescription>
+<para>function to remove destructible walls </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>nothing </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="97" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classWall_1a062dd722a465aeedb622dc841b231449" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>irr::scene::IMeshSceneNode *</type>
+        <definition>irr::scene::IMeshSceneNode * Wall::getBonnusMesh</definition>
+        <argsstring>() const</argsstring>
+        <name>getBonnusMesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="98" column="32" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.cpp" bodystart="123" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class which is used to build a single wall </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" line="34" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Wall.hpp" bodystart="35" bodyend="99"/>
+    <listofallmembers>
+      <member refid="classWall_1ac0c0bb3d500dedac25eb9c3ab10b7fb4" prot="private" virt="non-virtual"><scope>Wall</scope><name>anim</name></member>
+      <member refid="classWall_1a0e038e1fabcd1b5159df555e4af1548d" prot="private" virt="non-virtual"><scope>Wall</scope><name>bonnus</name></member>
+      <member refid="classWall_1a7f3aa5d94489deefd71694a31e8a8950" prot="private" virt="non-virtual"><scope>Wall</scope><name>cube</name></member>
+      <member refid="classWall_1a0aa5d33d0d6a2ad14a579aa3e3f703bf" prot="private" virt="non-virtual"><scope>Wall</scope><name>destructible</name></member>
+      <member refid="classWall_1a1fe2fd978ca8aad4bf12d419292452fc" prot="private" virt="non-virtual"><scope>Wall</scope><name>device</name></member>
+      <member refid="classWall_1a062dd722a465aeedb622dc841b231449" prot="public" virt="non-virtual"><scope>Wall</scope><name>getBonnusMesh</name></member>
+      <member refid="classWall_1a19755185e324087245889b9a309a4371" prot="public" virt="non-virtual"><scope>Wall</scope><name>getcubeMesh</name></member>
+      <member refid="classWall_1a1dbc7b6ca7c704e330e9ea854cdf7662" prot="public" virt="non-virtual"><scope>Wall</scope><name>getCubePos</name></member>
+      <member refid="classWall_1a6b961e8b10581afac917d6f45a1d5ba7" prot="public" virt="non-virtual"><scope>Wall</scope><name>getSelector</name></member>
+      <member refid="classWall_1a4c43b5bce522566775f020b5bcaaf01c" prot="public" virt="non-virtual"><scope>Wall</scope><name>getWallPosition</name></member>
+      <member refid="classWall_1ad795edbe513cdbe730c861933a2782e9" prot="public" virt="non-virtual"><scope>Wall</scope><name>isDestructible</name></member>
+      <member refid="classWall_1a6c90778823b2a3c90db4227ea65fd0c6" prot="private" virt="non-virtual"><scope>Wall</scope><name>posX</name></member>
+      <member refid="classWall_1ab59df255d3eb5bf46917fb415ca338d5" prot="private" virt="non-virtual"><scope>Wall</scope><name>posY</name></member>
+      <member refid="classWall_1a04fabec8becef9f4ec08cac13fb2ae47" prot="public" virt="non-virtual"><scope>Wall</scope><name>removeWall</name></member>
+      <member refid="classWall_1a65ac78aabbd944eca38e11ef9f4074c0" prot="private" virt="non-virtual"><scope>Wall</scope><name>selector</name></member>
+      <member refid="classWall_1ade0d9a0017f27341458e85f38cbbb7a6" prot="public" virt="non-virtual"><scope>Wall</scope><name>Wall</name></member>
+      <member refid="classWall_1a10526f3f90523937d033ed455620dc4b" prot="private" virt="non-virtual"><scope>Wall</scope><name>wall_pos</name></member>
+      <member refid="classWall_1a9a2992f2b533e1c160513d1e719f920c" prot="public" virt="non-virtual"><scope>Wall</scope><name>~Wall</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

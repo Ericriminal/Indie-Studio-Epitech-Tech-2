@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classMusic" kind="class" language="C++" prot="public">
+    <compoundname>Music</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMusic_1ad91c91fba62090b78e73357c5579d100" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Music::volumeMusic</definition>
+        <argsstring></argsstring>
+        <name>volumeMusic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="27" column="11" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMusic_1aca646c744ae10d230da89bc0cb740cd1" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Music::volumeSound</definition>
+        <argsstring></argsstring>
+        <name>volumeSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="28" column="11" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMusic_1a9545dadb47c1cb1279c73589059f50c1" prot="private" static="no" mutable="no">
+        <type>sf::SoundBuffer</type>
+        <definition>sf::SoundBuffer Music::explosion</definition>
+        <argsstring></argsstring>
+        <name>explosion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="29" column="21" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMusic_1ac937d732617983212717fa6874abc2c7" prot="private" static="no" mutable="no">
+        <type>sf::SoundBuffer</type>
+        <definition>sf::SoundBuffer Music::pickup</definition>
+        <argsstring></argsstring>
+        <name>pickup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="30" column="21" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMusic_1a281dded6ea83d98ddf2662c6bf47bd53" prot="private" static="no" mutable="no">
+        <type>sf::SoundBuffer</type>
+        <definition>sf::SoundBuffer Music::click</definition>
+        <argsstring></argsstring>
+        <name>click</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="31" column="21" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMusic_1a83a53392a164b6b9f840f3a50f5c5883" prot="private" static="no" mutable="no">
+        <type>sf::SoundBuffer</type>
+        <definition>sf::SoundBuffer Music::putBomb</definition>
+        <argsstring></argsstring>
+        <name>putBomb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="32" column="21" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMusic_1a5f04720d3e0c072db6203b49ebd68301" prot="private" static="no" mutable="no">
+        <type>sf::Sound</type>
+        <definition>sf::Sound Music::sound</definition>
+        <argsstring></argsstring>
+        <name>sound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="33" column="15" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMusic_1a8900cb5bfb5f9ffa79682df8b79ba43f" prot="private" static="no" mutable="no">
+        <type>sf::Sound</type>
+        <definition>sf::Sound Music::sound1</definition>
+        <argsstring></argsstring>
+        <name>sound1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="34" column="15" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMusic_1a5b82a3a6c154d5ddd3f1a22e5bde672c" prot="private" static="no" mutable="no">
+        <type>sf::Sound</type>
+        <definition>sf::Sound Music::sound2</definition>
+        <argsstring></argsstring>
+        <name>sound2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="35" column="15" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMusic_1a5b300a70ca62ec94d0e41c71bc0f9e40" prot="private" static="no" mutable="no">
+        <type>sf::Music</type>
+        <definition>sf::Music Music::music</definition>
+        <argsstring></argsstring>
+        <name>music</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="37" column="15" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMusic_1ab5143f67c021bc77894c8e91de2b916b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Music::Music</definition>
+        <argsstring>()</argsstring>
+        <name>Music</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="40" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.cpp" bodystart="11" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classMusic_1a0b4f3b9a018207e0c08003505f1f87fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Music::~Music</definition>
+        <argsstring>()</argsstring>
+        <name>~Music</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="41" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classMusic_1a51ffad6eaa2b71d13966ae66c0399932" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Music::loadMusic</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>loadMusic</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="42" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classMusic_1a4b7c191c6bae70db92125b3886dbadd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Music::playMusic</definition>
+        <argsstring>()</argsstring>
+        <name>playMusic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="43" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classMusic_1a572a660ef167226d78105fad6df52197" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Music::playSound</definition>
+        <argsstring>(SOUND type)</argsstring>
+        <name>playSound</name>
+        <param>
+          <type>SOUND</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="44" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.cpp" bodystart="43" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classMusic_1af9c29dda3fa4d8c9c579e9b7abfdfaa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Music::setSoundVolume</definition>
+        <argsstring>(float sound)</argsstring>
+        <name>setSoundVolume</name>
+        <param>
+          <type>float</type>
+          <declname>sound</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="45" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.cpp" bodystart="65" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classMusic_1abf25e613ae56d4e255be0bc7e2f346b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Music::setMusicVolume</definition>
+        <argsstring>(float sound)</argsstring>
+        <name>setMusicVolume</name>
+        <param>
+          <type>float</type>
+          <declname>sound</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="46" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.cpp" bodystart="73" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classMusic_1a854742db6d6dcbc5fecd512ce92bf702" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Music::getMusicVolume</definition>
+        <argsstring>()</argsstring>
+        <name>getMusicVolume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="47" column="11" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.cpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" line="24" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Music.hpp" bodystart="25" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classMusic_1a281dded6ea83d98ddf2662c6bf47bd53" prot="private" virt="non-virtual"><scope>Music</scope><name>click</name></member>
+      <member refid="classMusic_1a9545dadb47c1cb1279c73589059f50c1" prot="private" virt="non-virtual"><scope>Music</scope><name>explosion</name></member>
+      <member refid="classMusic_1a854742db6d6dcbc5fecd512ce92bf702" prot="public" virt="non-virtual"><scope>Music</scope><name>getMusicVolume</name></member>
+      <member refid="classMusic_1a51ffad6eaa2b71d13966ae66c0399932" prot="public" virt="non-virtual"><scope>Music</scope><name>loadMusic</name></member>
+      <member refid="classMusic_1a5b300a70ca62ec94d0e41c71bc0f9e40" prot="private" virt="non-virtual"><scope>Music</scope><name>music</name></member>
+      <member refid="classMusic_1ab5143f67c021bc77894c8e91de2b916b" prot="public" virt="non-virtual"><scope>Music</scope><name>Music</name></member>
+      <member refid="classMusic_1ac937d732617983212717fa6874abc2c7" prot="private" virt="non-virtual"><scope>Music</scope><name>pickup</name></member>
+      <member refid="classMusic_1a4b7c191c6bae70db92125b3886dbadd6" prot="public" virt="non-virtual"><scope>Music</scope><name>playMusic</name></member>
+      <member refid="classMusic_1a572a660ef167226d78105fad6df52197" prot="public" virt="non-virtual"><scope>Music</scope><name>playSound</name></member>
+      <member refid="classMusic_1a83a53392a164b6b9f840f3a50f5c5883" prot="private" virt="non-virtual"><scope>Music</scope><name>putBomb</name></member>
+      <member refid="classMusic_1abf25e613ae56d4e255be0bc7e2f346b6" prot="public" virt="non-virtual"><scope>Music</scope><name>setMusicVolume</name></member>
+      <member refid="classMusic_1af9c29dda3fa4d8c9c579e9b7abfdfaa5" prot="public" virt="non-virtual"><scope>Music</scope><name>setSoundVolume</name></member>
+      <member refid="classMusic_1a5f04720d3e0c072db6203b49ebd68301" prot="private" virt="non-virtual"><scope>Music</scope><name>sound</name></member>
+      <member refid="classMusic_1a8900cb5bfb5f9ffa79682df8b79ba43f" prot="private" virt="non-virtual"><scope>Music</scope><name>sound1</name></member>
+      <member refid="classMusic_1a5b82a3a6c154d5ddd3f1a22e5bde672c" prot="private" virt="non-virtual"><scope>Music</scope><name>sound2</name></member>
+      <member refid="classMusic_1ad91c91fba62090b78e73357c5579d100" prot="private" virt="non-virtual"><scope>Music</scope><name>volumeMusic</name></member>
+      <member refid="classMusic_1aca646c744ae10d230da89bc0cb740cd1" prot="private" virt="non-virtual"><scope>Music</scope><name>volumeSound</name></member>
+      <member refid="classMusic_1a0b4f3b9a018207e0c08003505f1f87fe" prot="public" virt="non-virtual"><scope>Music</scope><name>~Music</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

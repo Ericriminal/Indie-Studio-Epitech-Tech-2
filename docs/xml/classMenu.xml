@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classMenu" kind="class" language="C++" prot="public">
+    <compoundname>Menu</compoundname>
+    <basecompoundref refid="classAScene" prot="public" virt="non-virtual">AScene</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMenu_1a55014a7f3e51eaacd58b4c6d67b98bfb" prot="private" static="no" mutable="no">
+        <type>irr::gui::IGUIEnvironment *</type>
+        <definition>irr::gui::IGUIEnvironment* Menu::guienv</definition>
+        <argsstring></argsstring>
+        <name>guienv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" line="27" column="35" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMenu_1a2fefe6ea66cb9b333ab7d050df66e901" prot="private" static="no" mutable="no">
+        <type>irr::video::ITexture *</type>
+        <definition>irr::video::ITexture* Menu::background</definition>
+        <argsstring></argsstring>
+        <name>background</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" line="30" column="30" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMenu_1a594b39c037da137f722c1d6fe31a8cce" prot="private" static="no" mutable="no">
+        <type>irr::video::ITexture *</type>
+        <definition>irr::video::ITexture* Menu::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" line="33" column="30" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMenu_1a38e333c4123aa7b19ba1d02f8947b235" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classButton" kindref="compound">Button</ref> &gt;</type>
+        <definition>std::vector&lt;Button&gt; Menu::Button_list</definition>
+        <argsstring></argsstring>
+        <name>Button_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" line="36" column="21" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMenu_1aedbee199c90615a0a16f5abf6017218b" prot="private" static="no" mutable="no">
+        <type><ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref> *</type>
+        <definition>MyEventReceiver* Menu::_receiver</definition>
+        <argsstring></argsstring>
+        <name>_receiver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" line="39" column="25" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMenu_1a04f437ace22b18a4a60c2a0193d72ce6" prot="private" static="no" mutable="no">
+        <type>irr::IrrlichtDevice *</type>
+        <definition>irr::IrrlichtDevice* Menu::_device</definition>
+        <argsstring></argsstring>
+        <name>_device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" line="42" column="29" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMenu_1acc2639fc7539c0b5b32eef90fa13f566" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Menu::Menu</definition>
+        <argsstring>(irr::IrrlichtDevice *device, MyEventReceiver *receiver)</argsstring>
+        <name>Menu</name>
+        <param>
+          <type>irr::IrrlichtDevice *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type><ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref> *</type>
+          <declname>receiver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" line="19" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.cpp" bodystart="53" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classMenu_1ab4a14483d6f503c1a8ed667d6d723a30" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Menu::doScene</definition>
+        <argsstring>()</argsstring>
+        <name>doScene</name>
+        <reimplements refid="classIScene_1a06a4c59f8bf0b6cbeeb3c479b83fa0d6">doScene</reimplements>
+        <briefdescription>
+<para>Funtion to print scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" line="20" column="13" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.cpp" bodystart="26" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classMenu_1a831387f51358cfb88cd018e1777bc980" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Menu::~Menu</definition>
+        <argsstring>()</argsstring>
+        <name>~Menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" line="21" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMenu_1ae953044cb82ac974cad9b4dec72a887b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Menu::checkMouseButton</definition>
+        <argsstring>()</argsstring>
+        <name>checkMouseButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" line="24" column="14" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.cpp" bodystart="15" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Menu</label>
+        <link refid="classMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IScene</label>
+        <link refid="classIScene"/>
+      </node>
+      <node id="2">
+        <label>AScene</label>
+        <link refid="classAScene"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Menu</label>
+        <link refid="classMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IScene</label>
+        <link refid="classIScene"/>
+      </node>
+      <node id="2">
+        <label>AScene</label>
+        <link refid="classAScene"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" line="17" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Menu.hpp" bodystart="17" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classMenu_1a04f437ace22b18a4a60c2a0193d72ce6" prot="private" virt="non-virtual"><scope>Menu</scope><name>_device</name></member>
+      <member refid="classMenu_1aedbee199c90615a0a16f5abf6017218b" prot="private" virt="non-virtual"><scope>Menu</scope><name>_receiver</name></member>
+      <member refid="classMenu_1a2fefe6ea66cb9b333ab7d050df66e901" prot="private" virt="non-virtual"><scope>Menu</scope><name>background</name></member>
+      <member refid="classMenu_1a38e333c4123aa7b19ba1d02f8947b235" prot="private" virt="non-virtual"><scope>Menu</scope><name>Button_list</name></member>
+      <member refid="classMenu_1ae953044cb82ac974cad9b4dec72a887b" prot="private" virt="non-virtual"><scope>Menu</scope><name>checkMouseButton</name></member>
+      <member refid="classMenu_1ab4a14483d6f503c1a8ed667d6d723a30" prot="public" virt="virtual"><scope>Menu</scope><name>doScene</name></member>
+      <member refid="classAScene_1ae56af2648a100df159b037a9176e553b" prot="protected" virt="non-virtual"><scope>Menu</scope><name>driver</name></member>
+      <member refid="classMenu_1a55014a7f3e51eaacd58b4c6d67b98bfb" prot="private" virt="non-virtual"><scope>Menu</scope><name>guienv</name></member>
+      <member refid="classMenu_1acc2639fc7539c0b5b32eef90fa13f566" prot="public" virt="non-virtual"><scope>Menu</scope><name>Menu</name></member>
+      <member refid="classAScene_1a67c9a683bd486e4630bb2ce8777a44c1" prot="protected" virt="non-virtual"><scope>Menu</scope><name>smgr</name></member>
+      <member refid="classMenu_1a594b39c037da137f722c1d6fe31a8cce" prot="private" virt="non-virtual"><scope>Menu</scope><name>title</name></member>
+      <member refid="classIScene_1a146b1101069efb7a46b3bb6e419bc2bc" prot="public" virt="virtual"><scope>Menu</scope><name>~IScene</name></member>
+      <member refid="classMenu_1a831387f51358cfb88cd018e1777bc980" prot="public" virt="non-virtual"><scope>Menu</scope><name>~Menu</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

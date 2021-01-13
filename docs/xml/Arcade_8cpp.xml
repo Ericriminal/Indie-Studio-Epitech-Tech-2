@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="Arcade_8cpp" kind="file" language="C++">
+    <compoundname>Arcade.cpp</compoundname>
+    <includes refid="Arcade_8hpp" local="yes">Arcade.hpp</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>Button.hpp</label>
+        <link refid="Button_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>../AScene.hpp</label>
+        <link refid="AScene_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.cpp</label>
+        <link refid="Arcade_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>Arcade.hpp</label>
+        <link refid="Arcade_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>IScene.hpp</label>
+        <link refid="IScene_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>irrlicht.h</label>
+      </node>
+      <node id="9">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2020</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>Arcade</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Class<sp/>Arcade</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arcade.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Arcade::checkMouseButton()</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Button_list.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>_device-&gt;getCursorControl()-&gt;getPosition().X<sp/>&gt;=<sp/>Button_list[i].getPosition().X<sp/>&amp;&amp;<sp/>_device-&gt;getCursorControl()-&gt;getPosition().X<sp/>&lt;=<sp/>Button_list[i].getPositionWithSize().X</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>_device-&gt;getCursorControl()-&gt;getPosition().Y<sp/>&gt;=<sp/>Button_list[i].getPosition().Y<sp/>&amp;&amp;<sp/>_device-&gt;getCursorControl()-&gt;getPosition().Y<sp/>&lt;=<sp/>Button_list[i].getPositionWithSize().Y)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Button_list[i].changeImage(0);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Button_list[i].changeImage(1);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classArcade_1ac19a0fc5f4f7ca375242c17394479b45" kindref="member">Arcade::doScene</ref>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>P1_text-&gt;setText(std::wstring(P1_color.begin(),<sp/>P1_color.end()).c_str());</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>P2_text-&gt;setText(std::wstring(P2_color.begin(),<sp/>P2_color.end()).c_str());</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;beginScene(</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>irr::video::SColor(255,100,101,140));</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>checkMouseButton();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;draw2DImage(background,<sp/>irr::core::position2d&lt;irr::s32&gt;(0,0),</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::core::rect&lt;irr::s32&gt;(0,0,background-&gt;getSize().Width,background-&gt;getSize().Height),<sp/>0,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::video::SColor(255,<sp/>255,<sp/>255,<sp/>255),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;draw2DImage(title,<sp/>irr::core::position2d&lt;irr::s32&gt;(160,<sp/>80),</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::core::rect&lt;irr::s32&gt;(0,0,title-&gt;getSize().Width,<sp/>title-&gt;getSize().Height),<sp/>0,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::video::SColor(255,<sp/>255,<sp/>255,<sp/>255),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;draw2DImage(P1,<sp/>irr::core::position2d&lt;irr::s32&gt;(80,<sp/>180),</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::core::rect&lt;irr::s32&gt;(0,0,P1-&gt;getSize().Width,<sp/>P1-&gt;getSize().Height),<sp/>0,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::video::SColor(255,<sp/>255,<sp/>255,<sp/>255),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;draw2DImage(P2,<sp/>irr::core::position2d&lt;irr::s32&gt;(480,<sp/>180),</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::core::rect&lt;irr::s32&gt;(0,0,P2-&gt;getSize().Width,<sp/>P2-&gt;getSize().Height),<sp/>0,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::video::SColor(255,<sp/>255,<sp/>255,<sp/>255),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;draw2DImage(launch,<sp/>irr::core::position2d&lt;irr::s32&gt;(50,<sp/>500),</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::core::rect&lt;irr::s32&gt;(0,0,launch-&gt;getSize().Width,<sp/>launch-&gt;getSize().Height),<sp/>0,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>irr::video::SColor(255,<sp/>255,<sp/>255,<sp/>255),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>guienv-&gt;drawAll();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;endScene();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Button_list[0].isclicked()<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Button_list[1].isclicked()<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P1_color<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;W&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_color-&gt;at(0)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Button_list[2].isclicked()<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P1_color<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;B&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_color-&gt;at(0)<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Button_list[3].isclicked()<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P1_color<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;G&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_color-&gt;at(0)<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Button_list[4].isclicked()<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P1_color<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;R&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_color-&gt;at(0)<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Button_list[5].isclicked()<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P2_color<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;W&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_color-&gt;at(1)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Button_list[6].isclicked()<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P2_color<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;B&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_color-&gt;at(1)<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Button_list[7].isclicked()<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P2_color<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;G&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_color-&gt;at(1)<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Button_list[8].isclicked()<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P2_color<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;R&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_color-&gt;at(1)<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Button_list[9].isclicked()<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(5);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Button_list[10].isclicked()<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(6);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">Arcade::Arcade(irr::IrrlichtDevice<sp/>*device,<sp/>std::vector&lt;int&gt;<sp/>*color)<sp/>:<sp/>_device(device),<sp/>_color(color)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref><sp/>=<sp/>device-&gt;getVideoDriver();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAScene_1a67c9a683bd486e4630bb2ce8777a44c1" kindref="member">smgr</ref><sp/>=<sp/>device-&gt;getSceneManager();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>guienv<sp/>=<sp/><ref refid="classAScene_1a67c9a683bd486e4630bb2ce8777a44c1" kindref="member">smgr</ref>-&gt;getGUIEnvironment();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//background</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>background<sp/>=<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;getTexture(</highlight><highlight class="stringliteral">&quot;../ressources/Menu/Bomberman_wallpaper.jpeg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//title</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>title<sp/>=<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;getTexture(</highlight><highlight class="stringliteral">&quot;../ressources/Menu/Arcade.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Launch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>launch<sp/>=<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;getTexture(</highlight><highlight class="stringliteral">&quot;../ressources/Menu/LAUNCH_GAME.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Font</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::gui::IGUIFont<sp/>*font<sp/>=<sp/>guienv-&gt;getFont(</highlight><highlight class="stringliteral">&quot;../ressources/font/fonthaettenschweiler.bmp&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>P1<sp/>=<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;getTexture(</highlight><highlight class="stringliteral">&quot;../ressources/Menu/P1.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>P1_color<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;W&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>P1_text<sp/>=<sp/>guienv-&gt;addStaticText(std::wstring(P1_color.begin(),<sp/>P1_color.end()).c_str(),</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::core::rect&lt;irr::s32&gt;(125<sp/>,260,<sp/>145,<sp/>285),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>0,<sp/>-1,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>P1_text-&gt;setOverrideFont(font);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>P2<sp/>=<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>-&gt;getTexture(</highlight><highlight class="stringliteral">&quot;../ressources/Menu/P2.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>P2_color<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;W&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>P2_text<sp/>=<sp/>guienv-&gt;addStaticText(std::wstring(P2_color.begin(),<sp/>P2_color.end()).c_str(),</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>irr::core::rect&lt;irr::s32&gt;(520,260,<sp/>545,<sp/>285),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>0,<sp/>-1,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>P2_text-&gt;setOverrideFont(font);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>Button_list.push_back(<ref refid="classButton" kindref="compound">Button</ref>(guienv,<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>,<sp/>irr::core::position2d&lt;irr::s32&gt;(0,<sp/>860),<sp/>std::vector&lt;std::string&gt;{</highlight><highlight class="stringliteral">&quot;../ressources/Option/Back.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Option/Back.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Option/Back_clicked.png&quot;</highlight><highlight class="normal">}));</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>Button_list.push_back(<ref refid="classButton" kindref="compound">Button</ref>(guienv,<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>,<sp/>irr::core::position2d&lt;irr::s32&gt;(50,<sp/>300),<sp/>std::vector&lt;std::string&gt;{</highlight><highlight class="stringliteral">&quot;../ressources/Menu/W.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/W_pressed.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/W_clicked.png&quot;</highlight><highlight class="normal">}));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>Button_list.push_back(<ref refid="classButton" kindref="compound">Button</ref>(guienv,<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>,<sp/>irr::core::position2d&lt;irr::s32&gt;(150,<sp/>300),<sp/>std::vector&lt;std::string&gt;{</highlight><highlight class="stringliteral">&quot;../ressources/Menu/B.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/B_pressed.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/B_clicked.png&quot;</highlight><highlight class="normal">}));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>Button_list.push_back(<ref refid="classButton" kindref="compound">Button</ref>(guienv,<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>,<sp/>irr::core::position2d&lt;irr::s32&gt;(50,<sp/>400),<sp/>std::vector&lt;std::string&gt;{</highlight><highlight class="stringliteral">&quot;../ressources/Menu/G.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/G_pressed.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/G_clicked.png&quot;</highlight><highlight class="normal">}));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>Button_list.push_back(<ref refid="classButton" kindref="compound">Button</ref>(guienv,<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>,<sp/>irr::core::position2d&lt;irr::s32&gt;(150,<sp/>400),<sp/>std::vector&lt;std::string&gt;{</highlight><highlight class="stringliteral">&quot;../ressources/Menu/R.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/R_pressed.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/R_clicked.png&quot;</highlight><highlight class="normal">}));</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>Button_list.push_back(<ref refid="classButton" kindref="compound">Button</ref>(guienv,<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>,<sp/>irr::core::position2d&lt;irr::s32&gt;(450,<sp/>300),<sp/>std::vector&lt;std::string&gt;{</highlight><highlight class="stringliteral">&quot;../ressources/Menu/W.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/W_pressed.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/W_clicked.png&quot;</highlight><highlight class="normal">}));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>Button_list.push_back(<ref refid="classButton" kindref="compound">Button</ref>(guienv,<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>,<sp/>irr::core::position2d&lt;irr::s32&gt;(550,<sp/>300),<sp/>std::vector&lt;std::string&gt;{</highlight><highlight class="stringliteral">&quot;../ressources/Menu/B.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/B_pressed.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/B_clicked.png&quot;</highlight><highlight class="normal">}));</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>Button_list.push_back(<ref refid="classButton" kindref="compound">Button</ref>(guienv,<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>,<sp/>irr::core::position2d&lt;irr::s32&gt;(450,<sp/>400),<sp/>std::vector&lt;std::string&gt;{</highlight><highlight class="stringliteral">&quot;../ressources/Menu/G.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/G_pressed.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/G_clicked.png&quot;</highlight><highlight class="normal">}));</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>Button_list.push_back(<ref refid="classButton" kindref="compound">Button</ref>(guienv,<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>,<sp/>irr::core::position2d&lt;irr::s32&gt;(550,<sp/>400),<sp/>std::vector&lt;std::string&gt;{</highlight><highlight class="stringliteral">&quot;../ressources/Menu/R.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/R_pressed.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/R_clicked.png&quot;</highlight><highlight class="normal">}));</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>Button_list.push_back(<ref refid="classButton" kindref="compound">Button</ref>(guienv,<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>,<sp/>irr::core::position2d&lt;irr::s32&gt;(120,<sp/>580),<sp/>std::vector&lt;std::string&gt;{</highlight><highlight class="stringliteral">&quot;../ressources/Menu/P1.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/P1_pressed.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/P1_clicked.png&quot;</highlight><highlight class="normal">}));</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>Button_list.push_back(<ref refid="classButton" kindref="compound">Button</ref>(guienv,<sp/><ref refid="classAScene_1ae56af2648a100df159b037a9176e553b" kindref="member">driver</ref>,<sp/>irr::core::position2d&lt;irr::s32&gt;(520,<sp/>580),<sp/>std::vector&lt;std::string&gt;{</highlight><highlight class="stringliteral">&quot;../ressources/Menu/P2.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/P2_pressed.png&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;../ressources/Menu/P2_clicked.png&quot;</highlight><highlight class="normal">}));</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">Arcade::~Arcade()</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>guienv-&gt;clear();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Menu/Arcade.cpp"/>
+  </compounddef>
+</doxygen>

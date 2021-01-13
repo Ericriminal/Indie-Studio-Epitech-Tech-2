@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classground" kind="class" language="C++" prot="public">
+    <compoundname>ground</compoundname>
+    <includes refid="ground_8hpp" local="no">ground.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classground_1a53e1659b99acf637ff796087a4151e9a" prot="private" static="no" mutable="no">
+        <type>irr::scene::IAnimatedMesh *</type>
+        <definition>irr::scene::IAnimatedMesh* ground::groundMesh</definition>
+        <argsstring></argsstring>
+        <name>groundMesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/ground.hpp" line="27" column="31" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/ground.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classground_1a7adf19f9b5956d887daf7cfffb33fbc0" prot="private" static="no" mutable="no">
+        <type>irr::scene::IMeshSceneNode *</type>
+        <definition>irr::scene::IMeshSceneNode* ground::groundNode</definition>
+        <argsstring></argsstring>
+        <name>groundNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/ground.hpp" line="28" column="32" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/ground.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classground_1a5e6794c01c251452711b81ea087a048f" prot="private" static="no" mutable="no">
+        <type>irr::scene::ISceneManager *</type>
+        <definition>irr::scene::ISceneManager* ground::smgr</definition>
+        <argsstring></argsstring>
+        <name>smgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/ground.hpp" line="29" column="31" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/ground.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classground_1a77789161a027b02fdb6ef8ec9d3701dc" prot="private" static="no" mutable="no">
+        <type>irr::scene::IAnimatedMeshSceneNode *</type>
+        <definition>irr::scene::IAnimatedMeshSceneNode* ground::groundAnim</definition>
+        <argsstring></argsstring>
+        <name>groundAnim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/ground.hpp" line="30" column="40" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/ground.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classground_1a10e7839aaa4f17b3f0fd87e9a1ae9dc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ground::ground</definition>
+        <argsstring>(irr::scene::ISceneManager *smgr, irr::IrrlichtDevice *device, irr::video::IVideoDriver *driver)</argsstring>
+        <name>ground</name>
+        <param>
+          <type>irr::scene::ISceneManager *</type>
+          <declname>smgr</declname>
+        </param>
+        <param>
+          <type>irr::IrrlichtDevice *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>irr::video::IVideoDriver *</type>
+          <declname>driver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>groundAnim-&gt;setAnimationSpeed(30);</para>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/ground.hpp" line="19" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/ground.cpp" bodystart="10" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classground_1a3bc192a200b96ca35fef94f0c5429d8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ground::~ground</definition>
+        <argsstring>()</argsstring>
+        <name>~ground</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/ground.hpp" line="20" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/ground.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classground_1a5bf2b1765479dc4ad084f598ad579194" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>irr::scene::ITriangleSelector *</type>
+        <definition>irr::scene::ITriangleSelector * ground::getSelector</definition>
+        <argsstring>()</argsstring>
+        <name>getSelector</name>
+        <briefdescription>
+<para>function to get a selector of the ground </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>irr::scene::ITriangleSelector* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/ground.hpp" line="25" column="35" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/ground.cpp" bodystart="32" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class to create the ground </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/ground.hpp" line="17" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/ground.hpp" bodystart="17" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classground_1a5bf2b1765479dc4ad084f598ad579194" prot="public" virt="non-virtual"><scope>ground</scope><name>getSelector</name></member>
+      <member refid="classground_1a10e7839aaa4f17b3f0fd87e9a1ae9dc2" prot="public" virt="non-virtual"><scope>ground</scope><name>ground</name></member>
+      <member refid="classground_1a77789161a027b02fdb6ef8ec9d3701dc" prot="private" virt="non-virtual"><scope>ground</scope><name>groundAnim</name></member>
+      <member refid="classground_1a53e1659b99acf637ff796087a4151e9a" prot="private" virt="non-virtual"><scope>ground</scope><name>groundMesh</name></member>
+      <member refid="classground_1a7adf19f9b5956d887daf7cfffb33fbc0" prot="private" virt="non-virtual"><scope>ground</scope><name>groundNode</name></member>
+      <member refid="classground_1a5e6794c01c251452711b81ea087a048f" prot="private" virt="non-virtual"><scope>ground</scope><name>smgr</name></member>
+      <member refid="classground_1a3bc192a200b96ca35fef94f0c5429d8e" prot="public" virt="non-virtual"><scope>ground</scope><name>~ground</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

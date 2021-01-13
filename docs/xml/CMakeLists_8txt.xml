@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="CMakeLists_8txt" kind="file" language="C++">
+    <compoundname>CMakeLists.txt</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="CMakeLists_8txt_1a06ff59c19a71bb69b115b6de4f3fb15f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cmake_minimum_required</definition>
+        <argsstring>(VERSION 3.11) project(bomberman VERSION 1.0.0) list(APPEND CMAKE_MODULE_PATH &quot;$</argsstring>
+        <name>cmake_minimum_required</name>
+        <param>
+          <type>VERSION 3.</type>
+          <declname>11</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/CMakeLists.txt" line="1" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/CMakeLists.txt" bodystart="1" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="CMakeLists_8txt_1ac63aca49bd421ebef13572df6f1f9f1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>libs Irrlicht</type>
+        <definition>libs Irrlicht set</definition>
+        <argsstring>(Irrlicht_FIND_REQUIRED true) include(FindIrrlicht) set(SOURCES src/Main.cpp src/Core.cpp src/Menu/Menu.cpp src/Menu/Button.cpp src/Menu/Option.cpp src/Menu/Adventure.cpp src/Game/window.cpp src/Game/Player.cpp src/Game/Wall.cpp src/Game/ground.cpp src/Game/map.cpp src/Game/bomb.cpp src/Game/UI.cpp src/Game/Music.cpp src/Game/Path.cpp src/Menu/Arcade.cpp src/Game/GameOver.cpp src/Game/Win.cpp) set(CMAKE_CXX_STANDARD 17) link_directories(&quot;./libs/Irrlicht&quot;) link_directories(&quot;./libs/SFML&quot;) link_libraries($</argsstring>
+        <name>set</name>
+        <param>
+          <type>Irrlicht_FIND_REQUIRED</type>
+          <declname>true</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/CMakeLists.txt" line="5" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/CMakeLists.txt" bodystart="5" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="CMakeLists_8txt_1ad87abadf12c437eca5ce2d42198dadb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sfml audio lpthread</type>
+        <definition>sfml audio lpthread if</definition>
+        <argsstring>(MSVC) set(EXECUTABLE_OUTPUT_PATH $</argsstring>
+        <name>if</name>
+        <param>
+          <type>MSVC</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/CMakeLists.txt" line="36" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/CMakeLists.txt" bodystart="36" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="CMakeLists_8txt_1a96ea077e0933fe768d31abe61a6b88b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bin</type>
+        <definition>bin file</definition>
+        <argsstring>(COPY ${CMAKE_CURRENT_SOURCE_DIR}/libs/Irrlicht/irrlicht.dll DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/bin) file(COPY $</argsstring>
+        <name>file</name>
+        <param>
+          <type>COPY ${CMAKE_CURRENT_SOURCE_DIR}/libs/Irrlicht/irrlicht.dll DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/</type>
+          <declname>bin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/CMakeLists.txt" line="38" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/CMakeLists.txt" bodystart="38" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">cmake_minimum_required(VERSION<sp/>3.11)</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">project(bomberman<sp/>VERSION<sp/>1.0.0)</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">list(APPEND<sp/>CMAKE_MODULE_PATH<sp/></highlight><highlight class="stringliteral">&quot;${CMAKE_CURRENT_LIST_DIR}/libs/Irrlicht&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">set(Irrlicht_FIND_REQUIRED<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">include(FindIrrlicht)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">set(SOURCES</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>src/Main.cpp</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>src/Core.cpp</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>src/<ref refid="classMenu" kindref="compound">Menu</ref>/<ref refid="classMenu" kindref="compound">Menu</ref>.cpp</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>src/<ref refid="classMenu" kindref="compound">Menu</ref>/<ref refid="classButton" kindref="compound">Button</ref>.cpp</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>src/<ref refid="classMenu" kindref="compound">Menu</ref>/<ref refid="classOption" kindref="compound">Option</ref>.cpp</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>src/<ref refid="classMenu" kindref="compound">Menu</ref>/<ref refid="classAdventure" kindref="compound">Adventure</ref>.cpp</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>src/Game/<ref refid="classwindow" kindref="compound">window</ref>.cpp</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>src/Game/<ref refid="classPlayer" kindref="compound">Player</ref>.cpp</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>src/Game/<ref refid="classWall" kindref="compound">Wall</ref>.cpp</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>src/Game/<ref refid="classground" kindref="compound">ground</ref>.cpp</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>src/Game/map.cpp</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>src/Game/bomb.cpp</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>src/Game/<ref refid="classUI" kindref="compound">UI</ref>.cpp</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>src/Game/<ref refid="classMusic" kindref="compound">Music</ref>.cpp</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>src/Game/Path.cpp</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>src/<ref refid="classMenu" kindref="compound">Menu</ref>/<ref refid="classArcade" kindref="compound">Arcade</ref>.cpp</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>src/Game/<ref refid="classGameOver" kindref="compound">GameOver</ref>.cpp</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>src/Game/<ref refid="classWin" kindref="compound">Win</ref>.cpp</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">set(CMAKE_CXX_STANDARD<sp/>17)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">link_directories(&quot;./libs/Irrlicht&quot;)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">link_directories(&quot;./libs/SFML&quot;)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">link_libraries(${Irrlicht_LIBRARIES}<sp/>sfml-audio<sp/>-lpthread)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(MSVC)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>set(EXECUTABLE_OUTPUT_PATH<sp/>${CMAKE_CURRENT_SOURCE_DIR}/bin/)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>file(COPY<sp/>${CMAKE_CURRENT_SOURCE_DIR}/libs/Irrlicht/irrlicht.dll</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DESTINATION<sp/>${CMAKE_CURRENT_SOURCE_DIR}/bin)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>file(COPY<sp/>${CMAKE_CURRENT_SOURCE_DIR}/libs/SFML/sfml-audio-2.dll</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DESTINATION<sp/>${CMAKE_CURRENT_SOURCE_DIR}/bin)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>file(COPY<sp/>${CMAKE_CURRENT_SOURCE_DIR}/libs/SFML/sfml-system-2.dll</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DESTINATION<sp/>${CMAKE_CURRENT_SOURCE_DIR}/bin)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>file(COPY<sp/>${CMAKE_CURRENT_SOURCE_DIR}/libs/SFML/openal32.dll</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DESTINATION<sp/>${CMAKE_CURRENT_SOURCE_DIR}/bin)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>include_directories(</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>${CMAKE_CURRENT_LIST_DIR}/libs/Irrlicht/include/</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>${CMAKE_CURRENT_LIST_DIR}/libs/SFML/include/</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>(MSVC)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>add_compile_options()</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>include_directories(</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>${Irrlicht_INCLUDE_DIRS}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">endif<sp/>(MSVC)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">add_executable(${PROJECT_NAME}<sp/>${SOURCES})</highlight></codeline>
+    </programlisting>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/CMakeLists.txt"/>
+  </compounddef>
+</doxygen>

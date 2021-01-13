@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classUI" kind="class" language="C++" prot="public">
+    <compoundname>UI</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUI_1a69ab5698e6dfb1429e3c77ff820c9367" prot="private" static="no" mutable="no">
+        <type>irr::IrrlichtDevice *</type>
+        <definition>irr::IrrlichtDevice* UI::device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" line="22" column="25" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUI_1aaab7f0f8efb9c4570c6f91eee76eabfb" prot="private" static="no" mutable="no">
+        <type>irr::video::IVideoDriver *</type>
+        <definition>irr::video::IVideoDriver* UI::driver</definition>
+        <argsstring></argsstring>
+        <name>driver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" line="23" column="30" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUI_1a21c81b433e0878c0f9cac61b5b735455" prot="private" static="no" mutable="no">
+        <type>irr::scene::ISceneManager *</type>
+        <definition>irr::scene::ISceneManager* UI::smgr</definition>
+        <argsstring></argsstring>
+        <name>smgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" line="24" column="31" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUI_1a5ab201f485623d93e5bba7e605b7054b" prot="private" static="no" mutable="no">
+        <type>irr::gui::IGUIEnvironment *</type>
+        <definition>irr::gui::IGUIEnvironment* UI::guienv</definition>
+        <argsstring></argsstring>
+        <name>guienv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" line="25" column="31" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUI_1ae119446820f462c517d60c0281a7543f" prot="private" static="no" mutable="no">
+        <type>irr::gui::IGUIFont *</type>
+        <definition>irr::gui::IGUIFont* UI::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" line="26" column="24" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUI_1a00da820f693fb6d96caa63780356b457" prot="private" static="no" mutable="no">
+        <type>irr::video::ITexture *</type>
+        <definition>irr::video::ITexture* UI::bomb</definition>
+        <argsstring></argsstring>
+        <name>bomb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" line="27" column="26" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUI_1a4570995cf70414c8af5ead66c1c5fa0d" prot="private" static="no" mutable="no">
+        <type>irr::video::ITexture *</type>
+        <definition>irr::video::ITexture* UI::fire</definition>
+        <argsstring></argsstring>
+        <name>fire</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" line="28" column="26" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUI_1a3c697eb5c5752f9a69ded2ee3ba96ff5" prot="private" static="no" mutable="no">
+        <type>irr::video::ITexture *</type>
+        <definition>irr::video::ITexture* UI::skate</definition>
+        <argsstring></argsstring>
+        <name>skate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" line="29" column="26" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUI_1ac7c4e827226160f64d7cf2c3de88b4e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UI::UI</definition>
+        <argsstring>(irr::IrrlichtDevice *device, irr::video::IVideoDriver *driver, irr::scene::ISceneManager *smgr, irr::gui::IGUIEnvironment *guienv)</argsstring>
+        <name>UI</name>
+        <param>
+          <type>irr::IrrlichtDevice *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>irr::video::IVideoDriver *</type>
+          <declname>driver</declname>
+        </param>
+        <param>
+          <type>irr::scene::ISceneManager *</type>
+          <declname>smgr</declname>
+        </param>
+        <param>
+          <type>irr::gui::IGUIEnvironment *</type>
+          <declname>guienv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" line="32" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.cpp" bodystart="10" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classUI_1a1b23d0c64c7cbb3d143d90ec532a7ccd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UI::~UI</definition>
+        <argsstring>()</argsstring>
+        <name>~UI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" line="33" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classUI_1aaa1c88e189549db0181a3ab83d49cabe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UI::loadFont</definition>
+        <argsstring>()</argsstring>
+        <name>loadFont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" line="34" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classUI_1ad548eedf7ece2742bc2caa68501064ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UI::loadFont</definition>
+        <argsstring>(const irr::io::path &amp;filename)</argsstring>
+        <name>loadFont</name>
+        <param>
+          <type>const irr::io::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" line="35" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.cpp" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classUI_1a9ea8f718a8c251ba0c860b81e0cd6770" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>irr::video::ITexture *</type>
+        <definition>irr::video::ITexture * UI::load2dImage</definition>
+        <argsstring>(irr::video::ITexture *images, const irr::io::path &amp;filename)</argsstring>
+        <name>load2dImage</name>
+        <param>
+          <type>irr::video::ITexture *</type>
+          <declname>images</declname>
+        </param>
+        <param>
+          <type>const irr::io::path &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" line="36" column="26" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classUI_1a8b1bb61967db03000f90cdcda77c75b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UI::draw2DImage</definition>
+        <argsstring>(irr::video::ITexture *images, int posX, int posY, int scale)</argsstring>
+        <name>draw2DImage</name>
+        <param>
+          <type>irr::video::ITexture *</type>
+          <declname>images</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" line="37" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.cpp" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classUI_1a9118e7708463f7c649606685c5bc8074" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UI::printPlayerInfo</definition>
+        <argsstring>(Player *player, int posX, int posY)</argsstring>
+        <name>printPlayerInfo</name>
+        <param>
+          <type><ref refid="classPlayer" kindref="compound">Player</ref> *</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" line="38" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.cpp" bodystart="46" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" line="19" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/UI.hpp" bodystart="20" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classUI_1a00da820f693fb6d96caa63780356b457" prot="private" virt="non-virtual"><scope>UI</scope><name>bomb</name></member>
+      <member refid="classUI_1a69ab5698e6dfb1429e3c77ff820c9367" prot="private" virt="non-virtual"><scope>UI</scope><name>device</name></member>
+      <member refid="classUI_1a8b1bb61967db03000f90cdcda77c75b1" prot="public" virt="non-virtual"><scope>UI</scope><name>draw2DImage</name></member>
+      <member refid="classUI_1aaab7f0f8efb9c4570c6f91eee76eabfb" prot="private" virt="non-virtual"><scope>UI</scope><name>driver</name></member>
+      <member refid="classUI_1a4570995cf70414c8af5ead66c1c5fa0d" prot="private" virt="non-virtual"><scope>UI</scope><name>fire</name></member>
+      <member refid="classUI_1ae119446820f462c517d60c0281a7543f" prot="private" virt="non-virtual"><scope>UI</scope><name>font</name></member>
+      <member refid="classUI_1a5ab201f485623d93e5bba7e605b7054b" prot="private" virt="non-virtual"><scope>UI</scope><name>guienv</name></member>
+      <member refid="classUI_1a9ea8f718a8c251ba0c860b81e0cd6770" prot="public" virt="non-virtual"><scope>UI</scope><name>load2dImage</name></member>
+      <member refid="classUI_1aaa1c88e189549db0181a3ab83d49cabe" prot="public" virt="non-virtual"><scope>UI</scope><name>loadFont</name></member>
+      <member refid="classUI_1ad548eedf7ece2742bc2caa68501064ef" prot="public" virt="non-virtual"><scope>UI</scope><name>loadFont</name></member>
+      <member refid="classUI_1a9118e7708463f7c649606685c5bc8074" prot="public" virt="non-virtual"><scope>UI</scope><name>printPlayerInfo</name></member>
+      <member refid="classUI_1a3c697eb5c5752f9a69ded2ee3ba96ff5" prot="private" virt="non-virtual"><scope>UI</scope><name>skate</name></member>
+      <member refid="classUI_1a21c81b433e0878c0f9cac61b5b735455" prot="private" virt="non-virtual"><scope>UI</scope><name>smgr</name></member>
+      <member refid="classUI_1ac7c4e827226160f64d7cf2c3de88b4e2" prot="public" virt="non-virtual"><scope>UI</scope><name>UI</name></member>
+      <member refid="classUI_1a1b23d0c64c7cbb3d143d90ec532a7ccd" prot="public" virt="non-virtual"><scope>UI</scope><name>~UI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

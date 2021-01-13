@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classWin" kind="class" language="C++" prot="public">
+    <compoundname>Win</compoundname>
+    <basecompoundref refid="classAScene" prot="public" virt="non-virtual">AScene</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWin_1a366da657adb1088418276f5a83b1d845" prot="private" static="no" mutable="no">
+        <type>irr::video::ITexture *</type>
+        <definition>irr::video::ITexture* Win::background</definition>
+        <argsstring></argsstring>
+        <name>background</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Win.hpp" line="22" column="30" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Win.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWin_1a97762590a40f24ede34a643aeef9c6e9" prot="private" static="no" mutable="no">
+        <type>irr::IrrlichtDevice *</type>
+        <definition>irr::IrrlichtDevice* Win::_device</definition>
+        <argsstring></argsstring>
+        <name>_device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Win.hpp" line="23" column="29" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Win.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWin_1a9549b95addc2478db4dc83f87afceac3" prot="private" static="no" mutable="no">
+        <type>irr::u32</type>
+        <definition>irr::u32 Win::waitTime</definition>
+        <argsstring></argsstring>
+        <name>waitTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Win.hpp" line="24" column="18" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Win.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWin_1aab82b53500b8d11a36361829b99f518e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Win::Win</definition>
+        <argsstring>(irr::IrrlichtDevice *device)</argsstring>
+        <name>Win</name>
+        <param>
+          <type>irr::IrrlichtDevice *</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Win.hpp" line="15" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Win.cpp" bodystart="23" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classWin_1a2a356df5290c18b5636cbf2a584557c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Win::~Win</definition>
+        <argsstring>()</argsstring>
+        <name>~Win</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Win.hpp" line="16" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Win.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classWin_1a557dda068ecb1e62dfd8265242ced2fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Win::doScene</definition>
+        <argsstring>()</argsstring>
+        <name>doScene</name>
+        <reimplements refid="classIScene_1a06a4c59f8bf0b6cbeeb3c479b83fa0d6">doScene</reimplements>
+        <briefdescription>
+<para>Funtion to print scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Win.hpp" line="17" column="13" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Win.cpp" bodystart="11" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>IScene</label>
+        <link refid="classIScene"/>
+      </node>
+      <node id="2">
+        <label>AScene</label>
+        <link refid="classAScene"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Win</label>
+        <link refid="classWin"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>IScene</label>
+        <link refid="classIScene"/>
+      </node>
+      <node id="2">
+        <label>AScene</label>
+        <link refid="classAScene"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Win</label>
+        <link refid="classWin"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Win.hpp" line="13" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/Win.hpp" bodystart="13" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classWin_1a97762590a40f24ede34a643aeef9c6e9" prot="private" virt="non-virtual"><scope>Win</scope><name>_device</name></member>
+      <member refid="classWin_1a366da657adb1088418276f5a83b1d845" prot="private" virt="non-virtual"><scope>Win</scope><name>background</name></member>
+      <member refid="classWin_1a557dda068ecb1e62dfd8265242ced2fc" prot="public" virt="virtual"><scope>Win</scope><name>doScene</name></member>
+      <member refid="classAScene_1ae56af2648a100df159b037a9176e553b" prot="protected" virt="non-virtual"><scope>Win</scope><name>driver</name></member>
+      <member refid="classAScene_1a67c9a683bd486e4630bb2ce8777a44c1" prot="protected" virt="non-virtual"><scope>Win</scope><name>smgr</name></member>
+      <member refid="classWin_1a9549b95addc2478db4dc83f87afceac3" prot="private" virt="non-virtual"><scope>Win</scope><name>waitTime</name></member>
+      <member refid="classWin_1aab82b53500b8d11a36361829b99f518e" prot="public" virt="non-virtual"><scope>Win</scope><name>Win</name></member>
+      <member refid="classIScene_1a146b1101069efb7a46b3bb6e419bc2bc" prot="public" virt="virtual"><scope>Win</scope><name>~IScene</name></member>
+      <member refid="classWin_1a2a356df5290c18b5636cbf2a584557c2" prot="public" virt="non-virtual"><scope>Win</scope><name>~Win</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classcore" kind="class" language="C++" prot="public">
+    <compoundname>core</compoundname>
+    <includes refid="Core_8hpp" local="no">Core.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1ae1508406d58a8c6fe2713711add5ecda" prot="private" static="no" mutable="no">
+        <type>irr::IrrlichtDevice *</type>
+        <definition>irr::IrrlichtDevice* core::device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <briefdescription>
+<para>pointer to device of irrlicht </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="27" column="29" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1a62be9f6f5892186020cd0681f4375239" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classIScene" kindref="compound">IScene</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;IScene&gt; core::my_scene</definition>
+        <argsstring></argsstring>
+        <name>my_scene</name>
+        <briefdescription>
+<para>Pointer to the actual scene show. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="31" column="25" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1a85d032d53abfd62bc158d057b0501066" prot="private" static="no" mutable="no">
+        <type><ref refid="classMyEventReceiver" kindref="compound">MyEventReceiver</ref> *</type>
+        <definition>MyEventReceiver* core::receiver</definition>
+        <argsstring></argsstring>
+        <name>receiver</name>
+        <briefdescription>
+<para>Receiver to device of irrlicht. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="35" column="25" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1a1eae2aa59e17d003c9378cda9a614406" prot="private" static="no" mutable="no">
+        <type><ref refid="classMusic" kindref="compound">Music</ref></type>
+        <definition>Music core::music</definition>
+        <argsstring></argsstring>
+        <name>music</name>
+        <briefdescription>
+<para><ref refid="classMusic" kindref="compound">Music</ref> class for the music and sound. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="39" column="15" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1acf947273e7e6b37bc6c64cf153b689e4" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structBomberman_1_1Controle" kindref="compound">Bomberman::Controle</ref> &gt;</type>
+        <definition>std::vector&lt;Bomberman::Controle&gt; core::_keybinding</definition>
+        <argsstring></argsstring>
+        <name>_keybinding</name>
+        <briefdescription>
+<para>vector that store the key binding of the 2 player </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="81" column="21" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1a6243345c89a71eafce526ea1dd690a13" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; core::_color</definition>
+        <argsstring></argsstring>
+        <name>_color</name>
+        <briefdescription>
+<para>function that store the skin of the 2 player </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="94" column="21" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcore_1a6819b5057b808b7ded8bc126f6cc22bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int core::coreManager</definition>
+        <argsstring>(int status)</argsstring>
+        <name>coreManager</name>
+        <param>
+          <type>int</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>fucntion to manage core usage </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="44" column="13" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.cpp" bodystart="118" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1a571c913b422e4213a9fdebbb26d4bcd9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::changeScene</definition>
+        <argsstring>(int scene)</argsstring>
+        <name>changeScene</name>
+        <param>
+          <type>int</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+<para>function to change scene </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="48" column="14" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.cpp" bodystart="96" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1a0aa526d3b73832c31b96611f59ffc719" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::goMenu</definition>
+        <argsstring>()</argsstring>
+        <name>goMenu</name>
+        <briefdescription>
+<para>function to go menu </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="52" column="14" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.cpp" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1ae607256741dbcb0da75a9a293b77d3e3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::goGameSolo</definition>
+        <argsstring>()</argsstring>
+        <name>goGameSolo</name>
+        <briefdescription>
+<para>function to launch the game solo </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="56" column="14" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.cpp" bodystart="50" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1a83e73b55a818bce9139b51930e95b28b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::goGameAdventure</definition>
+        <argsstring>()</argsstring>
+        <name>goGameAdventure</name>
+        <briefdescription>
+<para>function to launch the adventure </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="60" column="14" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.cpp" bodystart="66" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1a3bb6536402bbb54d85fb26f658821397" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::goGameMulti</definition>
+        <argsstring>()</argsstring>
+        <name>goGameMulti</name>
+        <briefdescription>
+<para>function to launch a game on multiplayer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="64" column="14" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.cpp" bodystart="58" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1ac47e2f20b7a84b59323d9a0d78fa0c83" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::goOption</definition>
+        <argsstring>()</argsstring>
+        <name>goOption</name>
+        <briefdescription>
+<para>function to go to option </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="68" column="14" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.cpp" bodystart="32" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1ad99d3d6ce8257233ff03ce8afb01dee8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::goGameOver</definition>
+        <argsstring>()</argsstring>
+        <name>goGameOver</name>
+        <briefdescription>
+<para>function to go to gameover screen </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="72" column="14" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.cpp" bodystart="80" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1a5e97a7eabf2ee9b66da8194350b34e45" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::goWin</definition>
+        <argsstring>()</argsstring>
+        <name>goWin</name>
+        <briefdescription>
+<para>function to go to win screen </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="76" column="14" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.cpp" bodystart="88" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1a5aa651571aa70f2836786734dfd99695" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::goAdventure</definition>
+        <argsstring>()</argsstring>
+        <name>goAdventure</name>
+        <briefdescription>
+<para>function to go to adventure </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="85" column="14" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.cpp" bodystart="74" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1a10da8bff337894bbf2e21bd27080d8b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::goArcade</definition>
+        <argsstring>()</argsstring>
+        <name>goArcade</name>
+        <briefdescription>
+<para>function to go to arcade mode </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="89" column="14" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.cpp" bodystart="38" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1a80fcee9cff8016506d97aaa915c3cb0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::core</definition>
+        <argsstring>()</argsstring>
+        <name>core</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="97" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.cpp" bodystart="19" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1a9026f259315e60898c73a8a1f41b8dfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+<para>function to launch the core </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="101" column="14" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.cpp" bodystart="127" bodyend="137"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Core class for bomberman. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" line="22" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Core.hpp" bodystart="22" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classcore_1a6243345c89a71eafce526ea1dd690a13" prot="private" virt="non-virtual"><scope>core</scope><name>_color</name></member>
+      <member refid="classcore_1acf947273e7e6b37bc6c64cf153b689e4" prot="private" virt="non-virtual"><scope>core</scope><name>_keybinding</name></member>
+      <member refid="classcore_1a571c913b422e4213a9fdebbb26d4bcd9" prot="private" virt="non-virtual"><scope>core</scope><name>changeScene</name></member>
+      <member refid="classcore_1a80fcee9cff8016506d97aaa915c3cb0c" prot="public" virt="non-virtual"><scope>core</scope><name>core</name></member>
+      <member refid="classcore_1a6819b5057b808b7ded8bc126f6cc22bd" prot="private" virt="non-virtual"><scope>core</scope><name>coreManager</name></member>
+      <member refid="classcore_1ae1508406d58a8c6fe2713711add5ecda" prot="private" virt="non-virtual"><scope>core</scope><name>device</name></member>
+      <member refid="classcore_1a5aa651571aa70f2836786734dfd99695" prot="private" virt="non-virtual"><scope>core</scope><name>goAdventure</name></member>
+      <member refid="classcore_1a10da8bff337894bbf2e21bd27080d8b4" prot="private" virt="non-virtual"><scope>core</scope><name>goArcade</name></member>
+      <member refid="classcore_1a83e73b55a818bce9139b51930e95b28b" prot="private" virt="non-virtual"><scope>core</scope><name>goGameAdventure</name></member>
+      <member refid="classcore_1a3bb6536402bbb54d85fb26f658821397" prot="private" virt="non-virtual"><scope>core</scope><name>goGameMulti</name></member>
+      <member refid="classcore_1ad99d3d6ce8257233ff03ce8afb01dee8" prot="private" virt="non-virtual"><scope>core</scope><name>goGameOver</name></member>
+      <member refid="classcore_1ae607256741dbcb0da75a9a293b77d3e3" prot="private" virt="non-virtual"><scope>core</scope><name>goGameSolo</name></member>
+      <member refid="classcore_1a0aa526d3b73832c31b96611f59ffc719" prot="private" virt="non-virtual"><scope>core</scope><name>goMenu</name></member>
+      <member refid="classcore_1ac47e2f20b7a84b59323d9a0d78fa0c83" prot="private" virt="non-virtual"><scope>core</scope><name>goOption</name></member>
+      <member refid="classcore_1a5e97a7eabf2ee9b66da8194350b34e45" prot="private" virt="non-virtual"><scope>core</scope><name>goWin</name></member>
+      <member refid="classcore_1a1eae2aa59e17d003c9378cda9a614406" prot="private" virt="non-virtual"><scope>core</scope><name>music</name></member>
+      <member refid="classcore_1a62be9f6f5892186020cd0681f4375239" prot="private" virt="non-virtual"><scope>core</scope><name>my_scene</name></member>
+      <member refid="classcore_1a85d032d53abfd62bc158d057b0501066" prot="private" virt="non-virtual"><scope>core</scope><name>receiver</name></member>
+      <member refid="classcore_1a9026f259315e60898c73a8a1f41b8dfe" prot="public" virt="non-virtual"><scope>core</scope><name>start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

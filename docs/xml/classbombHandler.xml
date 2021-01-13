@@ -1,0 +1,979 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classbombHandler" kind="class" language="C++" prot="public">
+    <compoundname>bombHandler</compoundname>
+    <includes refid="bomb_8hpp" local="no">bomb.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classbombHandler_1ac32f6300a9b1c7de3eab0a05db9fd982" prot="private" static="no" mutable="no">
+        <type><ref refid="classMap" kindref="compound">Map</ref> *</type>
+        <definition>Map* bombHandler::map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <briefdescription>
+<para>map object </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="156" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbombHandler_1a4ee989dde90797bbddaa329bf61c3d56" prot="private" static="no" mutable="no">
+        <type>irr::scene::ISceneManager *</type>
+        <definition>irr::scene::ISceneManager* bombHandler::smgr</definition>
+        <argsstring></argsstring>
+        <name>smgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="157" column="31" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbombHandler_1aecedb2ccab2b6a0bfc4b011c5def1ff8" prot="private" static="no" mutable="no">
+        <type>irr::video::IVideoDriver *</type>
+        <definition>irr::video::IVideoDriver* bombHandler::driver</definition>
+        <argsstring></argsstring>
+        <name>driver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="158" column="30" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbombHandler_1ae885ed99d709f6f26d943386059228c9" prot="private" static="no" mutable="no">
+        <type><ref refid="classMusic" kindref="compound">Music</ref> *</type>
+        <definition>Music* bombHandler::music</definition>
+        <argsstring></argsstring>
+        <name>music</name>
+        <briefdescription>
+<para>music object </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="162" column="11" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbombHandler_1a49abfcf46576c22a3fa1ed53c5d56a3e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; bombHandler::bombPos</definition>
+        <argsstring></argsstring>
+        <name>bombPos</name>
+        <briefdescription>
+<para>vector to save each bomb position </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="166" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbombHandler_1a1e331669f688fe5289d93140f096c39c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; bombHandler::bombEffectZone</definition>
+        <argsstring></argsstring>
+        <name>bombEffectZone</name>
+        <briefdescription>
+<para>vector to save each bomb effect zone </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="170" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbombHandler_1afea2730ccfc29758720d962f62521f31" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; bombHandler::wallExplosed</definition>
+        <argsstring></argsstring>
+        <name>wallExplosed</name>
+        <briefdescription>
+<para>vector to save each wall that has been explosed by a bomb </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="174" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbombHandler_1a86ddccae0fa21d11af67d4228ced680d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; irr::scene::IParticleSystemSceneNode * &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;irr::scene::IParticleSystemSceneNode *&gt; &gt; bombHandler::bombParticles</definition>
+        <argsstring></argsstring>
+        <name>bombParticles</name>
+        <briefdescription>
+<para>vector to have each particle </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="178" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbombHandler_1ad52bb7cabc82f2991920f28f46bd1193" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; bombHandler::mapEffectZone</definition>
+        <argsstring></argsstring>
+        <name>mapEffectZone</name>
+        <briefdescription>
+<para>vector to have explosion zone </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="182" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbombHandler_1abf3f4579d68145db756d30a4afa6a7b6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; BOMB_STATUS &gt;</type>
+        <definition>std::vector&lt;BOMB_STATUS&gt; bombHandler::bombStatus</definition>
+        <argsstring></argsstring>
+        <name>bombStatus</name>
+        <briefdescription>
+<para>vector to have each status of the bomb </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="186" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbombHandler_1af1926e37e18b05d7536cba88c4c43364" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; irr::u32 &gt;</type>
+        <definition>std::vector&lt;irr::u32&gt; bombHandler::remainingTime</definition>
+        <argsstring></argsstring>
+        <name>remainingTime</name>
+        <briefdescription>
+<para>vector to have each timer of bomb </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="190" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbombHandler_1a0ac86f8a01408f3045103817875f3334" prot="private" static="no" mutable="no">
+        <type>irr::ITimer *</type>
+        <definition>irr::ITimer* bombHandler::clock</definition>
+        <argsstring></argsstring>
+        <name>clock</name>
+        <briefdescription>
+<para>time clock of bomb </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="194" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbombHandler_1abb11611a619acad18b8a691979c4f53a" prot="private" static="no" mutable="no">
+        <type>irr::scene::IAnimatedMesh *</type>
+        <definition>irr::scene::IAnimatedMesh* bombHandler::bombMesh</definition>
+        <argsstring></argsstring>
+        <name>bombMesh</name>
+        <briefdescription>
+<para>mesh of the bomb </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="198" column="31" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbombHandler_1a60061bce7c22d9aeac30b5a94c012e60" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; irr::scene::IAnimatedMeshSceneNode * &gt;</type>
+        <definition>std::vector&lt;irr::scene::IAnimatedMeshSceneNode*&gt; bombHandler::bombMeshSceneNode</definition>
+        <argsstring></argsstring>
+        <name>bombMeshSceneNode</name>
+        <briefdescription>
+<para>vector of each meshnode </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="202" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbombHandler_1a84e1a2f0da1df5cc7ee051140a7f8730" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool bombHandler::pause</definition>
+        <argsstring></argsstring>
+        <name>pause</name>
+        <briefdescription>
+<para>boolean pause </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="206" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbombHandler_1ad412602cff65ae12db1296e0b31d3501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bombHandler::bombHandler</definition>
+        <argsstring>(irr::scene::ISceneManager *smgr, irr::video::IVideoDriver *driver, irr::ITimer *clock, Map *map, Music *music)</argsstring>
+        <name>bombHandler</name>
+        <param>
+          <type>irr::scene::ISceneManager *</type>
+          <declname>smgr</declname>
+        </param>
+        <param>
+          <type>irr::video::IVideoDriver *</type>
+          <declname>driver</declname>
+        </param>
+        <param>
+          <type>irr::ITimer *</type>
+          <declname>clock</declname>
+        </param>
+        <param>
+          <type><ref refid="classMap" kindref="compound">Map</ref> *</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type><ref refid="classMusic" kindref="compound">Music</ref> *</type>
+          <declname>music</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="30" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="10" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classbombHandler_1ad6b5308871c6f650ec5f4f1bdbdbaccd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bombHandler::~bombHandler</definition>
+        <argsstring>()</argsstring>
+        <name>~bombHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="33" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classbombHandler_1a1bf6bb843941ce190044c2560e8c4b98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool bombHandler::addBomb</definition>
+        <argsstring>(std::vector&lt; int &gt; bombPos, int force)</argsstring>
+        <name>addBomb</name>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>bombPos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+<para>function that add a bomb on the map </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the bomb (x,y) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="39" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="124" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classbombHandler_1a65ed78824969ea583e73fd1800673b3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bombHandler::SetPause</definition>
+        <argsstring>(bool pause)</argsstring>
+        <name>SetPause</name>
+        <param>
+          <type>bool</type>
+          <declname>pause</declname>
+        </param>
+        <briefdescription>
+<para>function to pause the handling of bombs </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>boolean</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the status of the game </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="45" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="305" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classbombHandler_1afc7e6a87dbe540cbfb14e10f9e72aa3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bombHandler::checkBomb</definition>
+        <argsstring>()</argsstring>
+        <name>checkBomb</name>
+        <briefdescription>
+<para>function to check bombs </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="50" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="314" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classbombHandler_1a7a4a3d013569397263a39fd57f5a4663" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; int &gt; &gt; bombHandler::getDangerZone</definition>
+        <argsstring>()</argsstring>
+        <name>getDangerZone</name>
+        <briefdescription>
+<para>getter of the vector 2d dangerzone </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>dangerZone (vector 2d) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="56" column="17" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="300" bodyend="303"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classbombHandler_1aabbd9752a31b861f5ff9cd6fb9b16ba8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bombHandler::checkWaitTime</definition>
+        <argsstring>(int bombCounter, irr::u32 actualTime)</argsstring>
+        <name>checkWaitTime</name>
+        <param>
+          <type>int</type>
+          <declname>bombCounter</declname>
+        </param>
+        <param>
+          <type>irr::u32</type>
+          <declname>actualTime</declname>
+        </param>
+        <briefdescription>
+<para>wait 3 sec to make explosion </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bombCounter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the bomb vector </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>actualTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer of the game </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="64" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="225" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classbombHandler_1a6bbd79250e2965b851b124cfde3662e7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bombHandler::setBombExplosion</definition>
+        <argsstring>(int bombCounter)</argsstring>
+        <name>setBombExplosion</name>
+        <param>
+          <type>int</type>
+          <declname>bombCounter</declname>
+        </param>
+        <briefdescription>
+<para>make the explosion of the bomb and remove explosed wall </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bombCounter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index the bomb vector </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="70" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="140" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classbombHandler_1addf15463871c503471d138f648f57bce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bombHandler::addParticles</definition>
+        <argsstring>(int bombCounter)</argsstring>
+        <name>addParticles</name>
+        <param>
+          <type>int</type>
+          <declname>bombCounter</declname>
+        </param>
+        <briefdescription>
+<para>add explosion particles in the danger zone </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bombCounter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index the bomb vector </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="76" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="157" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classbombHandler_1a8b3b0f93a9c43458a55b5d7b885f3292" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bombHandler::removeParticles</definition>
+        <argsstring>()</argsstring>
+        <name>removeParticles</name>
+        <briefdescription>
+<para>remove the particlue after 3 sec </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="82" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="220" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classbombHandler_1a59bf2c8075b27dea7a558cd531fecb89" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bombHandler::bombRadiusVertical</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; int &gt;&gt; actualMap, int force, int startPos, int incrementor, std::vector&lt; int &gt; *wallExplosedTmp)</argsstring>
+        <name>bombRadiusVertical</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; int &gt;&gt;</type>
+          <declname>actualMap</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>force</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>startPos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>incrementor</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; *</type>
+          <declname>wallExplosedTmp</declname>
+        </param>
+        <briefdescription>
+<para>get the Y explosion range </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>actualMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector2d (int) map of the game </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the power of the bomb </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>startPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position y of the bomb </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>incrementor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>direction of the explosion </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wallExplosedTmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>explosed wall in one direction (here Y) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>explosion range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="92" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="35" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classbombHandler_1a5ca624a4f054421731fd4e7a2340400f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bombHandler::bombRadiusHorizontal</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; int &gt;&gt; actualMap, int force, int startPos, int incrementor, std::vector&lt; int &gt; *wallExplosedTmp)</argsstring>
+        <name>bombRadiusHorizontal</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; int &gt;&gt;</type>
+          <declname>actualMap</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>force</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>startPos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>incrementor</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; *</type>
+          <declname>wallExplosedTmp</declname>
+        </param>
+        <briefdescription>
+<para>get the X explosion range </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>actualMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vecot2d (int) map of the game </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the power of the bomb </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>startPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position x of the bomb </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>incrementor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>direction of the explosion </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wallExplosedTmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>explosed wall in one direction (here X) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>explosion range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="103" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="55" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classbombHandler_1a09cb2519623ef2ace0a4c625bf2e8d1c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bombHandler::getBombRadius</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; int &gt;&gt; actualMap, int direction, int force, std::vector&lt; int &gt; *allWallDestroyed)</argsstring>
+        <name>getBombRadius</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; int &gt;&gt;</type>
+          <declname>actualMap</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>force</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; *</type>
+          <declname>allWallDestroyed</declname>
+        </param>
+        <briefdescription>
+<para>get the explosion range </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>actualMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vecot2d (int) map of the game </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of explosion </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the power of the bomb </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wallExplosedTmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>explosed wall in one direction </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>explosion range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="113" column="9" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="75" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classbombHandler_1a69f855083905a6070d048c2cb763f141" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bombHandler::setDangerZone</definition>
+        <argsstring>(int force)</argsstring>
+        <name>setDangerZone</name>
+        <param>
+          <type>int</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+<para>set the explosion range in the vector danger zone </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>power of explosion </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="120" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="105" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classbombHandler_1a3eb9f12c38aaf37cfbb6adb7e1fe134d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bombHandler::updateDangerZone</definition>
+        <argsstring>()</argsstring>
+        <name>updateDangerZone</name>
+        <briefdescription>
+<para>update all the vector 2d bombEffectZone </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="126" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="263" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classbombHandler_1a8a79d8341f5f2e473d20412ab9682877" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bombHandler::addHorizontalDangerZone</definition>
+        <argsstring>(int dangerType, int leftX, int leftY, int rightX)</argsstring>
+        <name>addHorizontalDangerZone</name>
+        <param>
+          <type>int</type>
+          <declname>dangerType</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>leftX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>leftY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rightX</declname>
+        </param>
+        <briefdescription>
+<para>add danger in the axe X </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dangerType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type of danger (predictable and imminent) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>leftX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position horizontal X </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>leftY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position horizontal Y </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rightX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position horizontal X </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="135" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="255" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classbombHandler_1ae56284dbf1228d5c032285c2d9faebdd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bombHandler::addVerticalDangerZone</definition>
+        <argsstring>(int dangerType, int topX, int topY, int downY)</argsstring>
+        <name>addVerticalDangerZone</name>
+        <param>
+          <type>int</type>
+          <declname>dangerType</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>topX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>topY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>downY</declname>
+        </param>
+        <briefdescription>
+<para>add danger in the axe Y </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dangerType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type of danger (predictable and imminent) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position verticale X axe </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position verticale Y axe </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>downX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position verticale Y axe </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="145" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="247" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classbombHandler_1aaf8cf7e108c16cf874634c61e248612d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bombHandler::removeOldPointer</definition>
+        <argsstring>()</argsstring>
+        <name>removeOldPointer</name>
+        <briefdescription>
+<para>function that remove old element of all vector </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="152" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.cpp" bodystart="282" bodyend="298"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class that handle all bombs </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" line="28" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/bomb.hpp" bodystart="28" bodyend="207"/>
+    <listofallmembers>
+      <member refid="classbombHandler_1a1bf6bb843941ce190044c2560e8c4b98" prot="public" virt="non-virtual"><scope>bombHandler</scope><name>addBomb</name></member>
+      <member refid="classbombHandler_1a8a79d8341f5f2e473d20412ab9682877" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>addHorizontalDangerZone</name></member>
+      <member refid="classbombHandler_1addf15463871c503471d138f648f57bce" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>addParticles</name></member>
+      <member refid="classbombHandler_1ae56284dbf1228d5c032285c2d9faebdd" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>addVerticalDangerZone</name></member>
+      <member refid="classbombHandler_1a1e331669f688fe5289d93140f096c39c" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>bombEffectZone</name></member>
+      <member refid="classbombHandler_1ad412602cff65ae12db1296e0b31d3501" prot="public" virt="non-virtual"><scope>bombHandler</scope><name>bombHandler</name></member>
+      <member refid="classbombHandler_1abb11611a619acad18b8a691979c4f53a" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>bombMesh</name></member>
+      <member refid="classbombHandler_1a60061bce7c22d9aeac30b5a94c012e60" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>bombMeshSceneNode</name></member>
+      <member refid="classbombHandler_1a86ddccae0fa21d11af67d4228ced680d" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>bombParticles</name></member>
+      <member refid="classbombHandler_1a49abfcf46576c22a3fa1ed53c5d56a3e" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>bombPos</name></member>
+      <member refid="classbombHandler_1a5ca624a4f054421731fd4e7a2340400f" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>bombRadiusHorizontal</name></member>
+      <member refid="classbombHandler_1a59bf2c8075b27dea7a558cd531fecb89" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>bombRadiusVertical</name></member>
+      <member refid="classbombHandler_1abf3f4579d68145db756d30a4afa6a7b6" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>bombStatus</name></member>
+      <member refid="classbombHandler_1afc7e6a87dbe540cbfb14e10f9e72aa3a" prot="public" virt="non-virtual"><scope>bombHandler</scope><name>checkBomb</name></member>
+      <member refid="classbombHandler_1aabbd9752a31b861f5ff9cd6fb9b16ba8" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>checkWaitTime</name></member>
+      <member refid="classbombHandler_1a0ac86f8a01408f3045103817875f3334" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>clock</name></member>
+      <member refid="classbombHandler_1aecedb2ccab2b6a0bfc4b011c5def1ff8" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>driver</name></member>
+      <member refid="classbombHandler_1a09cb2519623ef2ace0a4c625bf2e8d1c" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>getBombRadius</name></member>
+      <member refid="classbombHandler_1a7a4a3d013569397263a39fd57f5a4663" prot="public" virt="non-virtual"><scope>bombHandler</scope><name>getDangerZone</name></member>
+      <member refid="classbombHandler_1ac32f6300a9b1c7de3eab0a05db9fd982" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>map</name></member>
+      <member refid="classbombHandler_1ad52bb7cabc82f2991920f28f46bd1193" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>mapEffectZone</name></member>
+      <member refid="classbombHandler_1ae885ed99d709f6f26d943386059228c9" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>music</name></member>
+      <member refid="classbombHandler_1a84e1a2f0da1df5cc7ee051140a7f8730" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>pause</name></member>
+      <member refid="classbombHandler_1af1926e37e18b05d7536cba88c4c43364" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>remainingTime</name></member>
+      <member refid="classbombHandler_1aaf8cf7e108c16cf874634c61e248612d" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>removeOldPointer</name></member>
+      <member refid="classbombHandler_1a8b3b0f93a9c43458a55b5d7b885f3292" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>removeParticles</name></member>
+      <member refid="classbombHandler_1a6bbd79250e2965b851b124cfde3662e7" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>setBombExplosion</name></member>
+      <member refid="classbombHandler_1a69f855083905a6070d048c2cb763f141" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>setDangerZone</name></member>
+      <member refid="classbombHandler_1a65ed78824969ea583e73fd1800673b3b" prot="public" virt="non-virtual"><scope>bombHandler</scope><name>SetPause</name></member>
+      <member refid="classbombHandler_1a4ee989dde90797bbddaa329bf61c3d56" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>smgr</name></member>
+      <member refid="classbombHandler_1a3eb9f12c38aaf37cfbb6adb7e1fe134d" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>updateDangerZone</name></member>
+      <member refid="classbombHandler_1afea2730ccfc29758720d962f62521f31" prot="private" virt="non-virtual"><scope>bombHandler</scope><name>wallExplosed</name></member>
+      <member refid="classbombHandler_1ad6b5308871c6f650ec5f4f1bdbdbaccd" prot="public" virt="non-virtual"><scope>bombHandler</scope><name>~bombHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

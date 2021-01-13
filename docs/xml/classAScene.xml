@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classAScene" kind="class" language="C++" prot="public">
+    <compoundname>AScene</compoundname>
+    <basecompoundref refid="classIScene" prot="public" virt="non-virtual">IScene</basecompoundref>
+    <derivedcompoundref refid="classAdventure" prot="public" virt="non-virtual">Adventure</derivedcompoundref>
+    <derivedcompoundref refid="classArcade" prot="public" virt="non-virtual">Arcade</derivedcompoundref>
+    <derivedcompoundref refid="classGameOver" prot="public" virt="non-virtual">GameOver</derivedcompoundref>
+    <derivedcompoundref refid="classMenu" prot="public" virt="non-virtual">Menu</derivedcompoundref>
+    <derivedcompoundref refid="classOption" prot="public" virt="non-virtual">Option</derivedcompoundref>
+    <derivedcompoundref refid="classWin" prot="public" virt="non-virtual">Win</derivedcompoundref>
+    <derivedcompoundref refid="classwindow" prot="public" virt="non-virtual">window</derivedcompoundref>
+    <includes refid="AScene_8hpp" local="no">AScene.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classAScene_1a67c9a683bd486e4630bb2ce8777a44c1" prot="protected" static="no" mutable="no">
+        <type>irr::scene::ISceneManager *</type>
+        <definition>irr::scene::ISceneManager* AScene::smgr</definition>
+        <argsstring></argsstring>
+        <name>smgr</name>
+        <briefdescription>
+<para>pointer to ISceneManager of irrlicht </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/AScene.hpp" line="22" column="35" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/AScene.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAScene_1ae56af2648a100df159b037a9176e553b" prot="protected" static="no" mutable="no">
+        <type>irr::video::IVideoDriver *</type>
+        <definition>irr::video::IVideoDriver* AScene::driver</definition>
+        <argsstring></argsstring>
+        <name>driver</name>
+        <briefdescription>
+<para>pointer to IVideoDriver </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/AScene.hpp" line="26" column="34" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/AScene.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract class of SCene. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>Menu</label>
+        <link refid="classMenu"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GameOver</label>
+        <link refid="classGameOver"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Arcade</label>
+        <link refid="classArcade"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>window</label>
+        <link refid="classwindow"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Option</label>
+        <link refid="classOption"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IScene</label>
+        <link refid="classIScene"/>
+      </node>
+      <node id="1">
+        <label>AScene</label>
+        <link refid="classAScene"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Win</label>
+        <link refid="classWin"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Adventure</label>
+        <link refid="classAdventure"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IScene</label>
+        <link refid="classIScene"/>
+      </node>
+      <node id="1">
+        <label>AScene</label>
+        <link refid="classAScene"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/AScene.hpp" line="17" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/AScene.hpp" bodystart="17" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classIScene_1a06a4c59f8bf0b6cbeeb3c479b83fa0d6" prot="public" virt="pure-virtual"><scope>AScene</scope><name>doScene</name></member>
+      <member refid="classAScene_1ae56af2648a100df159b037a9176e553b" prot="protected" virt="non-virtual"><scope>AScene</scope><name>driver</name></member>
+      <member refid="classAScene_1a67c9a683bd486e4630bb2ce8777a44c1" prot="protected" virt="non-virtual"><scope>AScene</scope><name>smgr</name></member>
+      <member refid="classIScene_1a146b1101069efb7a46b3bb6e419bc2bc" prot="public" virt="virtual"><scope>AScene</scope><name>~IScene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

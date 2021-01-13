@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classMyEventReceiver" kind="class" language="C++" prot="public">
+    <compoundname>MyEventReceiver</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IEventReceiver</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMyEventReceiver_1a8a00bf782fbcbea2a85f7903eb195cca" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyEventReceiver::KeyIsDown[irr::KEY_KEY_CODES_COUNT]</definition>
+        <argsstring>[irr::KEY_KEY_CODES_COUNT]</argsstring>
+        <name>KeyIsDown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/InputEvent.hpp" line="45" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/InputEvent.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyEventReceiver_1af00138b43423b074769c2920238e1aec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyEventReceiver::OnEvent</definition>
+        <argsstring>(const irr::SEvent &amp;event)</argsstring>
+        <name>OnEvent</name>
+        <param>
+          <type>const irr::SEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/InputEvent.hpp" line="18" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/InputEvent.hpp" bodystart="18" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyEventReceiver_1a5c02b2408e841857658ae355a265ff23" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyEventReceiver::IsKeyDown</definition>
+        <argsstring>(irr::EKEY_CODE keyCode) const</argsstring>
+        <name>IsKeyDown</name>
+        <param>
+          <type>irr::EKEY_CODE</type>
+          <declname>keyCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/InputEvent.hpp" line="27" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/InputEvent.hpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyEventReceiver_1ac77fa3ab56ff576cdaf9464ba7b4f1a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool *</type>
+        <definition>bool* MyEventReceiver::getKey</definition>
+        <argsstring>(void)</argsstring>
+        <name>getKey</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/InputEvent.hpp" line="32" column="10" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/InputEvent.hpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyEventReceiver_1aee872bb650c49c210c8ca75eba6fa6a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyEventReceiver::MyEventReceiver</definition>
+        <argsstring>()</argsstring>
+        <name>MyEventReceiver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/InputEvent.hpp" line="37" column="5" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/InputEvent.hpp" bodystart="37" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MyEventReceiver</label>
+        <link refid="classMyEventReceiver"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>irr::IEventReceiver</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MyEventReceiver</label>
+        <link refid="classMyEventReceiver"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>irr::IEventReceiver</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/InputEvent.hpp" line="14" column="1" bodyfile="/home/joris/Projects/Epitech/tek_2/OOP/OOP_indie_studio_2019/src/Game/InputEvent.hpp" bodystart="15" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classMyEventReceiver_1ac77fa3ab56ff576cdaf9464ba7b4f1a4" prot="public" virt="non-virtual"><scope>MyEventReceiver</scope><name>getKey</name></member>
+      <member refid="classMyEventReceiver_1a5c02b2408e841857658ae355a265ff23" prot="public" virt="non-virtual"><scope>MyEventReceiver</scope><name>IsKeyDown</name></member>
+      <member refid="classMyEventReceiver_1a8a00bf782fbcbea2a85f7903eb195cca" prot="private" virt="non-virtual"><scope>MyEventReceiver</scope><name>KeyIsDown</name></member>
+      <member refid="classMyEventReceiver_1aee872bb650c49c210c8ca75eba6fa6a2" prot="public" virt="non-virtual"><scope>MyEventReceiver</scope><name>MyEventReceiver</name></member>
+      <member refid="classMyEventReceiver_1af00138b43423b074769c2920238e1aec" prot="public" virt="non-virtual"><scope>MyEventReceiver</scope><name>OnEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
